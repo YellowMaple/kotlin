@@ -2,18 +2,18 @@ FILE fqName:<root> fileName:/dynamicUnaryOperator.kt
   FUN name:testUnaryMinus visibility:public modality:FINAL <> (d:dynamic) returnType:dynamic flags:[]
     VALUE_PARAMETER name:d index:0 type:dynamic flags:[]
     BLOCK_BODY
-      RETURN type=kotlin.Nothing from='FUN name:testUnaryMinus visibility:public modality:FINAL <> (d:dynamic) returnType:dynamic flags:[]'
+      RETURN type=kotlin.Nothing from='public final fun testUnaryMinus <> (d: dynamic): dynamic flags:[] declared in <root>'
         DYN_OP operator=UNARY_MINUS type=dynamic
-          receiver: GET_VAR 'VALUE_PARAMETER name:d index:0 type:dynamic flags:[]' type=dynamic origin=null
+          receiver: GET_VAR 'd: dynamic flags:[] declared in <root>.testUnaryMinus' type=dynamic origin=null
   FUN name:testUnaryPlus visibility:public modality:FINAL <> (d:dynamic) returnType:dynamic flags:[]
     VALUE_PARAMETER name:d index:0 type:dynamic flags:[]
     BLOCK_BODY
-      RETURN type=kotlin.Nothing from='FUN name:testUnaryPlus visibility:public modality:FINAL <> (d:dynamic) returnType:dynamic flags:[]'
+      RETURN type=kotlin.Nothing from='public final fun testUnaryPlus <> (d: dynamic): dynamic flags:[] declared in <root>'
         DYN_OP operator=UNARY_PLUS type=dynamic
-          receiver: GET_VAR 'VALUE_PARAMETER name:d index:0 type:dynamic flags:[]' type=dynamic origin=null
+          receiver: GET_VAR 'd: dynamic flags:[] declared in <root>.testUnaryPlus' type=dynamic origin=null
   FUN name:testExcl visibility:public modality:FINAL <> (d:dynamic) returnType:dynamic flags:[]
     VALUE_PARAMETER name:d index:0 type:dynamic flags:[]
     BLOCK_BODY
-      RETURN type=kotlin.Nothing from='FUN name:testExcl visibility:public modality:FINAL <> (d:dynamic) returnType:dynamic flags:[]'
+      RETURN type=kotlin.Nothing from='public final fun testExcl <> (d: dynamic): dynamic flags:[] declared in <root>'
         DYN_OP operator=EXCL type=dynamic
-          receiver: GET_VAR 'VALUE_PARAMETER name:d index:0 type:dynamic flags:[]' type=dynamic origin=null
+          receiver: GET_VAR 'd: dynamic flags:[] declared in <root>.testExcl' type=dynamic origin=null

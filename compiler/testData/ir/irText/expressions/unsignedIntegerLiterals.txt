@@ -6,7 +6,7 @@ FILE fqName:<root> fileName:/unsignedIntegerLiterals.kt
     FUN DEFAULT_PROPERTY_ACCESSOR name:<get-testSimpleUIntLiteral> visibility:public modality:FINAL <> () returnType:kotlin.UInt flags:[]
       correspondingProperty: PROPERTY name:testSimpleUIntLiteral visibility:public modality:FINAL flags:[val]
       BLOCK_BODY
-        RETURN type=kotlin.Nothing from='FUN DEFAULT_PROPERTY_ACCESSOR name:<get-testSimpleUIntLiteral> visibility:public modality:FINAL <> () returnType:kotlin.UInt flags:[]'
+        RETURN type=kotlin.Nothing from='public final fun <get-testSimpleUIntLiteral> <> (): kotlin.UInt flags:[] declared in <root>'
           GET_FIELD 'FIELD PROPERTY_BACKING_FIELD name:testSimpleUIntLiteral type:kotlin.UInt visibility:public flags:[final,static]' type=kotlin.UInt origin=null
   PROPERTY name:testSimpleUIntLiteralWithOverflow visibility:public modality:FINAL flags:[val]
     FIELD PROPERTY_BACKING_FIELD name:testSimpleUIntLiteralWithOverflow type:kotlin.UInt visibility:public flags:[final,static]
@@ -15,7 +15,7 @@ FILE fqName:<root> fileName:/unsignedIntegerLiterals.kt
     FUN DEFAULT_PROPERTY_ACCESSOR name:<get-testSimpleUIntLiteralWithOverflow> visibility:public modality:FINAL <> () returnType:kotlin.UInt flags:[]
       correspondingProperty: PROPERTY name:testSimpleUIntLiteralWithOverflow visibility:public modality:FINAL flags:[val]
       BLOCK_BODY
-        RETURN type=kotlin.Nothing from='FUN DEFAULT_PROPERTY_ACCESSOR name:<get-testSimpleUIntLiteralWithOverflow> visibility:public modality:FINAL <> () returnType:kotlin.UInt flags:[]'
+        RETURN type=kotlin.Nothing from='public final fun <get-testSimpleUIntLiteralWithOverflow> <> (): kotlin.UInt flags:[] declared in <root>'
           GET_FIELD 'FIELD PROPERTY_BACKING_FIELD name:testSimpleUIntLiteralWithOverflow type:kotlin.UInt visibility:public flags:[final,static]' type=kotlin.UInt origin=null
   PROPERTY name:testUByteWithExpectedType visibility:public modality:FINAL flags:[val]
     FIELD PROPERTY_BACKING_FIELD name:testUByteWithExpectedType type:kotlin.UByte visibility:public flags:[final,static]
@@ -24,7 +24,7 @@ FILE fqName:<root> fileName:/unsignedIntegerLiterals.kt
     FUN DEFAULT_PROPERTY_ACCESSOR name:<get-testUByteWithExpectedType> visibility:public modality:FINAL <> () returnType:kotlin.UByte flags:[]
       correspondingProperty: PROPERTY name:testUByteWithExpectedType visibility:public modality:FINAL flags:[val]
       BLOCK_BODY
-        RETURN type=kotlin.Nothing from='FUN DEFAULT_PROPERTY_ACCESSOR name:<get-testUByteWithExpectedType> visibility:public modality:FINAL <> () returnType:kotlin.UByte flags:[]'
+        RETURN type=kotlin.Nothing from='public final fun <get-testUByteWithExpectedType> <> (): kotlin.UByte flags:[] declared in <root>'
           GET_FIELD 'FIELD PROPERTY_BACKING_FIELD name:testUByteWithExpectedType type:kotlin.UByte visibility:public flags:[final,static]' type=kotlin.UByte origin=null
   PROPERTY name:testUShortWithExpectedType visibility:public modality:FINAL flags:[val]
     FIELD PROPERTY_BACKING_FIELD name:testUShortWithExpectedType type:kotlin.UShort visibility:public flags:[final,static]
@@ -33,7 +33,7 @@ FILE fqName:<root> fileName:/unsignedIntegerLiterals.kt
     FUN DEFAULT_PROPERTY_ACCESSOR name:<get-testUShortWithExpectedType> visibility:public modality:FINAL <> () returnType:kotlin.UShort flags:[]
       correspondingProperty: PROPERTY name:testUShortWithExpectedType visibility:public modality:FINAL flags:[val]
       BLOCK_BODY
-        RETURN type=kotlin.Nothing from='FUN DEFAULT_PROPERTY_ACCESSOR name:<get-testUShortWithExpectedType> visibility:public modality:FINAL <> () returnType:kotlin.UShort flags:[]'
+        RETURN type=kotlin.Nothing from='public final fun <get-testUShortWithExpectedType> <> (): kotlin.UShort flags:[] declared in <root>'
           GET_FIELD 'FIELD PROPERTY_BACKING_FIELD name:testUShortWithExpectedType type:kotlin.UShort visibility:public flags:[final,static]' type=kotlin.UShort origin=null
   PROPERTY name:testUIntWithExpectedType visibility:public modality:FINAL flags:[val]
     FIELD PROPERTY_BACKING_FIELD name:testUIntWithExpectedType type:kotlin.UInt visibility:public flags:[final,static]
@@ -42,7 +42,7 @@ FILE fqName:<root> fileName:/unsignedIntegerLiterals.kt
     FUN DEFAULT_PROPERTY_ACCESSOR name:<get-testUIntWithExpectedType> visibility:public modality:FINAL <> () returnType:kotlin.UInt flags:[]
       correspondingProperty: PROPERTY name:testUIntWithExpectedType visibility:public modality:FINAL flags:[val]
       BLOCK_BODY
-        RETURN type=kotlin.Nothing from='FUN DEFAULT_PROPERTY_ACCESSOR name:<get-testUIntWithExpectedType> visibility:public modality:FINAL <> () returnType:kotlin.UInt flags:[]'
+        RETURN type=kotlin.Nothing from='public final fun <get-testUIntWithExpectedType> <> (): kotlin.UInt flags:[] declared in <root>'
           GET_FIELD 'FIELD PROPERTY_BACKING_FIELD name:testUIntWithExpectedType type:kotlin.UInt visibility:public flags:[final,static]' type=kotlin.UInt origin=null
   PROPERTY name:testULongWithExpectedType visibility:public modality:FINAL flags:[val]
     FIELD PROPERTY_BACKING_FIELD name:testULongWithExpectedType type:kotlin.ULong visibility:public flags:[final,static]
@@ -51,45 +51,45 @@ FILE fqName:<root> fileName:/unsignedIntegerLiterals.kt
     FUN DEFAULT_PROPERTY_ACCESSOR name:<get-testULongWithExpectedType> visibility:public modality:FINAL <> () returnType:kotlin.ULong flags:[]
       correspondingProperty: PROPERTY name:testULongWithExpectedType visibility:public modality:FINAL flags:[val]
       BLOCK_BODY
-        RETURN type=kotlin.Nothing from='FUN DEFAULT_PROPERTY_ACCESSOR name:<get-testULongWithExpectedType> visibility:public modality:FINAL <> () returnType:kotlin.ULong flags:[]'
+        RETURN type=kotlin.Nothing from='public final fun <get-testULongWithExpectedType> <> (): kotlin.ULong flags:[] declared in <root>'
           GET_FIELD 'FIELD PROPERTY_BACKING_FIELD name:testULongWithExpectedType type:kotlin.ULong visibility:public flags:[final,static]' type=kotlin.ULong origin=null
   PROPERTY name:testToUByte visibility:public modality:FINAL flags:[val]
     FIELD PROPERTY_BACKING_FIELD name:testToUByte type:kotlin.UByte visibility:public flags:[final,static]
       EXPRESSION_BODY
-        CALL 'FUN IR_EXTERNAL_DECLARATION_STUB name:toUByte visibility:public modality:FINAL <> ($receiver:kotlin.Int) returnType:kotlin.UByte flags:[inline]' type=kotlin.UByte origin=null
+        CALL 'public final fun toUByte <> (): kotlin.UByte flags:[inline] declared in kotlin' type=kotlin.UByte origin=null
           $receiver: CONST Int type=kotlin.Int value=1
     FUN DEFAULT_PROPERTY_ACCESSOR name:<get-testToUByte> visibility:public modality:FINAL <> () returnType:kotlin.UByte flags:[]
       correspondingProperty: PROPERTY name:testToUByte visibility:public modality:FINAL flags:[val]
       BLOCK_BODY
-        RETURN type=kotlin.Nothing from='FUN DEFAULT_PROPERTY_ACCESSOR name:<get-testToUByte> visibility:public modality:FINAL <> () returnType:kotlin.UByte flags:[]'
+        RETURN type=kotlin.Nothing from='public final fun <get-testToUByte> <> (): kotlin.UByte flags:[] declared in <root>'
           GET_FIELD 'FIELD PROPERTY_BACKING_FIELD name:testToUByte type:kotlin.UByte visibility:public flags:[final,static]' type=kotlin.UByte origin=null
   PROPERTY name:testToUShort visibility:public modality:FINAL flags:[val]
     FIELD PROPERTY_BACKING_FIELD name:testToUShort type:kotlin.UShort visibility:public flags:[final,static]
       EXPRESSION_BODY
-        CALL 'FUN IR_EXTERNAL_DECLARATION_STUB name:toUShort visibility:public modality:FINAL <> ($receiver:kotlin.Int) returnType:kotlin.UShort flags:[inline]' type=kotlin.UShort origin=null
+        CALL 'public final fun toUShort <> (): kotlin.UShort flags:[inline] declared in kotlin' type=kotlin.UShort origin=null
           $receiver: CONST Int type=kotlin.Int value=1
     FUN DEFAULT_PROPERTY_ACCESSOR name:<get-testToUShort> visibility:public modality:FINAL <> () returnType:kotlin.UShort flags:[]
       correspondingProperty: PROPERTY name:testToUShort visibility:public modality:FINAL flags:[val]
       BLOCK_BODY
-        RETURN type=kotlin.Nothing from='FUN DEFAULT_PROPERTY_ACCESSOR name:<get-testToUShort> visibility:public modality:FINAL <> () returnType:kotlin.UShort flags:[]'
+        RETURN type=kotlin.Nothing from='public final fun <get-testToUShort> <> (): kotlin.UShort flags:[] declared in <root>'
           GET_FIELD 'FIELD PROPERTY_BACKING_FIELD name:testToUShort type:kotlin.UShort visibility:public flags:[final,static]' type=kotlin.UShort origin=null
   PROPERTY name:testToUInt visibility:public modality:FINAL flags:[val]
     FIELD PROPERTY_BACKING_FIELD name:testToUInt type:kotlin.UInt visibility:public flags:[final,static]
       EXPRESSION_BODY
-        CALL 'FUN IR_EXTERNAL_DECLARATION_STUB name:toUInt visibility:public modality:FINAL <> ($receiver:kotlin.Int) returnType:kotlin.UInt flags:[inline]' type=kotlin.UInt origin=null
+        CALL 'public final fun toUInt <> (): kotlin.UInt flags:[inline] declared in kotlin' type=kotlin.UInt origin=null
           $receiver: CONST Int type=kotlin.Int value=1
     FUN DEFAULT_PROPERTY_ACCESSOR name:<get-testToUInt> visibility:public modality:FINAL <> () returnType:kotlin.UInt flags:[]
       correspondingProperty: PROPERTY name:testToUInt visibility:public modality:FINAL flags:[val]
       BLOCK_BODY
-        RETURN type=kotlin.Nothing from='FUN DEFAULT_PROPERTY_ACCESSOR name:<get-testToUInt> visibility:public modality:FINAL <> () returnType:kotlin.UInt flags:[]'
+        RETURN type=kotlin.Nothing from='public final fun <get-testToUInt> <> (): kotlin.UInt flags:[] declared in <root>'
           GET_FIELD 'FIELD PROPERTY_BACKING_FIELD name:testToUInt type:kotlin.UInt visibility:public flags:[final,static]' type=kotlin.UInt origin=null
   PROPERTY name:testToULong visibility:public modality:FINAL flags:[val]
     FIELD PROPERTY_BACKING_FIELD name:testToULong type:kotlin.ULong visibility:public flags:[final,static]
       EXPRESSION_BODY
-        CALL 'FUN IR_EXTERNAL_DECLARATION_STUB name:toULong visibility:public modality:FINAL <> ($receiver:kotlin.Int) returnType:kotlin.ULong flags:[inline]' type=kotlin.ULong origin=null
+        CALL 'public final fun toULong <> (): kotlin.ULong flags:[inline] declared in kotlin' type=kotlin.ULong origin=null
           $receiver: CONST Int type=kotlin.Int value=1
     FUN DEFAULT_PROPERTY_ACCESSOR name:<get-testToULong> visibility:public modality:FINAL <> () returnType:kotlin.ULong flags:[]
       correspondingProperty: PROPERTY name:testToULong visibility:public modality:FINAL flags:[val]
       BLOCK_BODY
-        RETURN type=kotlin.Nothing from='FUN DEFAULT_PROPERTY_ACCESSOR name:<get-testToULong> visibility:public modality:FINAL <> () returnType:kotlin.ULong flags:[]'
+        RETURN type=kotlin.Nothing from='public final fun <get-testToULong> <> (): kotlin.ULong flags:[] declared in <root>'
           GET_FIELD 'FIELD PROPERTY_BACKING_FIELD name:testToULong type:kotlin.ULong visibility:public flags:[final,static]' type=kotlin.ULong origin=null

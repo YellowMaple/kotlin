@@ -3,7 +3,7 @@ FILE fqName:<root> fileName:/classes.kt
     $this: VALUE_PARAMETER INSTANCE_RECEIVER name:<this> type:<root>.TestClass flags:[]
     CONSTRUCTOR visibility:public <> () returnType:<root>.TestClass flags:[primary]
       BLOCK_BODY
-        DELEGATING_CONSTRUCTOR_CALL 'CONSTRUCTOR IR_EXTERNAL_DECLARATION_STUB visibility:public <> () returnType:kotlin.Any flags:[primary]'
+        DELEGATING_CONSTRUCTOR_CALL 'public constructor <init> <> () flags:[primary] declared in kotlin.Any'
         INSTANCE_INITIALIZER_CALL classDescriptor='CLASS CLASS name:TestClass modality:FINAL visibility:public flags:[] superTypes:[kotlin.Any]'
     FUN FAKE_OVERRIDE name:equals visibility:public modality:OPEN <> ($this:kotlin.Any, other:kotlin.Any?) returnType:kotlin.Boolean flags:[]
       overridden:
@@ -37,7 +37,7 @@ FILE fqName:<root> fileName:/classes.kt
     $this: VALUE_PARAMETER INSTANCE_RECEIVER name:<this> type:<root>.TestObject flags:[]
     CONSTRUCTOR visibility:private <> () returnType:<root>.TestObject flags:[primary]
       BLOCK_BODY
-        DELEGATING_CONSTRUCTOR_CALL 'CONSTRUCTOR IR_EXTERNAL_DECLARATION_STUB visibility:public <> () returnType:kotlin.Any flags:[primary]'
+        DELEGATING_CONSTRUCTOR_CALL 'public constructor <init> <> () flags:[primary] declared in kotlin.Any'
         INSTANCE_INITIALIZER_CALL classDescriptor='CLASS OBJECT name:TestObject modality:FINAL visibility:public flags:[] superTypes:[kotlin.Any]'
     FUN FAKE_OVERRIDE name:equals visibility:public modality:OPEN <> ($this:kotlin.Any, other:kotlin.Any?) returnType:kotlin.Boolean flags:[]
       overridden:
@@ -72,7 +72,7 @@ FILE fqName:<root> fileName:/classes.kt
     $this: VALUE_PARAMETER INSTANCE_RECEIVER name:<this> type:<root>.TestEnumClass flags:[]
     CONSTRUCTOR visibility:private <> () returnType:<root>.TestEnumClass flags:[primary]
       BLOCK_BODY
-        ENUM_CONSTRUCTOR_CALL 'CONSTRUCTOR IR_EXTERNAL_DECLARATION_STUB visibility:public <> (name:kotlin.String, ordinal:kotlin.Int) returnType:kotlin.Enum<kotlin.Enum.E> flags:[primary]'
+        ENUM_CONSTRUCTOR_CALL 'public constructor <init> <> (name: kotlin.String, ordinal: kotlin.Int) flags:[primary] declared in kotlin.Enum'
           <E : Enum<E>>: <root>.TestEnumClass
         INSTANCE_INITIALIZER_CALL classDescriptor='CLASS ENUM_CLASS name:TestEnumClass modality:FINAL visibility:public flags:[] superTypes:[kotlin.Enum<<root>.TestEnumClass>]'
     FUN FAKE_OVERRIDE name:clone visibility:protected modality:FINAL <> ($this:kotlin.Enum<<root>.TestEnumClass>) returnType:kotlin.Any flags:[]

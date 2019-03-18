@@ -6,7 +6,7 @@ FILE fqName:<root> fileName:/typeAlias.kt
     $this: VALUE_PARAMETER INSTANCE_RECEIVER name:<this> type:<root>.C flags:[]
     CONSTRUCTOR visibility:public <> () returnType:<root>.C flags:[primary]
       BLOCK_BODY
-        DELEGATING_CONSTRUCTOR_CALL 'CONSTRUCTOR IR_EXTERNAL_DECLARATION_STUB visibility:public <> () returnType:kotlin.Any flags:[primary]'
+        DELEGATING_CONSTRUCTOR_CALL 'public constructor <init> <> () flags:[primary] declared in kotlin.Any'
         INSTANCE_INITIALIZER_CALL classDescriptor='CLASS CLASS name:C modality:FINAL visibility:public flags:[] superTypes:[kotlin.Any]'
     FUN FAKE_OVERRIDE name:equals visibility:public modality:OPEN <> ($this:kotlin.Any, other:kotlin.Any?) returnType:kotlin.Boolean flags:[]
       overridden:

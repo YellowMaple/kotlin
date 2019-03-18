@@ -3,18 +3,18 @@ FILE fqName:<root> fileName:/companion.kt
     $this: VALUE_PARAMETER INSTANCE_RECEIVER name:<this> type:<root>.Z flags:[]
     CONSTRUCTOR visibility:public <> () returnType:<root>.Z flags:[primary]
       BLOCK_BODY
-        DELEGATING_CONSTRUCTOR_CALL 'CONSTRUCTOR IR_EXTERNAL_DECLARATION_STUB visibility:public <> () returnType:kotlin.Any flags:[primary]'
+        DELEGATING_CONSTRUCTOR_CALL 'public constructor <init> <> () flags:[primary] declared in kotlin.Any'
         INSTANCE_INITIALIZER_CALL classDescriptor='CLASS CLASS name:Z modality:FINAL visibility:public flags:[] superTypes:[kotlin.Any]'
     FUN name:test2 visibility:public modality:FINAL <> ($this:<root>.Z) returnType:kotlin.Unit flags:[]
       $this: VALUE_PARAMETER name:<this> type:<root>.Z flags:[]
       BLOCK_BODY
-        CALL 'FUN name:test visibility:public modality:FINAL <> ($this:<root>.Z.Companion) returnType:kotlin.Unit flags:[]' type=kotlin.Unit origin=null
+        CALL 'public final fun test <> (): kotlin.Unit flags:[] declared in <root>.Z.Companion' type=kotlin.Unit origin=null
           $this: GET_OBJECT 'CLASS OBJECT name:Companion modality:FINAL visibility:public flags:[companion] superTypes:[kotlin.Any]' type=<root>.Z.Companion
     CLASS OBJECT name:Companion modality:FINAL visibility:public flags:[companion] superTypes:[kotlin.Any]
       $this: VALUE_PARAMETER INSTANCE_RECEIVER name:<this> type:<root>.Z.Companion flags:[]
       CONSTRUCTOR visibility:private <> () returnType:<root>.Z.Companion flags:[primary]
         BLOCK_BODY
-          DELEGATING_CONSTRUCTOR_CALL 'CONSTRUCTOR IR_EXTERNAL_DECLARATION_STUB visibility:public <> () returnType:kotlin.Any flags:[primary]'
+          DELEGATING_CONSTRUCTOR_CALL 'public constructor <init> <> () flags:[primary] declared in kotlin.Any'
           INSTANCE_INITIALIZER_CALL classDescriptor='CLASS OBJECT name:Companion modality:FINAL visibility:public flags:[companion] superTypes:[kotlin.Any]'
       FUN name:test visibility:public modality:FINAL <> ($this:<root>.Z.Companion) returnType:kotlin.Unit flags:[]
         $this: VALUE_PARAMETER name:<this> type:<root>.Z.Companion flags:[]

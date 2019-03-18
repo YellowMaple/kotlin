@@ -3,7 +3,7 @@ FILE fqName:<root> fileName:/objectWithInitializers.kt
     $this: VALUE_PARAMETER INSTANCE_RECEIVER name:<this> type:<root>.Base flags:[]
     CONSTRUCTOR visibility:public <> () returnType:<root>.Base flags:[primary]
       BLOCK_BODY
-        DELEGATING_CONSTRUCTOR_CALL 'CONSTRUCTOR IR_EXTERNAL_DECLARATION_STUB visibility:public <> () returnType:kotlin.Any flags:[primary]'
+        DELEGATING_CONSTRUCTOR_CALL 'public constructor <init> <> () flags:[primary] declared in kotlin.Any'
         INSTANCE_INITIALIZER_CALL classDescriptor='CLASS CLASS name:Base modality:ABSTRACT visibility:public flags:[] superTypes:[kotlin.Any]'
     FUN FAKE_OVERRIDE name:equals visibility:public modality:OPEN <> ($this:kotlin.Any, other:kotlin.Any?) returnType:kotlin.Boolean flags:[]
       overridden:
@@ -22,7 +22,7 @@ FILE fqName:<root> fileName:/objectWithInitializers.kt
     $this: VALUE_PARAMETER INSTANCE_RECEIVER name:<this> type:<root>.Test flags:[]
     CONSTRUCTOR visibility:private <> () returnType:<root>.Test flags:[primary]
       BLOCK_BODY
-        DELEGATING_CONSTRUCTOR_CALL 'CONSTRUCTOR visibility:public <> () returnType:<root>.Base flags:[primary]'
+        DELEGATING_CONSTRUCTOR_CALL 'public constructor <init> <> () flags:[primary] declared in <root>.Base'
         INSTANCE_INITIALIZER_CALL classDescriptor='CLASS OBJECT name:Test modality:FINAL visibility:public flags:[] superTypes:[<root>.Base]'
     PROPERTY name:x visibility:public modality:FINAL flags:[val]
       FIELD PROPERTY_BACKING_FIELD name:x type:kotlin.Int visibility:public flags:[final]
@@ -32,24 +32,24 @@ FILE fqName:<root> fileName:/objectWithInitializers.kt
         correspondingProperty: PROPERTY name:x visibility:public modality:FINAL flags:[val]
         $this: VALUE_PARAMETER name:<this> type:<root>.Test flags:[]
         BLOCK_BODY
-          RETURN type=kotlin.Nothing from='FUN DEFAULT_PROPERTY_ACCESSOR name:<get-x> visibility:public modality:FINAL <> ($this:<root>.Test) returnType:kotlin.Int flags:[]'
+          RETURN type=kotlin.Nothing from='public final fun <get-x> <> (): kotlin.Int flags:[] declared in <root>.Test'
             GET_FIELD 'FIELD PROPERTY_BACKING_FIELD name:x type:kotlin.Int visibility:public flags:[final]' type=kotlin.Int origin=null
-              receiver: GET_VAR 'VALUE_PARAMETER name:<this> type:<root>.Test flags:[]' type=<root>.Test origin=null
+              receiver: GET_VAR '<this>: <root>.Test flags:[] declared in <root>.Test.<get-x>' type=<root>.Test origin=null
     PROPERTY name:y visibility:public modality:FINAL flags:[val]
       FIELD PROPERTY_BACKING_FIELD name:y type:kotlin.Int visibility:public flags:[final]
       FUN DEFAULT_PROPERTY_ACCESSOR name:<get-y> visibility:public modality:FINAL <> ($this:<root>.Test) returnType:kotlin.Int flags:[]
         correspondingProperty: PROPERTY name:y visibility:public modality:FINAL flags:[val]
         $this: VALUE_PARAMETER name:<this> type:<root>.Test flags:[]
         BLOCK_BODY
-          RETURN type=kotlin.Nothing from='FUN DEFAULT_PROPERTY_ACCESSOR name:<get-y> visibility:public modality:FINAL <> ($this:<root>.Test) returnType:kotlin.Int flags:[]'
+          RETURN type=kotlin.Nothing from='public final fun <get-y> <> (): kotlin.Int flags:[] declared in <root>.Test'
             GET_FIELD 'FIELD PROPERTY_BACKING_FIELD name:y type:kotlin.Int visibility:public flags:[final]' type=kotlin.Int origin=null
-              receiver: GET_VAR 'VALUE_PARAMETER name:<this> type:<root>.Test flags:[]' type=<root>.Test origin=null
+              receiver: GET_VAR '<this>: <root>.Test flags:[] declared in <root>.Test.<get-y>' type=<root>.Test origin=null
     ANONYMOUS_INITIALIZER isStatic=false
       BLOCK_BODY
         SET_FIELD 'FIELD PROPERTY_BACKING_FIELD name:y type:kotlin.Int visibility:public flags:[final]' type=kotlin.Unit origin=null
-          receiver: GET_VAR 'VALUE_PARAMETER INSTANCE_RECEIVER name:<this> type:<root>.Test flags:[]' type=<root>.Test origin=null
-          value: CALL 'FUN DEFAULT_PROPERTY_ACCESSOR name:<get-x> visibility:public modality:FINAL <> ($this:<root>.Test) returnType:kotlin.Int flags:[]' type=kotlin.Int origin=GET_PROPERTY
-            $this: GET_VAR 'VALUE_PARAMETER INSTANCE_RECEIVER name:<this> type:<root>.Test flags:[]' type=<root>.Test origin=null
+          receiver: GET_VAR '<this>: <root>.Test flags:[] declared in <root>.Test' type=<root>.Test origin=null
+          value: CALL 'public final fun <get-x> <> (): kotlin.Int flags:[] declared in <root>.Test' type=kotlin.Int origin=GET_PROPERTY
+            $this: GET_VAR '<this>: <root>.Test flags:[] declared in <root>.Test' type=<root>.Test origin=null
     FUN FAKE_OVERRIDE name:equals visibility:public modality:OPEN <> ($this:kotlin.Any, other:kotlin.Any?) returnType:kotlin.Boolean flags:[]
       overridden:
         FUN FAKE_OVERRIDE name:equals visibility:public modality:OPEN <> ($this:kotlin.Any, other:kotlin.Any?) returnType:kotlin.Boolean flags:[]

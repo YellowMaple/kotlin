@@ -19,10 +19,10 @@ FILE fqName:<root> fileName:/intersectionType3.kt
     TYPE_PARAMETER name:T index:0 variance: superTypes:[kotlin.Any?]
     $receiver: VALUE_PARAMETER name:<this> type:<root>.In<<root>.isT.T> flags:[]
     BLOCK_BODY
-      RETURN type=kotlin.Nothing from='FUN name:isT visibility:public modality:FINAL <T> ($receiver:<root>.In<<root>.isT.T>) returnType:kotlin.Boolean flags:[inline]'
+      RETURN type=kotlin.Nothing from='public final fun isT <T> (): kotlin.Boolean flags:[inline] declared in <root>'
         TYPE_OP type=kotlin.Boolean origin=INSTANCEOF typeOperand=<root>.isT.T
           typeOperand: TYPE_PARAMETER name:T index:0 variance: superTypes:[kotlin.Any?]
-          GET_VAR 'VALUE_PARAMETER name:<this> type:<root>.In<<root>.isT.T> flags:[]' type=<root>.In<<root>.isT.T> origin=null
+          GET_VAR '<this>: <root>.In<<root>.isT.T> flags:[] declared in <root>.isT' type=<root>.In<<root>.isT.T> origin=null
   FUN name:asT visibility:public modality:FINAL <T> ($receiver:<root>.In<<root>.asT.T>) returnType:kotlin.Unit flags:[inline]
     TYPE_PARAMETER name:T index:0 variance: superTypes:[kotlin.Any?]
     $receiver: VALUE_PARAMETER name:<this> type:<root>.In<<root>.asT.T> flags:[]
@@ -31,14 +31,14 @@ FILE fqName:<root> fileName:/intersectionType3.kt
         typeOperand: CLASS IR_EXTERNAL_DECLARATION_STUB OBJECT name:Unit modality:FINAL visibility:public flags:[] superTypes:[kotlin.Any]
         TYPE_OP type=<root>.asT.T origin=CAST typeOperand=<root>.asT.T
           typeOperand: TYPE_PARAMETER name:T index:0 variance: superTypes:[kotlin.Any?]
-          GET_VAR 'VALUE_PARAMETER name:<this> type:<root>.In<<root>.asT.T> flags:[]' type=<root>.In<<root>.asT.T> origin=null
+          GET_VAR '<this>: <root>.In<<root>.asT.T> flags:[] declared in <root>.asT' type=<root>.In<<root>.asT.T> origin=null
   FUN name:sel visibility:public modality:FINAL <S> (x:<root>.sel.S, y:<root>.sel.S) returnType:<root>.sel.S flags:[]
     TYPE_PARAMETER name:S index:0 variance: superTypes:[kotlin.Any?]
     VALUE_PARAMETER name:x index:0 type:<root>.sel.S flags:[]
     VALUE_PARAMETER name:y index:1 type:<root>.sel.S flags:[]
     BLOCK_BODY
-      RETURN type=kotlin.Nothing from='FUN name:sel visibility:public modality:FINAL <S> (x:<root>.sel.S, y:<root>.sel.S) returnType:<root>.sel.S flags:[]'
-        GET_VAR 'VALUE_PARAMETER name:x index:0 type:<root>.sel.S flags:[]' type=<root>.sel.S origin=null
+      RETURN type=kotlin.Nothing from='public final fun sel <S> (x: <root>.sel.S, y: <root>.sel.S): <root>.sel.S flags:[] declared in <root>'
+        GET_VAR 'x: <root>.sel.S flags:[] declared in <root>.sel' type=<root>.sel.S origin=null
   CLASS INTERFACE name:A modality:ABSTRACT visibility:public flags:[] superTypes:[kotlin.Any]
     $this: VALUE_PARAMETER INSTANCE_RECEIVER name:<this> type:<root>.A flags:[]
     FUN FAKE_OVERRIDE name:equals visibility:public modality:OPEN <> ($this:kotlin.Any, other:kotlin.Any?) returnType:kotlin.Boolean flags:[]
@@ -139,65 +139,65 @@ FILE fqName:<root> fileName:/intersectionType3.kt
     VALUE_PARAMETER name:x index:0 type:<root>.In<<root>.A> flags:[]
     VALUE_PARAMETER name:y index:1 type:<root>.In<<root>.B> flags:[]
     BLOCK_BODY
-      RETURN type=kotlin.Nothing from='FUN name:testInIs1 visibility:public modality:FINAL <> (x:<root>.In<<root>.A>, y:<root>.In<<root>.B>) returnType:kotlin.Boolean flags:[]'
-        CALL 'FUN name:isT visibility:public modality:FINAL <T> ($receiver:<root>.In<<root>.isT.T>) returnType:kotlin.Boolean flags:[inline]' type=kotlin.Boolean origin=null
+      RETURN type=kotlin.Nothing from='public final fun testInIs1 <> (x: <root>.In<<root>.A>, y: <root>.In<<root>.B>): kotlin.Boolean flags:[] declared in <root>'
+        CALL 'public final fun isT <T> (): kotlin.Boolean flags:[inline] declared in <root>' type=kotlin.Boolean origin=null
           <reified T>: kotlin.Any
-          $receiver: CALL 'FUN name:sel visibility:public modality:FINAL <S> (x:<root>.sel.S, y:<root>.sel.S) returnType:<root>.sel.S flags:[]' type=<root>.In<kotlin.Any> origin=null
+          $receiver: CALL 'public final fun sel <S> (x: <root>.sel.S, y: <root>.sel.S): <root>.sel.S flags:[] declared in <root>' type=<root>.In<kotlin.Any> origin=null
             <S>: <root>.In<kotlin.Any>
-            x: GET_VAR 'VALUE_PARAMETER name:x index:0 type:<root>.In<<root>.A> flags:[]' type=<root>.In<<root>.A> origin=null
-            y: GET_VAR 'VALUE_PARAMETER name:y index:1 type:<root>.In<<root>.B> flags:[]' type=<root>.In<<root>.B> origin=null
+            x: GET_VAR 'x: <root>.In<<root>.A> flags:[] declared in <root>.testInIs1' type=<root>.In<<root>.A> origin=null
+            y: GET_VAR 'y: <root>.In<<root>.B> flags:[] declared in <root>.testInIs1' type=<root>.In<<root>.B> origin=null
   FUN name:testInIs2 visibility:public modality:FINAL <> (x:<root>.In<<root>.Z1>, y:<root>.In<<root>.Z2>) returnType:kotlin.Boolean flags:[]
     VALUE_PARAMETER name:x index:0 type:<root>.In<<root>.Z1> flags:[]
     VALUE_PARAMETER name:y index:1 type:<root>.In<<root>.Z2> flags:[]
     BLOCK_BODY
-      RETURN type=kotlin.Nothing from='FUN name:testInIs2 visibility:public modality:FINAL <> (x:<root>.In<<root>.Z1>, y:<root>.In<<root>.Z2>) returnType:kotlin.Boolean flags:[]'
-        CALL 'FUN name:isT visibility:public modality:FINAL <T> ($receiver:<root>.In<<root>.isT.T>) returnType:kotlin.Boolean flags:[inline]' type=kotlin.Boolean origin=null
+      RETURN type=kotlin.Nothing from='public final fun testInIs2 <> (x: <root>.In<<root>.Z1>, y: <root>.In<<root>.Z2>): kotlin.Boolean flags:[] declared in <root>'
+        CALL 'public final fun isT <T> (): kotlin.Boolean flags:[inline] declared in <root>' type=kotlin.Boolean origin=null
           <reified T>: kotlin.Any
-          $receiver: CALL 'FUN name:sel visibility:public modality:FINAL <S> (x:<root>.sel.S, y:<root>.sel.S) returnType:<root>.sel.S flags:[]' type=<root>.In<kotlin.Any> origin=null
+          $receiver: CALL 'public final fun sel <S> (x: <root>.sel.S, y: <root>.sel.S): <root>.sel.S flags:[] declared in <root>' type=<root>.In<kotlin.Any> origin=null
             <S>: <root>.In<kotlin.Any>
-            x: GET_VAR 'VALUE_PARAMETER name:x index:0 type:<root>.In<<root>.Z1> flags:[]' type=<root>.In<<root>.Z1> origin=null
-            y: GET_VAR 'VALUE_PARAMETER name:y index:1 type:<root>.In<<root>.Z2> flags:[]' type=<root>.In<<root>.Z2> origin=null
+            x: GET_VAR 'x: <root>.In<<root>.Z1> flags:[] declared in <root>.testInIs2' type=<root>.In<<root>.Z1> origin=null
+            y: GET_VAR 'y: <root>.In<<root>.Z2> flags:[] declared in <root>.testInIs2' type=<root>.In<<root>.Z2> origin=null
   FUN name:testInIs3 visibility:public modality:FINAL <> (x:<root>.In<<root>.A1>, y:<root>.In<<root>.A2>) returnType:kotlin.Boolean flags:[]
     VALUE_PARAMETER name:x index:0 type:<root>.In<<root>.A1> flags:[]
     VALUE_PARAMETER name:y index:1 type:<root>.In<<root>.A2> flags:[]
     BLOCK_BODY
-      RETURN type=kotlin.Nothing from='FUN name:testInIs3 visibility:public modality:FINAL <> (x:<root>.In<<root>.A1>, y:<root>.In<<root>.A2>) returnType:kotlin.Boolean flags:[]'
-        CALL 'FUN name:isT visibility:public modality:FINAL <T> ($receiver:<root>.In<<root>.isT.T>) returnType:kotlin.Boolean flags:[inline]' type=kotlin.Boolean origin=null
+      RETURN type=kotlin.Nothing from='public final fun testInIs3 <> (x: <root>.In<<root>.A1>, y: <root>.In<<root>.A2>): kotlin.Boolean flags:[] declared in <root>'
+        CALL 'public final fun isT <T> (): kotlin.Boolean flags:[inline] declared in <root>' type=kotlin.Boolean origin=null
           <reified T>: <root>.A
-          $receiver: CALL 'FUN name:sel visibility:public modality:FINAL <S> (x:<root>.sel.S, y:<root>.sel.S) returnType:<root>.sel.S flags:[]' type=<root>.In<<root>.A> origin=null
+          $receiver: CALL 'public final fun sel <S> (x: <root>.sel.S, y: <root>.sel.S): <root>.sel.S flags:[] declared in <root>' type=<root>.In<<root>.A> origin=null
             <S>: <root>.In<<root>.A>
-            x: GET_VAR 'VALUE_PARAMETER name:x index:0 type:<root>.In<<root>.A1> flags:[]' type=<root>.In<<root>.A1> origin=null
-            y: GET_VAR 'VALUE_PARAMETER name:y index:1 type:<root>.In<<root>.A2> flags:[]' type=<root>.In<<root>.A2> origin=null
+            x: GET_VAR 'x: <root>.In<<root>.A1> flags:[] declared in <root>.testInIs3' type=<root>.In<<root>.A1> origin=null
+            y: GET_VAR 'y: <root>.In<<root>.A2> flags:[] declared in <root>.testInIs3' type=<root>.In<<root>.A2> origin=null
   FUN name:testInAs1 visibility:public modality:FINAL <> (x:<root>.In<<root>.A>, y:<root>.In<<root>.B>) returnType:kotlin.Unit flags:[]
     VALUE_PARAMETER name:x index:0 type:<root>.In<<root>.A> flags:[]
     VALUE_PARAMETER name:y index:1 type:<root>.In<<root>.B> flags:[]
     BLOCK_BODY
-      RETURN type=kotlin.Nothing from='FUN name:testInAs1 visibility:public modality:FINAL <> (x:<root>.In<<root>.A>, y:<root>.In<<root>.B>) returnType:kotlin.Unit flags:[]'
-        CALL 'FUN name:asT visibility:public modality:FINAL <T> ($receiver:<root>.In<<root>.asT.T>) returnType:kotlin.Unit flags:[inline]' type=kotlin.Unit origin=null
+      RETURN type=kotlin.Nothing from='public final fun testInAs1 <> (x: <root>.In<<root>.A>, y: <root>.In<<root>.B>): kotlin.Unit flags:[] declared in <root>'
+        CALL 'public final fun asT <T> (): kotlin.Unit flags:[inline] declared in <root>' type=kotlin.Unit origin=null
           <reified T>: kotlin.Any
-          $receiver: CALL 'FUN name:sel visibility:public modality:FINAL <S> (x:<root>.sel.S, y:<root>.sel.S) returnType:<root>.sel.S flags:[]' type=<root>.In<kotlin.Any> origin=null
+          $receiver: CALL 'public final fun sel <S> (x: <root>.sel.S, y: <root>.sel.S): <root>.sel.S flags:[] declared in <root>' type=<root>.In<kotlin.Any> origin=null
             <S>: <root>.In<kotlin.Any>
-            x: GET_VAR 'VALUE_PARAMETER name:x index:0 type:<root>.In<<root>.A> flags:[]' type=<root>.In<<root>.A> origin=null
-            y: GET_VAR 'VALUE_PARAMETER name:y index:1 type:<root>.In<<root>.B> flags:[]' type=<root>.In<<root>.B> origin=null
+            x: GET_VAR 'x: <root>.In<<root>.A> flags:[] declared in <root>.testInAs1' type=<root>.In<<root>.A> origin=null
+            y: GET_VAR 'y: <root>.In<<root>.B> flags:[] declared in <root>.testInAs1' type=<root>.In<<root>.B> origin=null
   FUN name:testInAs2 visibility:public modality:FINAL <> (x:<root>.In<<root>.Z1>, y:<root>.In<<root>.Z2>) returnType:kotlin.Unit flags:[]
     VALUE_PARAMETER name:x index:0 type:<root>.In<<root>.Z1> flags:[]
     VALUE_PARAMETER name:y index:1 type:<root>.In<<root>.Z2> flags:[]
     BLOCK_BODY
-      RETURN type=kotlin.Nothing from='FUN name:testInAs2 visibility:public modality:FINAL <> (x:<root>.In<<root>.Z1>, y:<root>.In<<root>.Z2>) returnType:kotlin.Unit flags:[]'
-        CALL 'FUN name:asT visibility:public modality:FINAL <T> ($receiver:<root>.In<<root>.asT.T>) returnType:kotlin.Unit flags:[inline]' type=kotlin.Unit origin=null
+      RETURN type=kotlin.Nothing from='public final fun testInAs2 <> (x: <root>.In<<root>.Z1>, y: <root>.In<<root>.Z2>): kotlin.Unit flags:[] declared in <root>'
+        CALL 'public final fun asT <T> (): kotlin.Unit flags:[inline] declared in <root>' type=kotlin.Unit origin=null
           <reified T>: kotlin.Any
-          $receiver: CALL 'FUN name:sel visibility:public modality:FINAL <S> (x:<root>.sel.S, y:<root>.sel.S) returnType:<root>.sel.S flags:[]' type=<root>.In<kotlin.Any> origin=null
+          $receiver: CALL 'public final fun sel <S> (x: <root>.sel.S, y: <root>.sel.S): <root>.sel.S flags:[] declared in <root>' type=<root>.In<kotlin.Any> origin=null
             <S>: <root>.In<kotlin.Any>
-            x: GET_VAR 'VALUE_PARAMETER name:x index:0 type:<root>.In<<root>.Z1> flags:[]' type=<root>.In<<root>.Z1> origin=null
-            y: GET_VAR 'VALUE_PARAMETER name:y index:1 type:<root>.In<<root>.Z2> flags:[]' type=<root>.In<<root>.Z2> origin=null
+            x: GET_VAR 'x: <root>.In<<root>.Z1> flags:[] declared in <root>.testInAs2' type=<root>.In<<root>.Z1> origin=null
+            y: GET_VAR 'y: <root>.In<<root>.Z2> flags:[] declared in <root>.testInAs2' type=<root>.In<<root>.Z2> origin=null
   FUN name:testInAs3 visibility:public modality:FINAL <> (x:<root>.In<<root>.A1>, y:<root>.In<<root>.A2>) returnType:kotlin.Unit flags:[]
     VALUE_PARAMETER name:x index:0 type:<root>.In<<root>.A1> flags:[]
     VALUE_PARAMETER name:y index:1 type:<root>.In<<root>.A2> flags:[]
     BLOCK_BODY
-      RETURN type=kotlin.Nothing from='FUN name:testInAs3 visibility:public modality:FINAL <> (x:<root>.In<<root>.A1>, y:<root>.In<<root>.A2>) returnType:kotlin.Unit flags:[]'
-        CALL 'FUN name:asT visibility:public modality:FINAL <T> ($receiver:<root>.In<<root>.asT.T>) returnType:kotlin.Unit flags:[inline]' type=kotlin.Unit origin=null
+      RETURN type=kotlin.Nothing from='public final fun testInAs3 <> (x: <root>.In<<root>.A1>, y: <root>.In<<root>.A2>): kotlin.Unit flags:[] declared in <root>'
+        CALL 'public final fun asT <T> (): kotlin.Unit flags:[inline] declared in <root>' type=kotlin.Unit origin=null
           <reified T>: <root>.A
-          $receiver: CALL 'FUN name:sel visibility:public modality:FINAL <S> (x:<root>.sel.S, y:<root>.sel.S) returnType:<root>.sel.S flags:[]' type=<root>.In<<root>.A> origin=null
+          $receiver: CALL 'public final fun sel <S> (x: <root>.sel.S, y: <root>.sel.S): <root>.sel.S flags:[] declared in <root>' type=<root>.In<<root>.A> origin=null
             <S>: <root>.In<<root>.A>
-            x: GET_VAR 'VALUE_PARAMETER name:x index:0 type:<root>.In<<root>.A1> flags:[]' type=<root>.In<<root>.A1> origin=null
-            y: GET_VAR 'VALUE_PARAMETER name:y index:1 type:<root>.In<<root>.A2> flags:[]' type=<root>.In<<root>.A2> origin=null
+            x: GET_VAR 'x: <root>.In<<root>.A1> flags:[] declared in <root>.testInAs3' type=<root>.In<<root>.A1> origin=null
+            y: GET_VAR 'y: <root>.In<<root>.A2> flags:[] declared in <root>.testInAs3' type=<root>.In<<root>.A2> origin=null

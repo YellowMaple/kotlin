@@ -43,7 +43,7 @@ FILE fqName:foo fileName:/nativeNativeKotlin.kt
     $this: VALUE_PARAMETER INSTANCE_RECEIVER name:<this> type:foo.C flags:[]
     CONSTRUCTOR visibility:public <> () returnType:foo.C flags:[primary]
       BLOCK_BODY
-        DELEGATING_CONSTRUCTOR_CALL 'CONSTRUCTOR visibility:public <> () returnType:foo.B flags:[external,primary]'
+        DELEGATING_CONSTRUCTOR_CALL 'public constructor <init> <> () flags:[external,primary] declared in foo.B'
         INSTANCE_INITIALIZER_CALL classDescriptor='CLASS CLASS name:C modality:FINAL visibility:public flags:[] superTypes:[foo.B]'
     FUN FAKE_OVERRIDE name:bar visibility:public modality:FINAL <> ($this:foo.B) returnType:kotlin.String flags:[]
       overridden:
@@ -69,6 +69,6 @@ FILE fqName:foo fileName:/nativeNativeKotlin.kt
   FUN name:box visibility:public modality:FINAL <> () returnType:kotlin.String flags:[]
     BLOCK_BODY
       VAR name:c type:foo.C flags:[val]
-        CALL 'CONSTRUCTOR visibility:public <> () returnType:foo.C flags:[primary]' type=foo.C origin=null
-      RETURN type=kotlin.Nothing from='FUN name:box visibility:public modality:FINAL <> () returnType:kotlin.String flags:[]'
+        CALL 'public constructor <init> <> () flags:[primary] declared in foo.C' type=foo.C origin=null
+      RETURN type=kotlin.Nothing from='public final fun box <> (): kotlin.String flags:[] declared in foo'
         CONST String type=kotlin.String value="OK"

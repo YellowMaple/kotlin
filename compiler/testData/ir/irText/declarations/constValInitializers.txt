@@ -6,7 +6,7 @@ FILE fqName:<root> fileName:/constValInitializers.kt
     FUN DEFAULT_PROPERTY_ACCESSOR name:<get-I0> visibility:public modality:FINAL <> () returnType:kotlin.Int flags:[]
       correspondingProperty: PROPERTY name:I0 visibility:public modality:FINAL flags:[const,val]
       BLOCK_BODY
-        RETURN type=kotlin.Nothing from='FUN DEFAULT_PROPERTY_ACCESSOR name:<get-I0> visibility:public modality:FINAL <> () returnType:kotlin.Int flags:[]'
+        RETURN type=kotlin.Nothing from='public final fun <get-I0> <> (): kotlin.Int flags:[] declared in <root>'
           GET_FIELD 'FIELD PROPERTY_BACKING_FIELD name:I0 type:kotlin.Int visibility:public flags:[final,static]' type=kotlin.Int origin=null
   PROPERTY name:I1 visibility:public modality:FINAL flags:[const,val]
     FIELD PROPERTY_BACKING_FIELD name:I1 type:kotlin.Int visibility:public flags:[final,static]
@@ -15,7 +15,7 @@ FILE fqName:<root> fileName:/constValInitializers.kt
     FUN DEFAULT_PROPERTY_ACCESSOR name:<get-I1> visibility:public modality:FINAL <> () returnType:kotlin.Int flags:[]
       correspondingProperty: PROPERTY name:I1 visibility:public modality:FINAL flags:[const,val]
       BLOCK_BODY
-        RETURN type=kotlin.Nothing from='FUN DEFAULT_PROPERTY_ACCESSOR name:<get-I1> visibility:public modality:FINAL <> () returnType:kotlin.Int flags:[]'
+        RETURN type=kotlin.Nothing from='public final fun <get-I1> <> (): kotlin.Int flags:[] declared in <root>'
           GET_FIELD 'FIELD PROPERTY_BACKING_FIELD name:I1 type:kotlin.Int visibility:public flags:[final,static]' type=kotlin.Int origin=null
   PROPERTY name:I2 visibility:public modality:FINAL flags:[const,val]
     FIELD PROPERTY_BACKING_FIELD name:I2 type:kotlin.Int visibility:public flags:[final,static]
@@ -24,7 +24,7 @@ FILE fqName:<root> fileName:/constValInitializers.kt
     FUN DEFAULT_PROPERTY_ACCESSOR name:<get-I2> visibility:public modality:FINAL <> () returnType:kotlin.Int flags:[]
       correspondingProperty: PROPERTY name:I2 visibility:public modality:FINAL flags:[const,val]
       BLOCK_BODY
-        RETURN type=kotlin.Nothing from='FUN DEFAULT_PROPERTY_ACCESSOR name:<get-I2> visibility:public modality:FINAL <> () returnType:kotlin.Int flags:[]'
+        RETURN type=kotlin.Nothing from='public final fun <get-I2> <> (): kotlin.Int flags:[] declared in <root>'
           GET_FIELD 'FIELD PROPERTY_BACKING_FIELD name:I2 type:kotlin.Int visibility:public flags:[final,static]' type=kotlin.Int origin=null
   PROPERTY name:STR1 visibility:public modality:FINAL flags:[const,val]
     FIELD PROPERTY_BACKING_FIELD name:STR1 type:kotlin.String visibility:public flags:[final,static]
@@ -33,7 +33,7 @@ FILE fqName:<root> fileName:/constValInitializers.kt
     FUN DEFAULT_PROPERTY_ACCESSOR name:<get-STR1> visibility:public modality:FINAL <> () returnType:kotlin.String flags:[]
       correspondingProperty: PROPERTY name:STR1 visibility:public modality:FINAL flags:[const,val]
       BLOCK_BODY
-        RETURN type=kotlin.Nothing from='FUN DEFAULT_PROPERTY_ACCESSOR name:<get-STR1> visibility:public modality:FINAL <> () returnType:kotlin.String flags:[]'
+        RETURN type=kotlin.Nothing from='public final fun <get-STR1> <> (): kotlin.String flags:[] declared in <root>'
           GET_FIELD 'FIELD PROPERTY_BACKING_FIELD name:STR1 type:kotlin.String visibility:public flags:[final,static]' type=kotlin.String origin=null
   PROPERTY name:STR2 visibility:public modality:FINAL flags:[const,val]
     FIELD PROPERTY_BACKING_FIELD name:STR2 type:kotlin.String visibility:public flags:[final,static]
@@ -42,7 +42,7 @@ FILE fqName:<root> fileName:/constValInitializers.kt
     FUN DEFAULT_PROPERTY_ACCESSOR name:<get-STR2> visibility:public modality:FINAL <> () returnType:kotlin.String flags:[]
       correspondingProperty: PROPERTY name:STR2 visibility:public modality:FINAL flags:[const,val]
       BLOCK_BODY
-        RETURN type=kotlin.Nothing from='FUN DEFAULT_PROPERTY_ACCESSOR name:<get-STR2> visibility:public modality:FINAL <> () returnType:kotlin.String flags:[]'
+        RETURN type=kotlin.Nothing from='public final fun <get-STR2> <> (): kotlin.String flags:[] declared in <root>'
           GET_FIELD 'FIELD PROPERTY_BACKING_FIELD name:STR2 type:kotlin.String visibility:public flags:[final,static]' type=kotlin.String origin=null
   PROPERTY name:STR3 visibility:public modality:FINAL flags:[const,val]
     FIELD PROPERTY_BACKING_FIELD name:STR3 type:kotlin.String visibility:public flags:[final,static]
@@ -51,7 +51,7 @@ FILE fqName:<root> fileName:/constValInitializers.kt
     FUN DEFAULT_PROPERTY_ACCESSOR name:<get-STR3> visibility:public modality:FINAL <> () returnType:kotlin.String flags:[]
       correspondingProperty: PROPERTY name:STR3 visibility:public modality:FINAL flags:[const,val]
       BLOCK_BODY
-        RETURN type=kotlin.Nothing from='FUN DEFAULT_PROPERTY_ACCESSOR name:<get-STR3> visibility:public modality:FINAL <> () returnType:kotlin.String flags:[]'
+        RETURN type=kotlin.Nothing from='public final fun <get-STR3> <> (): kotlin.String flags:[] declared in <root>'
           GET_FIELD 'FIELD PROPERTY_BACKING_FIELD name:STR3 type:kotlin.String visibility:public flags:[final,static]' type=kotlin.String origin=null
   PROPERTY name:STR4 visibility:public modality:FINAL flags:[const,val]
     FIELD PROPERTY_BACKING_FIELD name:STR4 type:kotlin.String visibility:public flags:[final,static]
@@ -60,5 +60,5 @@ FILE fqName:<root> fileName:/constValInitializers.kt
     FUN DEFAULT_PROPERTY_ACCESSOR name:<get-STR4> visibility:public modality:FINAL <> () returnType:kotlin.String flags:[]
       correspondingProperty: PROPERTY name:STR4 visibility:public modality:FINAL flags:[const,val]
       BLOCK_BODY
-        RETURN type=kotlin.Nothing from='FUN DEFAULT_PROPERTY_ACCESSOR name:<get-STR4> visibility:public modality:FINAL <> () returnType:kotlin.String flags:[]'
+        RETURN type=kotlin.Nothing from='public final fun <get-STR4> <> (): kotlin.String flags:[] declared in <root>'
           GET_FIELD 'FIELD PROPERTY_BACKING_FIELD name:STR4 type:kotlin.String visibility:public flags:[final,static]' type=kotlin.String origin=null

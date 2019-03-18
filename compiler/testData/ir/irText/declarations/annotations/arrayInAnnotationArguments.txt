@@ -6,14 +6,14 @@ FILE fqName:<root> fileName:/arrayInAnnotationArguments.kt
     PROPERTY name:x visibility:public modality:FINAL flags:[val]
       FIELD PROPERTY_BACKING_FIELD name:x type:kotlin.IntArray visibility:public flags:[final]
         EXPRESSION_BODY
-          GET_VAR 'VALUE_PARAMETER name:x index:0 type:kotlin.IntArray flags:[]' type=kotlin.IntArray origin=INITIALIZE_PROPERTY_FROM_PARAMETER
+          GET_VAR 'x: kotlin.IntArray flags:[] declared in <root>.TestAnnWithIntArray.<init>' type=kotlin.IntArray origin=INITIALIZE_PROPERTY_FROM_PARAMETER
       FUN DEFAULT_PROPERTY_ACCESSOR name:<get-x> visibility:public modality:FINAL <> ($this:<root>.TestAnnWithIntArray) returnType:kotlin.IntArray flags:[]
         correspondingProperty: PROPERTY name:x visibility:public modality:FINAL flags:[val]
         $this: VALUE_PARAMETER name:<this> type:<root>.TestAnnWithIntArray flags:[]
         BLOCK_BODY
-          RETURN type=kotlin.Nothing from='FUN DEFAULT_PROPERTY_ACCESSOR name:<get-x> visibility:public modality:FINAL <> ($this:<root>.TestAnnWithIntArray) returnType:kotlin.IntArray flags:[]'
+          RETURN type=kotlin.Nothing from='public final fun <get-x> <> (): kotlin.IntArray flags:[] declared in <root>.TestAnnWithIntArray'
             GET_FIELD 'FIELD PROPERTY_BACKING_FIELD name:x type:kotlin.IntArray visibility:public flags:[final]' type=kotlin.IntArray origin=null
-              receiver: GET_VAR 'VALUE_PARAMETER name:<this> type:<root>.TestAnnWithIntArray flags:[]' type=<root>.TestAnnWithIntArray origin=null
+              receiver: GET_VAR '<this>: <root>.TestAnnWithIntArray flags:[] declared in <root>.TestAnnWithIntArray.<get-x>' type=<root>.TestAnnWithIntArray origin=null
     FUN FAKE_OVERRIDE name:equals visibility:public modality:OPEN <> ($this:kotlin.Any, other:kotlin.Any?) returnType:kotlin.Boolean flags:[]
       overridden:
         FUN FAKE_OVERRIDE name:equals visibility:public modality:OPEN <> ($this:kotlin.Any, other:kotlin.Any?) returnType:kotlin.Boolean flags:[]
@@ -34,14 +34,14 @@ FILE fqName:<root> fileName:/arrayInAnnotationArguments.kt
     PROPERTY name:x visibility:public modality:FINAL flags:[val]
       FIELD PROPERTY_BACKING_FIELD name:x type:kotlin.Array<kotlin.String> visibility:public flags:[final]
         EXPRESSION_BODY
-          GET_VAR 'VALUE_PARAMETER name:x index:0 type:kotlin.Array<kotlin.String> flags:[]' type=kotlin.Array<kotlin.String> origin=INITIALIZE_PROPERTY_FROM_PARAMETER
+          GET_VAR 'x: kotlin.Array<kotlin.String> flags:[] declared in <root>.TestAnnWithStringArray.<init>' type=kotlin.Array<kotlin.String> origin=INITIALIZE_PROPERTY_FROM_PARAMETER
       FUN DEFAULT_PROPERTY_ACCESSOR name:<get-x> visibility:public modality:FINAL <> ($this:<root>.TestAnnWithStringArray) returnType:kotlin.Array<kotlin.String> flags:[]
         correspondingProperty: PROPERTY name:x visibility:public modality:FINAL flags:[val]
         $this: VALUE_PARAMETER name:<this> type:<root>.TestAnnWithStringArray flags:[]
         BLOCK_BODY
-          RETURN type=kotlin.Nothing from='FUN DEFAULT_PROPERTY_ACCESSOR name:<get-x> visibility:public modality:FINAL <> ($this:<root>.TestAnnWithStringArray) returnType:kotlin.Array<kotlin.String> flags:[]'
+          RETURN type=kotlin.Nothing from='public final fun <get-x> <> (): kotlin.Array<kotlin.String> flags:[] declared in <root>.TestAnnWithStringArray'
             GET_FIELD 'FIELD PROPERTY_BACKING_FIELD name:x type:kotlin.Array<kotlin.String> visibility:public flags:[final]' type=kotlin.Array<kotlin.String> origin=null
-              receiver: GET_VAR 'VALUE_PARAMETER name:<this> type:<root>.TestAnnWithStringArray flags:[]' type=<root>.TestAnnWithStringArray origin=null
+              receiver: GET_VAR '<this>: <root>.TestAnnWithStringArray flags:[] declared in <root>.TestAnnWithStringArray.<get-x>' type=<root>.TestAnnWithStringArray origin=null
     FUN FAKE_OVERRIDE name:equals visibility:public modality:OPEN <> ($this:kotlin.Any, other:kotlin.Any?) returnType:kotlin.Boolean flags:[]
       overridden:
         FUN FAKE_OVERRIDE name:equals visibility:public modality:OPEN <> ($this:kotlin.Any, other:kotlin.Any?) returnType:kotlin.Boolean flags:[]
@@ -57,22 +57,22 @@ FILE fqName:<root> fileName:/arrayInAnnotationArguments.kt
       $this: VALUE_PARAMETER name:<this> type:kotlin.Any flags:[]
   FUN name:test1 visibility:public modality:FINAL <> () returnType:kotlin.Unit flags:[]
     annotations:
-      CALL 'CONSTRUCTOR visibility:public <> (x:kotlin.IntArray) returnType:<root>.TestAnnWithIntArray flags:[primary]' type=<root>.TestAnnWithIntArray origin=null
+      CALL 'public constructor <init> <> (x: kotlin.IntArray) flags:[primary] declared in <root>.TestAnnWithIntArray' type=<root>.TestAnnWithIntArray origin=null
         x: VARARG type=kotlin.IntArray varargElementType=kotlin.Int
           CONST Int type=kotlin.Int value=1
           CONST Int type=kotlin.Int value=2
           CONST Int type=kotlin.Int value=3
-      CALL 'CONSTRUCTOR visibility:public <> (x:kotlin.Array<kotlin.String>) returnType:<root>.TestAnnWithStringArray flags:[primary]' type=<root>.TestAnnWithStringArray origin=null
+      CALL 'public constructor <init> <> (x: kotlin.Array<kotlin.String>) flags:[primary] declared in <root>.TestAnnWithStringArray' type=<root>.TestAnnWithStringArray origin=null
         x: VARARG type=kotlin.Array<kotlin.String> varargElementType=kotlin.String
           CONST String type=kotlin.String value="a"
           CONST String type=kotlin.String value="b"
           CONST String type=kotlin.String value="c"
-      CALL 'CONSTRUCTOR visibility:public <> (x:kotlin.IntArray) returnType:<root>.TestAnnWithIntArray flags:[primary]' type=<root>.TestAnnWithIntArray origin=null
+      CALL 'public constructor <init> <> (x: kotlin.IntArray) flags:[primary] declared in <root>.TestAnnWithIntArray' type=<root>.TestAnnWithIntArray origin=null
         x: VARARG type=kotlin.IntArray varargElementType=kotlin.Int
           CONST Int type=kotlin.Int value=1
           CONST Int type=kotlin.Int value=2
           CONST Int type=kotlin.Int value=3
-      CALL 'CONSTRUCTOR visibility:public <> (x:kotlin.Array<kotlin.String>) returnType:<root>.TestAnnWithStringArray flags:[primary]' type=<root>.TestAnnWithStringArray origin=null
+      CALL 'public constructor <init> <> (x: kotlin.Array<kotlin.String>) flags:[primary] declared in <root>.TestAnnWithStringArray' type=<root>.TestAnnWithStringArray origin=null
         x: VARARG type=kotlin.Array<kotlin.String> varargElementType=kotlin.String
           CONST String type=kotlin.String value="a"
           CONST String type=kotlin.String value="b"
@@ -80,22 +80,22 @@ FILE fqName:<root> fileName:/arrayInAnnotationArguments.kt
     BLOCK_BODY
   FUN name:test2 visibility:public modality:FINAL <> () returnType:kotlin.Unit flags:[]
     annotations:
-      CALL 'CONSTRUCTOR visibility:public <> (x:kotlin.IntArray) returnType:<root>.TestAnnWithIntArray flags:[primary]' type=<root>.TestAnnWithIntArray origin=null
+      CALL 'public constructor <init> <> (x: kotlin.IntArray) flags:[primary] declared in <root>.TestAnnWithIntArray' type=<root>.TestAnnWithIntArray origin=null
         x: VARARG type=kotlin.IntArray varargElementType=kotlin.Int
           CONST Int type=kotlin.Int value=4
           CONST Int type=kotlin.Int value=5
           CONST Int type=kotlin.Int value=6
-      CALL 'CONSTRUCTOR visibility:public <> (x:kotlin.Array<kotlin.String>) returnType:<root>.TestAnnWithStringArray flags:[primary]' type=<root>.TestAnnWithStringArray origin=null
+      CALL 'public constructor <init> <> (x: kotlin.Array<kotlin.String>) flags:[primary] declared in <root>.TestAnnWithStringArray' type=<root>.TestAnnWithStringArray origin=null
         x: VARARG type=kotlin.Array<kotlin.String> varargElementType=kotlin.String
           CONST String type=kotlin.String value="d"
           CONST String type=kotlin.String value="e"
           CONST String type=kotlin.String value="f"
-      CALL 'CONSTRUCTOR visibility:public <> (x:kotlin.IntArray) returnType:<root>.TestAnnWithIntArray flags:[primary]' type=<root>.TestAnnWithIntArray origin=null
+      CALL 'public constructor <init> <> (x: kotlin.IntArray) flags:[primary] declared in <root>.TestAnnWithIntArray' type=<root>.TestAnnWithIntArray origin=null
         x: VARARG type=kotlin.IntArray varargElementType=kotlin.Int
           CONST Int type=kotlin.Int value=4
           CONST Int type=kotlin.Int value=5
           CONST Int type=kotlin.Int value=6
-      CALL 'CONSTRUCTOR visibility:public <> (x:kotlin.Array<kotlin.String>) returnType:<root>.TestAnnWithStringArray flags:[primary]' type=<root>.TestAnnWithStringArray origin=null
+      CALL 'public constructor <init> <> (x: kotlin.Array<kotlin.String>) flags:[primary] declared in <root>.TestAnnWithStringArray' type=<root>.TestAnnWithStringArray origin=null
         x: VARARG type=kotlin.Array<kotlin.String> varargElementType=kotlin.String
           CONST String type=kotlin.String value="d"
           CONST String type=kotlin.String value="e"

@@ -11,11 +11,11 @@ FILE fqName:<root> fileName:/defaultArguments.kt
       FUN name:local visibility:local modality:FINAL <> (xx:kotlin.Int, yy:kotlin.Int, zz:kotlin.String) returnType:kotlin.Unit flags:[]
         VALUE_PARAMETER name:xx index:0 type:kotlin.Int flags:[]
           EXPRESSION_BODY
-            GET_VAR 'VALUE_PARAMETER name:x index:0 type:kotlin.Int flags:[]' type=kotlin.Int origin=null
+            GET_VAR 'x: kotlin.Int flags:[] declared in <root>.test1' type=kotlin.Int origin=null
         VALUE_PARAMETER name:yy index:1 type:kotlin.Int flags:[]
           EXPRESSION_BODY
-            GET_VAR 'VALUE_PARAMETER name:y index:1 type:kotlin.Int flags:[]' type=kotlin.Int origin=null
+            GET_VAR 'y: kotlin.Int flags:[] declared in <root>.test1' type=kotlin.Int origin=null
         VALUE_PARAMETER name:zz index:2 type:kotlin.String flags:[]
           EXPRESSION_BODY
-            GET_VAR 'VALUE_PARAMETER name:z index:2 type:kotlin.String flags:[]' type=kotlin.String origin=null
+            GET_VAR 'z: kotlin.String flags:[] declared in <root>.test1' type=kotlin.String origin=null
         BLOCK_BODY

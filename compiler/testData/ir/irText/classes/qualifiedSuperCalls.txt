@@ -9,7 +9,7 @@ FILE fqName:<root> fileName:/qualifiedSuperCalls.kt
         correspondingProperty: PROPERTY name:bar visibility:public modality:OPEN flags:[val]
         $this: VALUE_PARAMETER name:<this> type:<root>.ILeft flags:[]
         BLOCK_BODY
-          RETURN type=kotlin.Nothing from='FUN name:<get-bar> visibility:public modality:OPEN <> ($this:<root>.ILeft) returnType:kotlin.Int flags:[]'
+          RETURN type=kotlin.Nothing from='public open fun <get-bar> <> (): kotlin.Int flags:[] declared in <root>.ILeft'
             CONST Int type=kotlin.Int value=1
     FUN FAKE_OVERRIDE name:equals visibility:public modality:OPEN <> ($this:kotlin.Any, other:kotlin.Any?) returnType:kotlin.Boolean flags:[]
       overridden:
@@ -34,7 +34,7 @@ FILE fqName:<root> fileName:/qualifiedSuperCalls.kt
         correspondingProperty: PROPERTY name:bar visibility:public modality:OPEN flags:[val]
         $this: VALUE_PARAMETER name:<this> type:<root>.IRight flags:[]
         BLOCK_BODY
-          RETURN type=kotlin.Nothing from='FUN name:<get-bar> visibility:public modality:OPEN <> ($this:<root>.IRight) returnType:kotlin.Int flags:[]'
+          RETURN type=kotlin.Nothing from='public open fun <get-bar> <> (): kotlin.Int flags:[] declared in <root>.IRight'
             CONST Int type=kotlin.Int value=2
     FUN FAKE_OVERRIDE name:equals visibility:public modality:OPEN <> ($this:kotlin.Any, other:kotlin.Any?) returnType:kotlin.Boolean flags:[]
       overridden:
@@ -53,7 +53,7 @@ FILE fqName:<root> fileName:/qualifiedSuperCalls.kt
     $this: VALUE_PARAMETER INSTANCE_RECEIVER name:<this> type:<root>.CBoth flags:[]
     CONSTRUCTOR visibility:public <> () returnType:<root>.CBoth flags:[primary]
       BLOCK_BODY
-        DELEGATING_CONSTRUCTOR_CALL 'CONSTRUCTOR IR_EXTERNAL_DECLARATION_STUB visibility:public <> () returnType:kotlin.Any flags:[primary]'
+        DELEGATING_CONSTRUCTOR_CALL 'public constructor <init> <> () flags:[primary] declared in kotlin.Any'
         INSTANCE_INITIALIZER_CALL classDescriptor='CLASS CLASS name:CBoth modality:FINAL visibility:public flags:[] superTypes:[<root>.ILeft; <root>.IRight]'
     FUN name:foo visibility:public modality:OPEN <> ($this:<root>.CBoth) returnType:kotlin.Unit flags:[]
       overridden:
@@ -61,10 +61,10 @@ FILE fqName:<root> fileName:/qualifiedSuperCalls.kt
         FUN name:foo visibility:public modality:OPEN <> ($this:<root>.IRight) returnType:kotlin.Unit flags:[]
       $this: VALUE_PARAMETER name:<this> type:<root>.CBoth flags:[]
       BLOCK_BODY
-        CALL 'FUN name:foo visibility:public modality:OPEN <> ($this:<root>.ILeft) returnType:kotlin.Unit flags:[]' superQualifier='CLASS INTERFACE name:ILeft modality:ABSTRACT visibility:public flags:[] superTypes:[kotlin.Any]' type=kotlin.Unit origin=null
-          $this: GET_VAR 'VALUE_PARAMETER name:<this> type:<root>.CBoth flags:[]' type=<root>.ILeft origin=null
-        CALL 'FUN name:foo visibility:public modality:OPEN <> ($this:<root>.IRight) returnType:kotlin.Unit flags:[]' superQualifier='CLASS INTERFACE name:IRight modality:ABSTRACT visibility:public flags:[] superTypes:[kotlin.Any]' type=kotlin.Unit origin=null
-          $this: GET_VAR 'VALUE_PARAMETER name:<this> type:<root>.CBoth flags:[]' type=<root>.IRight origin=null
+        CALL 'public open fun foo <> (): kotlin.Unit flags:[] declared in <root>.ILeft' superQualifier='CLASS INTERFACE name:ILeft modality:ABSTRACT visibility:public flags:[] superTypes:[kotlin.Any]' type=kotlin.Unit origin=null
+          $this: GET_VAR '<this>: <root>.CBoth flags:[] declared in <root>.CBoth.foo' type=<root>.ILeft origin=null
+        CALL 'public open fun foo <> (): kotlin.Unit flags:[] declared in <root>.IRight' superQualifier='CLASS INTERFACE name:IRight modality:ABSTRACT visibility:public flags:[] superTypes:[kotlin.Any]' type=kotlin.Unit origin=null
+          $this: GET_VAR '<this>: <root>.CBoth flags:[] declared in <root>.CBoth.foo' type=<root>.IRight origin=null
     PROPERTY name:bar visibility:public modality:OPEN flags:[val]
       FUN name:<get-bar> visibility:public modality:OPEN <> ($this:<root>.CBoth) returnType:kotlin.Int flags:[]
         correspondingProperty: PROPERTY name:bar visibility:public modality:OPEN flags:[val]
@@ -73,12 +73,12 @@ FILE fqName:<root> fileName:/qualifiedSuperCalls.kt
           FUN name:<get-bar> visibility:public modality:OPEN <> ($this:<root>.IRight) returnType:kotlin.Int flags:[]
         $this: VALUE_PARAMETER name:<this> type:<root>.CBoth flags:[]
         BLOCK_BODY
-          RETURN type=kotlin.Nothing from='FUN name:<get-bar> visibility:public modality:OPEN <> ($this:<root>.CBoth) returnType:kotlin.Int flags:[]'
-            CALL 'FUN IR_EXTERNAL_DECLARATION_STUB name:plus visibility:public modality:FINAL <> ($this:kotlin.Int, other:kotlin.Int) returnType:kotlin.Int flags:[]' type=kotlin.Int origin=PLUS
-              $this: CALL 'FUN name:<get-bar> visibility:public modality:OPEN <> ($this:<root>.ILeft) returnType:kotlin.Int flags:[]' superQualifier='CLASS INTERFACE name:ILeft modality:ABSTRACT visibility:public flags:[] superTypes:[kotlin.Any]' type=kotlin.Int origin=GET_PROPERTY
-                $this: GET_VAR 'VALUE_PARAMETER name:<this> type:<root>.CBoth flags:[]' type=<root>.ILeft origin=null
-              other: CALL 'FUN name:<get-bar> visibility:public modality:OPEN <> ($this:<root>.IRight) returnType:kotlin.Int flags:[]' superQualifier='CLASS INTERFACE name:IRight modality:ABSTRACT visibility:public flags:[] superTypes:[kotlin.Any]' type=kotlin.Int origin=GET_PROPERTY
-                $this: GET_VAR 'VALUE_PARAMETER name:<this> type:<root>.CBoth flags:[]' type=<root>.IRight origin=null
+          RETURN type=kotlin.Nothing from='public open fun <get-bar> <> (): kotlin.Int flags:[] declared in <root>.CBoth'
+            CALL 'public final fun plus <> (other: kotlin.Int): kotlin.Int flags:[] declared in kotlin.Int' type=kotlin.Int origin=PLUS
+              $this: CALL 'public open fun <get-bar> <> (): kotlin.Int flags:[] declared in <root>.ILeft' superQualifier='CLASS INTERFACE name:ILeft modality:ABSTRACT visibility:public flags:[] superTypes:[kotlin.Any]' type=kotlin.Int origin=GET_PROPERTY
+                $this: GET_VAR '<this>: <root>.CBoth flags:[] declared in <root>.CBoth.<get-bar>' type=<root>.ILeft origin=null
+              other: CALL 'public open fun <get-bar> <> (): kotlin.Int flags:[] declared in <root>.IRight' superQualifier='CLASS INTERFACE name:IRight modality:ABSTRACT visibility:public flags:[] superTypes:[kotlin.Any]' type=kotlin.Int origin=GET_PROPERTY
+                $this: GET_VAR '<this>: <root>.CBoth flags:[] declared in <root>.CBoth.<get-bar>' type=<root>.IRight origin=null
     FUN FAKE_OVERRIDE name:equals visibility:public modality:OPEN <> ($this:kotlin.Any, other:kotlin.Any?) returnType:kotlin.Boolean flags:[]
       overridden:
         FUN FAKE_OVERRIDE name:equals visibility:public modality:OPEN <> ($this:kotlin.Any, other:kotlin.Any?) returnType:kotlin.Boolean flags:[]

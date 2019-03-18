@@ -3,7 +3,7 @@ FILE fqName:<root> fileName:/abstractMembers.kt
     $this: VALUE_PARAMETER INSTANCE_RECEIVER name:<this> type:<root>.AbstractClass flags:[]
     CONSTRUCTOR visibility:public <> () returnType:<root>.AbstractClass flags:[primary]
       BLOCK_BODY
-        DELEGATING_CONSTRUCTOR_CALL 'CONSTRUCTOR IR_EXTERNAL_DECLARATION_STUB visibility:public <> () returnType:kotlin.Any flags:[primary]'
+        DELEGATING_CONSTRUCTOR_CALL 'public constructor <init> <> () flags:[primary] declared in kotlin.Any'
         INSTANCE_INITIALIZER_CALL classDescriptor='CLASS CLASS name:AbstractClass modality:ABSTRACT visibility:public flags:[] superTypes:[kotlin.Any]'
     FUN name:abstractFun visibility:public modality:ABSTRACT <> ($this:<root>.AbstractClass) returnType:kotlin.Unit flags:[]
       $this: VALUE_PARAMETER name:<this> type:<root>.AbstractClass flags:[]

@@ -6,7 +6,7 @@ FILE fqName:<root> fileName:/literals.kt
     FUN DEFAULT_PROPERTY_ACCESSOR name:<get-test1> visibility:public modality:FINAL <> () returnType:kotlin.Int flags:[]
       correspondingProperty: PROPERTY name:test1 visibility:public modality:FINAL flags:[val]
       BLOCK_BODY
-        RETURN type=kotlin.Nothing from='FUN DEFAULT_PROPERTY_ACCESSOR name:<get-test1> visibility:public modality:FINAL <> () returnType:kotlin.Int flags:[]'
+        RETURN type=kotlin.Nothing from='public final fun <get-test1> <> (): kotlin.Int flags:[] declared in <root>'
           GET_FIELD 'FIELD PROPERTY_BACKING_FIELD name:test1 type:kotlin.Int visibility:public flags:[final,static]' type=kotlin.Int origin=null
   PROPERTY name:test2 visibility:public modality:FINAL flags:[val]
     FIELD PROPERTY_BACKING_FIELD name:test2 type:kotlin.Int visibility:public flags:[final,static]
@@ -15,7 +15,7 @@ FILE fqName:<root> fileName:/literals.kt
     FUN DEFAULT_PROPERTY_ACCESSOR name:<get-test2> visibility:public modality:FINAL <> () returnType:kotlin.Int flags:[]
       correspondingProperty: PROPERTY name:test2 visibility:public modality:FINAL flags:[val]
       BLOCK_BODY
-        RETURN type=kotlin.Nothing from='FUN DEFAULT_PROPERTY_ACCESSOR name:<get-test2> visibility:public modality:FINAL <> () returnType:kotlin.Int flags:[]'
+        RETURN type=kotlin.Nothing from='public final fun <get-test2> <> (): kotlin.Int flags:[] declared in <root>'
           GET_FIELD 'FIELD PROPERTY_BACKING_FIELD name:test2 type:kotlin.Int visibility:public flags:[final,static]' type=kotlin.Int origin=null
   PROPERTY name:test3 visibility:public modality:FINAL flags:[val]
     FIELD PROPERTY_BACKING_FIELD name:test3 type:kotlin.Boolean visibility:public flags:[final,static]
@@ -24,7 +24,7 @@ FILE fqName:<root> fileName:/literals.kt
     FUN DEFAULT_PROPERTY_ACCESSOR name:<get-test3> visibility:public modality:FINAL <> () returnType:kotlin.Boolean flags:[]
       correspondingProperty: PROPERTY name:test3 visibility:public modality:FINAL flags:[val]
       BLOCK_BODY
-        RETURN type=kotlin.Nothing from='FUN DEFAULT_PROPERTY_ACCESSOR name:<get-test3> visibility:public modality:FINAL <> () returnType:kotlin.Boolean flags:[]'
+        RETURN type=kotlin.Nothing from='public final fun <get-test3> <> (): kotlin.Boolean flags:[] declared in <root>'
           GET_FIELD 'FIELD PROPERTY_BACKING_FIELD name:test3 type:kotlin.Boolean visibility:public flags:[final,static]' type=kotlin.Boolean origin=null
   PROPERTY name:test4 visibility:public modality:FINAL flags:[val]
     FIELD PROPERTY_BACKING_FIELD name:test4 type:kotlin.Boolean visibility:public flags:[final,static]
@@ -33,7 +33,7 @@ FILE fqName:<root> fileName:/literals.kt
     FUN DEFAULT_PROPERTY_ACCESSOR name:<get-test4> visibility:public modality:FINAL <> () returnType:kotlin.Boolean flags:[]
       correspondingProperty: PROPERTY name:test4 visibility:public modality:FINAL flags:[val]
       BLOCK_BODY
-        RETURN type=kotlin.Nothing from='FUN DEFAULT_PROPERTY_ACCESSOR name:<get-test4> visibility:public modality:FINAL <> () returnType:kotlin.Boolean flags:[]'
+        RETURN type=kotlin.Nothing from='public final fun <get-test4> <> (): kotlin.Boolean flags:[] declared in <root>'
           GET_FIELD 'FIELD PROPERTY_BACKING_FIELD name:test4 type:kotlin.Boolean visibility:public flags:[final,static]' type=kotlin.Boolean origin=null
   PROPERTY name:test5 visibility:public modality:FINAL flags:[val]
     FIELD PROPERTY_BACKING_FIELD name:test5 type:kotlin.String visibility:public flags:[final,static]
@@ -42,7 +42,7 @@ FILE fqName:<root> fileName:/literals.kt
     FUN DEFAULT_PROPERTY_ACCESSOR name:<get-test5> visibility:public modality:FINAL <> () returnType:kotlin.String flags:[]
       correspondingProperty: PROPERTY name:test5 visibility:public modality:FINAL flags:[val]
       BLOCK_BODY
-        RETURN type=kotlin.Nothing from='FUN DEFAULT_PROPERTY_ACCESSOR name:<get-test5> visibility:public modality:FINAL <> () returnType:kotlin.String flags:[]'
+        RETURN type=kotlin.Nothing from='public final fun <get-test5> <> (): kotlin.String flags:[] declared in <root>'
           GET_FIELD 'FIELD PROPERTY_BACKING_FIELD name:test5 type:kotlin.String visibility:public flags:[final,static]' type=kotlin.String origin=null
   PROPERTY name:test6 visibility:public modality:FINAL flags:[val]
     FIELD PROPERTY_BACKING_FIELD name:test6 type:kotlin.Nothing? visibility:public flags:[final,static]
@@ -51,7 +51,7 @@ FILE fqName:<root> fileName:/literals.kt
     FUN DEFAULT_PROPERTY_ACCESSOR name:<get-test6> visibility:public modality:FINAL <> () returnType:kotlin.Nothing? flags:[]
       correspondingProperty: PROPERTY name:test6 visibility:public modality:FINAL flags:[val]
       BLOCK_BODY
-        RETURN type=kotlin.Nothing from='FUN DEFAULT_PROPERTY_ACCESSOR name:<get-test6> visibility:public modality:FINAL <> () returnType:kotlin.Nothing? flags:[]'
+        RETURN type=kotlin.Nothing from='public final fun <get-test6> <> (): kotlin.Nothing? flags:[] declared in <root>'
           GET_FIELD 'FIELD PROPERTY_BACKING_FIELD name:test6 type:kotlin.Nothing? visibility:public flags:[final,static]' type=kotlin.Nothing? origin=null
   PROPERTY name:test7 visibility:public modality:FINAL flags:[val]
     FIELD PROPERTY_BACKING_FIELD name:test7 type:kotlin.Long visibility:public flags:[final,static]
@@ -60,7 +60,7 @@ FILE fqName:<root> fileName:/literals.kt
     FUN DEFAULT_PROPERTY_ACCESSOR name:<get-test7> visibility:public modality:FINAL <> () returnType:kotlin.Long flags:[]
       correspondingProperty: PROPERTY name:test7 visibility:public modality:FINAL flags:[val]
       BLOCK_BODY
-        RETURN type=kotlin.Nothing from='FUN DEFAULT_PROPERTY_ACCESSOR name:<get-test7> visibility:public modality:FINAL <> () returnType:kotlin.Long flags:[]'
+        RETURN type=kotlin.Nothing from='public final fun <get-test7> <> (): kotlin.Long flags:[] declared in <root>'
           GET_FIELD 'FIELD PROPERTY_BACKING_FIELD name:test7 type:kotlin.Long visibility:public flags:[final,static]' type=kotlin.Long origin=null
   PROPERTY name:test8 visibility:public modality:FINAL flags:[val]
     FIELD PROPERTY_BACKING_FIELD name:test8 type:kotlin.Long visibility:public flags:[final,static]
@@ -69,7 +69,7 @@ FILE fqName:<root> fileName:/literals.kt
     FUN DEFAULT_PROPERTY_ACCESSOR name:<get-test8> visibility:public modality:FINAL <> () returnType:kotlin.Long flags:[]
       correspondingProperty: PROPERTY name:test8 visibility:public modality:FINAL flags:[val]
       BLOCK_BODY
-        RETURN type=kotlin.Nothing from='FUN DEFAULT_PROPERTY_ACCESSOR name:<get-test8> visibility:public modality:FINAL <> () returnType:kotlin.Long flags:[]'
+        RETURN type=kotlin.Nothing from='public final fun <get-test8> <> (): kotlin.Long flags:[] declared in <root>'
           GET_FIELD 'FIELD PROPERTY_BACKING_FIELD name:test8 type:kotlin.Long visibility:public flags:[final,static]' type=kotlin.Long origin=null
   PROPERTY name:test9 visibility:public modality:FINAL flags:[val]
     FIELD PROPERTY_BACKING_FIELD name:test9 type:kotlin.Double visibility:public flags:[final,static]
@@ -78,7 +78,7 @@ FILE fqName:<root> fileName:/literals.kt
     FUN DEFAULT_PROPERTY_ACCESSOR name:<get-test9> visibility:public modality:FINAL <> () returnType:kotlin.Double flags:[]
       correspondingProperty: PROPERTY name:test9 visibility:public modality:FINAL flags:[val]
       BLOCK_BODY
-        RETURN type=kotlin.Nothing from='FUN DEFAULT_PROPERTY_ACCESSOR name:<get-test9> visibility:public modality:FINAL <> () returnType:kotlin.Double flags:[]'
+        RETURN type=kotlin.Nothing from='public final fun <get-test9> <> (): kotlin.Double flags:[] declared in <root>'
           GET_FIELD 'FIELD PROPERTY_BACKING_FIELD name:test9 type:kotlin.Double visibility:public flags:[final,static]' type=kotlin.Double origin=null
   PROPERTY name:test10 visibility:public modality:FINAL flags:[val]
     FIELD PROPERTY_BACKING_FIELD name:test10 type:kotlin.Double visibility:public flags:[final,static]
@@ -87,7 +87,7 @@ FILE fqName:<root> fileName:/literals.kt
     FUN DEFAULT_PROPERTY_ACCESSOR name:<get-test10> visibility:public modality:FINAL <> () returnType:kotlin.Double flags:[]
       correspondingProperty: PROPERTY name:test10 visibility:public modality:FINAL flags:[val]
       BLOCK_BODY
-        RETURN type=kotlin.Nothing from='FUN DEFAULT_PROPERTY_ACCESSOR name:<get-test10> visibility:public modality:FINAL <> () returnType:kotlin.Double flags:[]'
+        RETURN type=kotlin.Nothing from='public final fun <get-test10> <> (): kotlin.Double flags:[] declared in <root>'
           GET_FIELD 'FIELD PROPERTY_BACKING_FIELD name:test10 type:kotlin.Double visibility:public flags:[final,static]' type=kotlin.Double origin=null
   PROPERTY name:test11 visibility:public modality:FINAL flags:[val]
     FIELD PROPERTY_BACKING_FIELD name:test11 type:kotlin.Float visibility:public flags:[final,static]
@@ -96,7 +96,7 @@ FILE fqName:<root> fileName:/literals.kt
     FUN DEFAULT_PROPERTY_ACCESSOR name:<get-test11> visibility:public modality:FINAL <> () returnType:kotlin.Float flags:[]
       correspondingProperty: PROPERTY name:test11 visibility:public modality:FINAL flags:[val]
       BLOCK_BODY
-        RETURN type=kotlin.Nothing from='FUN DEFAULT_PROPERTY_ACCESSOR name:<get-test11> visibility:public modality:FINAL <> () returnType:kotlin.Float flags:[]'
+        RETURN type=kotlin.Nothing from='public final fun <get-test11> <> (): kotlin.Float flags:[] declared in <root>'
           GET_FIELD 'FIELD PROPERTY_BACKING_FIELD name:test11 type:kotlin.Float visibility:public flags:[final,static]' type=kotlin.Float origin=null
   PROPERTY name:test12 visibility:public modality:FINAL flags:[val]
     FIELD PROPERTY_BACKING_FIELD name:test12 type:kotlin.Float visibility:public flags:[final,static]
@@ -105,7 +105,7 @@ FILE fqName:<root> fileName:/literals.kt
     FUN DEFAULT_PROPERTY_ACCESSOR name:<get-test12> visibility:public modality:FINAL <> () returnType:kotlin.Float flags:[]
       correspondingProperty: PROPERTY name:test12 visibility:public modality:FINAL flags:[val]
       BLOCK_BODY
-        RETURN type=kotlin.Nothing from='FUN DEFAULT_PROPERTY_ACCESSOR name:<get-test12> visibility:public modality:FINAL <> () returnType:kotlin.Float flags:[]'
+        RETURN type=kotlin.Nothing from='public final fun <get-test12> <> (): kotlin.Float flags:[] declared in <root>'
           GET_FIELD 'FIELD PROPERTY_BACKING_FIELD name:test12 type:kotlin.Float visibility:public flags:[final,static]' type=kotlin.Float origin=null
   PROPERTY name:test13 visibility:public modality:FINAL flags:[val]
     FIELD PROPERTY_BACKING_FIELD name:test13 type:kotlin.Char visibility:public flags:[final,static]
@@ -114,7 +114,7 @@ FILE fqName:<root> fileName:/literals.kt
     FUN DEFAULT_PROPERTY_ACCESSOR name:<get-test13> visibility:public modality:FINAL <> () returnType:kotlin.Char flags:[]
       correspondingProperty: PROPERTY name:test13 visibility:public modality:FINAL flags:[val]
       BLOCK_BODY
-        RETURN type=kotlin.Nothing from='FUN DEFAULT_PROPERTY_ACCESSOR name:<get-test13> visibility:public modality:FINAL <> () returnType:kotlin.Char flags:[]'
+        RETURN type=kotlin.Nothing from='public final fun <get-test13> <> (): kotlin.Char flags:[] declared in <root>'
           GET_FIELD 'FIELD PROPERTY_BACKING_FIELD name:test13 type:kotlin.Char visibility:public flags:[final,static]' type=kotlin.Char origin=null
   PROPERTY name:testB visibility:public modality:FINAL flags:[val]
     FIELD PROPERTY_BACKING_FIELD name:testB type:kotlin.Byte visibility:public flags:[final,static]
@@ -123,7 +123,7 @@ FILE fqName:<root> fileName:/literals.kt
     FUN DEFAULT_PROPERTY_ACCESSOR name:<get-testB> visibility:public modality:FINAL <> () returnType:kotlin.Byte flags:[]
       correspondingProperty: PROPERTY name:testB visibility:public modality:FINAL flags:[val]
       BLOCK_BODY
-        RETURN type=kotlin.Nothing from='FUN DEFAULT_PROPERTY_ACCESSOR name:<get-testB> visibility:public modality:FINAL <> () returnType:kotlin.Byte flags:[]'
+        RETURN type=kotlin.Nothing from='public final fun <get-testB> <> (): kotlin.Byte flags:[] declared in <root>'
           GET_FIELD 'FIELD PROPERTY_BACKING_FIELD name:testB type:kotlin.Byte visibility:public flags:[final,static]' type=kotlin.Byte origin=null
   PROPERTY name:testS visibility:public modality:FINAL flags:[val]
     FIELD PROPERTY_BACKING_FIELD name:testS type:kotlin.Short visibility:public flags:[final,static]
@@ -132,7 +132,7 @@ FILE fqName:<root> fileName:/literals.kt
     FUN DEFAULT_PROPERTY_ACCESSOR name:<get-testS> visibility:public modality:FINAL <> () returnType:kotlin.Short flags:[]
       correspondingProperty: PROPERTY name:testS visibility:public modality:FINAL flags:[val]
       BLOCK_BODY
-        RETURN type=kotlin.Nothing from='FUN DEFAULT_PROPERTY_ACCESSOR name:<get-testS> visibility:public modality:FINAL <> () returnType:kotlin.Short flags:[]'
+        RETURN type=kotlin.Nothing from='public final fun <get-testS> <> (): kotlin.Short flags:[] declared in <root>'
           GET_FIELD 'FIELD PROPERTY_BACKING_FIELD name:testS type:kotlin.Short visibility:public flags:[final,static]' type=kotlin.Short origin=null
   PROPERTY name:testI visibility:public modality:FINAL flags:[val]
     FIELD PROPERTY_BACKING_FIELD name:testI type:kotlin.Int visibility:public flags:[final,static]
@@ -141,7 +141,7 @@ FILE fqName:<root> fileName:/literals.kt
     FUN DEFAULT_PROPERTY_ACCESSOR name:<get-testI> visibility:public modality:FINAL <> () returnType:kotlin.Int flags:[]
       correspondingProperty: PROPERTY name:testI visibility:public modality:FINAL flags:[val]
       BLOCK_BODY
-        RETURN type=kotlin.Nothing from='FUN DEFAULT_PROPERTY_ACCESSOR name:<get-testI> visibility:public modality:FINAL <> () returnType:kotlin.Int flags:[]'
+        RETURN type=kotlin.Nothing from='public final fun <get-testI> <> (): kotlin.Int flags:[] declared in <root>'
           GET_FIELD 'FIELD PROPERTY_BACKING_FIELD name:testI type:kotlin.Int visibility:public flags:[final,static]' type=kotlin.Int origin=null
   PROPERTY name:testL visibility:public modality:FINAL flags:[val]
     FIELD PROPERTY_BACKING_FIELD name:testL type:kotlin.Long visibility:public flags:[final,static]
@@ -150,5 +150,5 @@ FILE fqName:<root> fileName:/literals.kt
     FUN DEFAULT_PROPERTY_ACCESSOR name:<get-testL> visibility:public modality:FINAL <> () returnType:kotlin.Long flags:[]
       correspondingProperty: PROPERTY name:testL visibility:public modality:FINAL flags:[val]
       BLOCK_BODY
-        RETURN type=kotlin.Nothing from='FUN DEFAULT_PROPERTY_ACCESSOR name:<get-testL> visibility:public modality:FINAL <> () returnType:kotlin.Long flags:[]'
+        RETURN type=kotlin.Nothing from='public final fun <get-testL> <> (): kotlin.Long flags:[] declared in <root>'
           GET_FIELD 'FIELD PROPERTY_BACKING_FIELD name:testL type:kotlin.Long visibility:public flags:[final,static]' type=kotlin.Long origin=null

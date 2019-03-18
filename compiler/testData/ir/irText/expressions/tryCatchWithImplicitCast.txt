@@ -6,16 +6,16 @@ FILE fqName:<root> fileName:/tryCatchWithImplicitCast.kt
         BRANCH
           if: TYPE_OP type=kotlin.Boolean origin=NOT_INSTANCEOF typeOperand=kotlin.String
             typeOperand: CLASS IR_EXTERNAL_DECLARATION_STUB CLASS name:String modality:FINAL visibility:public flags:[] superTypes:[kotlin.Comparable<kotlin.String>; kotlin.CharSequence; java.io.Serializable]
-            GET_VAR 'VALUE_PARAMETER name:a index:0 type:kotlin.Any flags:[]' type=kotlin.Any origin=null
-          then: RETURN type=kotlin.Nothing from='FUN name:testImplicitCast visibility:public modality:FINAL <> (a:kotlin.Any) returnType:kotlin.Unit flags:[]'
+            GET_VAR 'a: kotlin.Any flags:[] declared in <root>.testImplicitCast' type=kotlin.Any origin=null
+          then: RETURN type=kotlin.Nothing from='public final fun testImplicitCast <> (a: kotlin.Any): kotlin.Unit flags:[] declared in <root>'
             GET_OBJECT 'CLASS IR_EXTERNAL_DECLARATION_STUB OBJECT name:Unit modality:FINAL visibility:public flags:[] superTypes:[kotlin.Any]' type=kotlin.Unit
       VAR name:t type:kotlin.String flags:[val]
         TRY type=kotlin.String
           try: BLOCK type=kotlin.String origin=null
             TYPE_OP type=kotlin.String origin=IMPLICIT_CAST typeOperand=kotlin.String
               typeOperand: CLASS IR_EXTERNAL_DECLARATION_STUB CLASS name:String modality:FINAL visibility:public flags:[] superTypes:[kotlin.Comparable<kotlin.String>; kotlin.CharSequence; java.io.Serializable]
-              GET_VAR 'VALUE_PARAMETER name:a index:0 type:kotlin.Any flags:[]' type=kotlin.Any origin=null
-          CATCH parameter=VAR CATCH_PARAMETER name:e type:kotlin.Throwable flags:[val]
+              GET_VAR 'a: kotlin.Any flags:[] declared in <root>.testImplicitCast' type=kotlin.Any origin=null
+          CATCH parameter=val e: kotlin.Throwable flags:[val] declared in <root>.testImplicitCast
             VAR CATCH_PARAMETER name:e type:kotlin.Throwable flags:[val]
             BLOCK type=kotlin.String origin=null
               CONST String type=kotlin.String value=""

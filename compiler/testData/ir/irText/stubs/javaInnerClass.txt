@@ -3,20 +3,20 @@ FILE fqName:<root> fileName:/javaInnerClass.kt
     $this: VALUE_PARAMETER INSTANCE_RECEIVER name:<this> type:<root>.Test1 flags:[]
     CONSTRUCTOR visibility:public <> () returnType:<root>.Test1 flags:[primary]
       BLOCK_BODY
-        DELEGATING_CONSTRUCTOR_CALL 'CONSTRUCTOR IR_EXTERNAL_JAVA_DECLARATION_STUB visibility:public <> () returnType:<root>.J flags:[primary]'
+        DELEGATING_CONSTRUCTOR_CALL 'public constructor <init> <> () flags:[primary] declared in <root>.J'
         INSTANCE_INITIALIZER_CALL classDescriptor='CLASS CLASS name:Test1 modality:FINAL visibility:public flags:[] superTypes:[<root>.J]'
     PROPERTY name:test visibility:public modality:FINAL flags:[val]
       FIELD PROPERTY_BACKING_FIELD name:test type:<root>.J.JInner visibility:public flags:[final]
         EXPRESSION_BODY
-          CALL 'CONSTRUCTOR IR_EXTERNAL_JAVA_DECLARATION_STUB visibility:public <> ($this:<root>.J) returnType:<root>.J.JInner flags:[primary]' type=<root>.J.JInner origin=null
-            $this: GET_VAR 'VALUE_PARAMETER INSTANCE_RECEIVER name:<this> type:<root>.Test1 flags:[]' type=<root>.Test1 origin=null
+          CALL 'public constructor <init> <> () flags:[primary] declared in <root>.J.JInner' type=<root>.J.JInner origin=null
+            $this: GET_VAR '<this>: <root>.Test1 flags:[] declared in <root>.Test1' type=<root>.Test1 origin=null
       FUN DEFAULT_PROPERTY_ACCESSOR name:<get-test> visibility:public modality:FINAL <> ($this:<root>.Test1) returnType:<root>.J.JInner flags:[]
         correspondingProperty: PROPERTY name:test visibility:public modality:FINAL flags:[val]
         $this: VALUE_PARAMETER name:<this> type:<root>.Test1 flags:[]
         BLOCK_BODY
-          RETURN type=kotlin.Nothing from='FUN DEFAULT_PROPERTY_ACCESSOR name:<get-test> visibility:public modality:FINAL <> ($this:<root>.Test1) returnType:<root>.J.JInner flags:[]'
+          RETURN type=kotlin.Nothing from='public final fun <get-test> <> (): <root>.J.JInner flags:[] declared in <root>.Test1'
             GET_FIELD 'FIELD PROPERTY_BACKING_FIELD name:test type:<root>.J.JInner visibility:public flags:[final]' type=<root>.J.JInner origin=null
-              receiver: GET_VAR 'VALUE_PARAMETER name:<this> type:<root>.Test1 flags:[]' type=<root>.Test1 origin=null
+              receiver: GET_VAR '<this>: <root>.Test1 flags:[] declared in <root>.Test1.<get-test>' type=<root>.Test1 origin=null
     PROPERTY FAKE_OVERRIDE name:x visibility:public modality:FINAL flags:[var]
       FIELD FAKE_OVERRIDE name:x type:kotlin.Int visibility:public flags:[]
         overridden:

@@ -17,28 +17,28 @@ FILE fqName:<root> fileName:/typeOperators.kt
   FUN name:test1 visibility:public modality:FINAL <> (x:kotlin.Any) returnType:kotlin.Boolean flags:[]
     VALUE_PARAMETER name:x index:0 type:kotlin.Any flags:[]
     BLOCK_BODY
-      RETURN type=kotlin.Nothing from='FUN name:test1 visibility:public modality:FINAL <> (x:kotlin.Any) returnType:kotlin.Boolean flags:[]'
+      RETURN type=kotlin.Nothing from='public final fun test1 <> (x: kotlin.Any): kotlin.Boolean flags:[] declared in <root>'
         TYPE_OP type=kotlin.Boolean origin=INSTANCEOF typeOperand=<root>.IThing
           typeOperand: CLASS INTERFACE name:IThing modality:ABSTRACT visibility:public flags:[] superTypes:[kotlin.Any]
-          GET_VAR 'VALUE_PARAMETER name:x index:0 type:kotlin.Any flags:[]' type=kotlin.Any origin=null
+          GET_VAR 'x: kotlin.Any flags:[] declared in <root>.test1' type=kotlin.Any origin=null
   FUN name:test2 visibility:public modality:FINAL <> (x:kotlin.Any) returnType:kotlin.Boolean flags:[]
     VALUE_PARAMETER name:x index:0 type:kotlin.Any flags:[]
     BLOCK_BODY
-      RETURN type=kotlin.Nothing from='FUN name:test2 visibility:public modality:FINAL <> (x:kotlin.Any) returnType:kotlin.Boolean flags:[]'
+      RETURN type=kotlin.Nothing from='public final fun test2 <> (x: kotlin.Any): kotlin.Boolean flags:[] declared in <root>'
         TYPE_OP type=kotlin.Boolean origin=NOT_INSTANCEOF typeOperand=<root>.IThing
           typeOperand: CLASS INTERFACE name:IThing modality:ABSTRACT visibility:public flags:[] superTypes:[kotlin.Any]
-          GET_VAR 'VALUE_PARAMETER name:x index:0 type:kotlin.Any flags:[]' type=kotlin.Any origin=null
+          GET_VAR 'x: kotlin.Any flags:[] declared in <root>.test2' type=kotlin.Any origin=null
   FUN name:test3 visibility:public modality:FINAL <> (x:kotlin.Any) returnType:<root>.IThing flags:[]
     VALUE_PARAMETER name:x index:0 type:kotlin.Any flags:[]
     BLOCK_BODY
-      RETURN type=kotlin.Nothing from='FUN name:test3 visibility:public modality:FINAL <> (x:kotlin.Any) returnType:<root>.IThing flags:[]'
+      RETURN type=kotlin.Nothing from='public final fun test3 <> (x: kotlin.Any): <root>.IThing flags:[] declared in <root>'
         TYPE_OP type=<root>.IThing origin=CAST typeOperand=<root>.IThing
           typeOperand: CLASS INTERFACE name:IThing modality:ABSTRACT visibility:public flags:[] superTypes:[kotlin.Any]
-          GET_VAR 'VALUE_PARAMETER name:x index:0 type:kotlin.Any flags:[]' type=kotlin.Any origin=null
+          GET_VAR 'x: kotlin.Any flags:[] declared in <root>.test3' type=kotlin.Any origin=null
   FUN name:test4 visibility:public modality:FINAL <> (x:kotlin.Any) returnType:<root>.IThing? flags:[]
     VALUE_PARAMETER name:x index:0 type:kotlin.Any flags:[]
     BLOCK_BODY
-      RETURN type=kotlin.Nothing from='FUN name:test4 visibility:public modality:FINAL <> (x:kotlin.Any) returnType:<root>.IThing? flags:[]'
+      RETURN type=kotlin.Nothing from='public final fun test4 <> (x: kotlin.Any): <root>.IThing? flags:[] declared in <root>'
         TYPE_OP type=<root>.IThing? origin=SAFE_CAST typeOperand=<root>.IThing
           typeOperand: CLASS INTERFACE name:IThing modality:ABSTRACT visibility:public flags:[] superTypes:[kotlin.Any]
-          GET_VAR 'VALUE_PARAMETER name:x index:0 type:kotlin.Any flags:[]' type=kotlin.Any origin=null
+          GET_VAR 'x: kotlin.Any flags:[] declared in <root>.test4' type=kotlin.Any origin=null

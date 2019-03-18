@@ -1,30 +1,30 @@
 FILE fqName:<root> fileName:/jvmStaticFieldReference.kt
   FUN name:testFun visibility:public modality:FINAL <> () returnType:kotlin.Unit flags:[]
     BLOCK_BODY
-      CALL 'FUN IR_EXTERNAL_JAVA_DECLARATION_STUB name:println visibility:public modality:OPEN <> ($this:java.io.PrintStream, x:kotlin.String?) returnType:kotlin.Unit flags:[]' type=kotlin.Unit origin=null
+      CALL 'public open fun println <> (x: kotlin.String?): kotlin.Unit flags:[] declared in java.io.PrintStream' type=kotlin.Unit origin=null
         $this: GET_FIELD 'FIELD IR_EXTERNAL_JAVA_DECLARATION_STUB name:out type:java.io.PrintStream? visibility:public flags:[final,static]' type=java.io.PrintStream? origin=GET_PROPERTY
         x: CONST String type=kotlin.String value="testFun"
   PROPERTY name:testProp visibility:public modality:FINAL flags:[var]
     FUN name:<get-testProp> visibility:public modality:FINAL <> () returnType:kotlin.Any flags:[]
       correspondingProperty: PROPERTY name:testProp visibility:public modality:FINAL flags:[var]
       BLOCK_BODY
-        CALL 'FUN IR_EXTERNAL_JAVA_DECLARATION_STUB name:println visibility:public modality:OPEN <> ($this:java.io.PrintStream, x:kotlin.String?) returnType:kotlin.Unit flags:[]' type=kotlin.Unit origin=null
+        CALL 'public open fun println <> (x: kotlin.String?): kotlin.Unit flags:[] declared in java.io.PrintStream' type=kotlin.Unit origin=null
           $this: GET_FIELD 'FIELD IR_EXTERNAL_JAVA_DECLARATION_STUB name:out type:java.io.PrintStream? visibility:public flags:[final,static]' type=java.io.PrintStream? origin=GET_PROPERTY
           x: CONST String type=kotlin.String value="testProp/get"
-        RETURN type=kotlin.Nothing from='FUN name:<get-testProp> visibility:public modality:FINAL <> () returnType:kotlin.Any flags:[]'
+        RETURN type=kotlin.Nothing from='public final fun <get-testProp> <> (): kotlin.Any flags:[] declared in <root>'
           CONST Int type=kotlin.Int value=42
     FUN name:<set-testProp> visibility:public modality:FINAL <> (value:kotlin.Any) returnType:kotlin.Unit flags:[]
       correspondingProperty: PROPERTY name:testProp visibility:public modality:FINAL flags:[var]
       VALUE_PARAMETER name:value index:0 type:kotlin.Any flags:[]
       BLOCK_BODY
-        CALL 'FUN IR_EXTERNAL_JAVA_DECLARATION_STUB name:println visibility:public modality:OPEN <> ($this:java.io.PrintStream, x:kotlin.String?) returnType:kotlin.Unit flags:[]' type=kotlin.Unit origin=null
+        CALL 'public open fun println <> (x: kotlin.String?): kotlin.Unit flags:[] declared in java.io.PrintStream' type=kotlin.Unit origin=null
           $this: GET_FIELD 'FIELD IR_EXTERNAL_JAVA_DECLARATION_STUB name:out type:java.io.PrintStream? visibility:public flags:[final,static]' type=java.io.PrintStream? origin=GET_PROPERTY
           x: CONST String type=kotlin.String value="testProp/set"
   CLASS CLASS name:TestClass modality:FINAL visibility:public flags:[] superTypes:[kotlin.Any]
     $this: VALUE_PARAMETER INSTANCE_RECEIVER name:<this> type:<root>.TestClass flags:[]
     CONSTRUCTOR visibility:public <> () returnType:<root>.TestClass flags:[primary]
       BLOCK_BODY
-        DELEGATING_CONSTRUCTOR_CALL 'CONSTRUCTOR IR_EXTERNAL_DECLARATION_STUB visibility:public <> () returnType:kotlin.Any flags:[primary]'
+        DELEGATING_CONSTRUCTOR_CALL 'public constructor <init> <> () flags:[primary] declared in kotlin.Any'
         INSTANCE_INITIALIZER_CALL classDescriptor='CLASS CLASS name:TestClass modality:FINAL visibility:public flags:[] superTypes:[kotlin.Any]'
     PROPERTY name:test visibility:public modality:FINAL flags:[val]
       FIELD PROPERTY_BACKING_FIELD name:test type:kotlin.Int visibility:public flags:[final]
@@ -33,7 +33,7 @@ FILE fqName:<root> fileName:/jvmStaticFieldReference.kt
             BRANCH
               if: CONST Boolean type=kotlin.Boolean value=true
               then: BLOCK type=kotlin.Int origin=null
-                CALL 'FUN IR_EXTERNAL_JAVA_DECLARATION_STUB name:println visibility:public modality:OPEN <> ($this:java.io.PrintStream, x:kotlin.String?) returnType:kotlin.Unit flags:[]' type=kotlin.Unit origin=null
+                CALL 'public open fun println <> (x: kotlin.String?): kotlin.Unit flags:[] declared in java.io.PrintStream' type=kotlin.Unit origin=null
                   $this: GET_FIELD 'FIELD IR_EXTERNAL_JAVA_DECLARATION_STUB name:out type:java.io.PrintStream? visibility:public flags:[final,static]' type=java.io.PrintStream? origin=GET_PROPERTY
                   x: CONST String type=kotlin.String value="TestClass/test"
                 CONST Int type=kotlin.Int value=42
@@ -41,12 +41,12 @@ FILE fqName:<root> fileName:/jvmStaticFieldReference.kt
         correspondingProperty: PROPERTY name:test visibility:public modality:FINAL flags:[val]
         $this: VALUE_PARAMETER name:<this> type:<root>.TestClass flags:[]
         BLOCK_BODY
-          RETURN type=kotlin.Nothing from='FUN DEFAULT_PROPERTY_ACCESSOR name:<get-test> visibility:public modality:FINAL <> ($this:<root>.TestClass) returnType:kotlin.Int flags:[]'
+          RETURN type=kotlin.Nothing from='public final fun <get-test> <> (): kotlin.Int flags:[] declared in <root>.TestClass'
             GET_FIELD 'FIELD PROPERTY_BACKING_FIELD name:test type:kotlin.Int visibility:public flags:[final]' type=kotlin.Int origin=null
-              receiver: GET_VAR 'VALUE_PARAMETER name:<this> type:<root>.TestClass flags:[]' type=<root>.TestClass origin=null
+              receiver: GET_VAR '<this>: <root>.TestClass flags:[] declared in <root>.TestClass.<get-test>' type=<root>.TestClass origin=null
     ANONYMOUS_INITIALIZER isStatic=false
       BLOCK_BODY
-        CALL 'FUN IR_EXTERNAL_JAVA_DECLARATION_STUB name:println visibility:public modality:OPEN <> ($this:java.io.PrintStream, x:kotlin.String?) returnType:kotlin.Unit flags:[]' type=kotlin.Unit origin=null
+        CALL 'public open fun println <> (x: kotlin.String?): kotlin.Unit flags:[] declared in java.io.PrintStream' type=kotlin.Unit origin=null
           $this: GET_FIELD 'FIELD IR_EXTERNAL_JAVA_DECLARATION_STUB name:out type:java.io.PrintStream? visibility:public flags:[final,static]' type=java.io.PrintStream? origin=GET_PROPERTY
           x: CONST String type=kotlin.String value="TestClass/init"
     FUN FAKE_OVERRIDE name:equals visibility:public modality:OPEN <> ($this:kotlin.Any, other:kotlin.Any?) returnType:kotlin.Boolean flags:[]

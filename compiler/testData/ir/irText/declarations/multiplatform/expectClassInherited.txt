@@ -45,7 +45,7 @@ FILE fqName:<root> fileName:/expectClassInherited.kt
     $this: VALUE_PARAMETER INSTANCE_RECEIVER name:<this> type:<root>.A flags:[]
     CONSTRUCTOR visibility:protected <> () returnType:<root>.A flags:[primary]
       BLOCK_BODY
-        DELEGATING_CONSTRUCTOR_CALL 'CONSTRUCTOR IR_EXTERNAL_DECLARATION_STUB visibility:public <> () returnType:kotlin.Any flags:[primary]'
+        DELEGATING_CONSTRUCTOR_CALL 'public constructor <init> <> () flags:[primary] declared in kotlin.Any'
         INSTANCE_INITIALIZER_CALL classDescriptor='CLASS CLASS name:A modality:ABSTRACT visibility:public flags:[] superTypes:[kotlin.Any]'
     FUN name:foo visibility:public modality:ABSTRACT <> ($this:<root>.A) returnType:kotlin.Unit flags:[]
       $this: VALUE_PARAMETER name:<this> type:<root>.A flags:[]
@@ -67,7 +67,7 @@ FILE fqName:<root> fileName:/expectClassInherited.kt
     CONSTRUCTOR visibility:public <> (i:kotlin.Int) returnType:<root>.B flags:[primary]
       VALUE_PARAMETER name:i index:0 type:kotlin.Int flags:[]
       BLOCK_BODY
-        DELEGATING_CONSTRUCTOR_CALL 'CONSTRUCTOR visibility:protected <> () returnType:<root>.A flags:[primary]'
+        DELEGATING_CONSTRUCTOR_CALL 'protected constructor <init> <> () flags:[primary] declared in <root>.A'
         INSTANCE_INITIALIZER_CALL classDescriptor='CLASS CLASS name:B modality:OPEN visibility:public flags:[] superTypes:[<root>.A]'
     FUN name:foo visibility:public modality:OPEN <> ($this:<root>.B) returnType:kotlin.Unit flags:[]
       overridden:

@@ -6,8 +6,8 @@ FILE fqName:<root> fileName:/interfaceThisRef.kt
     FUN name:bar visibility:public modality:OPEN <> ($this:<root>.IFoo) returnType:kotlin.Unit flags:[]
       $this: VALUE_PARAMETER name:<this> type:<root>.IFoo flags:[]
       BLOCK_BODY
-        CALL 'FUN name:foo visibility:public modality:ABSTRACT <> ($this:<root>.IFoo) returnType:kotlin.Unit flags:[]' type=kotlin.Unit origin=null
-          $this: GET_VAR 'VALUE_PARAMETER name:<this> type:<root>.IFoo flags:[]' type=<root>.IFoo origin=null
+        CALL 'public abstract fun foo <> (): kotlin.Unit flags:[] declared in <root>.IFoo' type=kotlin.Unit origin=null
+          $this: GET_VAR '<this>: <root>.IFoo flags:[] declared in <root>.IFoo.bar' type=<root>.IFoo origin=null
     FUN FAKE_OVERRIDE name:equals visibility:public modality:OPEN <> ($this:kotlin.Any, other:kotlin.Any?) returnType:kotlin.Boolean flags:[]
       overridden:
         FUN IR_EXTERNAL_DECLARATION_STUB name:equals visibility:public modality:OPEN <> ($this:kotlin.Any, other:kotlin.Any?) returnType:kotlin.Boolean flags:[]

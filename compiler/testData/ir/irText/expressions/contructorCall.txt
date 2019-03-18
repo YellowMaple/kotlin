@@ -3,7 +3,7 @@ FILE fqName:<root> fileName:/contructorCall.kt
     $this: VALUE_PARAMETER INSTANCE_RECEIVER name:<this> type:<root>.A flags:[]
     CONSTRUCTOR visibility:public <> () returnType:<root>.A flags:[primary]
       BLOCK_BODY
-        DELEGATING_CONSTRUCTOR_CALL 'CONSTRUCTOR IR_EXTERNAL_DECLARATION_STUB visibility:public <> () returnType:kotlin.Any flags:[primary]'
+        DELEGATING_CONSTRUCTOR_CALL 'public constructor <init> <> () flags:[primary] declared in kotlin.Any'
         INSTANCE_INITIALIZER_CALL classDescriptor='CLASS CLASS name:A modality:FINAL visibility:public flags:[] superTypes:[kotlin.Any]'
     FUN FAKE_OVERRIDE name:equals visibility:public modality:OPEN <> ($this:kotlin.Any, other:kotlin.Any?) returnType:kotlin.Boolean flags:[]
       overridden:
@@ -21,9 +21,9 @@ FILE fqName:<root> fileName:/contructorCall.kt
   PROPERTY name:test visibility:public modality:FINAL flags:[val]
     FIELD PROPERTY_BACKING_FIELD name:test type:<root>.A visibility:public flags:[final,static]
       EXPRESSION_BODY
-        CALL 'CONSTRUCTOR visibility:public <> () returnType:<root>.A flags:[primary]' type=<root>.A origin=null
+        CALL 'public constructor <init> <> () flags:[primary] declared in <root>.A' type=<root>.A origin=null
     FUN DEFAULT_PROPERTY_ACCESSOR name:<get-test> visibility:public modality:FINAL <> () returnType:<root>.A flags:[]
       correspondingProperty: PROPERTY name:test visibility:public modality:FINAL flags:[val]
       BLOCK_BODY
-        RETURN type=kotlin.Nothing from='FUN DEFAULT_PROPERTY_ACCESSOR name:<get-test> visibility:public modality:FINAL <> () returnType:<root>.A flags:[]'
+        RETURN type=kotlin.Nothing from='public final fun <get-test> <> (): <root>.A flags:[] declared in <root>'
           GET_FIELD 'FIELD PROPERTY_BACKING_FIELD name:test type:<root>.A visibility:public flags:[final,static]' type=<root>.A origin=null

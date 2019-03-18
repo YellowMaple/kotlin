@@ -35,7 +35,7 @@ FILE fqName:<root> fileName:/expectedSealedClass.kt
     $this: VALUE_PARAMETER INSTANCE_RECEIVER name:<this> type:<root>.Ops flags:[]
     CONSTRUCTOR visibility:private <> () returnType:<root>.Ops flags:[primary]
       BLOCK_BODY
-        DELEGATING_CONSTRUCTOR_CALL 'CONSTRUCTOR IR_EXTERNAL_DECLARATION_STUB visibility:public <> () returnType:kotlin.Any flags:[primary]'
+        DELEGATING_CONSTRUCTOR_CALL 'public constructor <init> <> () flags:[primary] declared in kotlin.Any'
         INSTANCE_INITIALIZER_CALL classDescriptor='CLASS CLASS name:Ops modality:SEALED visibility:public flags:[] superTypes:[kotlin.Any]'
     FUN FAKE_OVERRIDE name:equals visibility:public modality:OPEN <> ($this:kotlin.Any, other:kotlin.Any?) returnType:kotlin.Boolean flags:[]
       overridden:
@@ -54,7 +54,7 @@ FILE fqName:<root> fileName:/expectedSealedClass.kt
     $this: VALUE_PARAMETER INSTANCE_RECEIVER name:<this> type:<root>.Add flags:[]
     CONSTRUCTOR visibility:public <> () returnType:<root>.Add flags:[primary]
       BLOCK_BODY
-        DELEGATING_CONSTRUCTOR_CALL 'CONSTRUCTOR visibility:private <> () returnType:<root>.Ops flags:[primary]'
+        DELEGATING_CONSTRUCTOR_CALL 'private constructor <init> <> () flags:[primary] declared in <root>.Ops'
         INSTANCE_INITIALIZER_CALL classDescriptor='CLASS CLASS name:Add modality:FINAL visibility:public flags:[] superTypes:[<root>.Ops]'
     FUN FAKE_OVERRIDE name:equals visibility:public modality:OPEN <> ($this:kotlin.Any, other:kotlin.Any?) returnType:kotlin.Boolean flags:[]
       overridden:

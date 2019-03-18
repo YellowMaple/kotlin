@@ -5,7 +5,7 @@ FILE fqName:<root> fileName:/localClassWithOverrides.kt
         $this: VALUE_PARAMETER INSTANCE_RECEIVER name:<this> type:<root>.outer.ALocal flags:[]
         CONSTRUCTOR visibility:public <> () returnType:<root>.outer.ALocal flags:[primary]
           BLOCK_BODY
-            DELEGATING_CONSTRUCTOR_CALL 'CONSTRUCTOR IR_EXTERNAL_DECLARATION_STUB visibility:public <> () returnType:kotlin.Any flags:[primary]'
+            DELEGATING_CONSTRUCTOR_CALL 'public constructor <init> <> () flags:[primary] declared in kotlin.Any'
             INSTANCE_INITIALIZER_CALL classDescriptor='CLASS CLASS name:ALocal modality:ABSTRACT visibility:local flags:[] superTypes:[kotlin.Any]'
         FUN name:afun visibility:public modality:ABSTRACT <> ($this:<root>.outer.ALocal) returnType:kotlin.Unit flags:[]
           $this: VALUE_PARAMETER name:<this> type:<root>.outer.ALocal flags:[]
@@ -38,7 +38,7 @@ FILE fqName:<root> fileName:/localClassWithOverrides.kt
         $this: VALUE_PARAMETER INSTANCE_RECEIVER name:<this> type:<root>.outer.Local flags:[]
         CONSTRUCTOR visibility:public <> () returnType:<root>.outer.Local flags:[primary]
           BLOCK_BODY
-            DELEGATING_CONSTRUCTOR_CALL 'CONSTRUCTOR visibility:public <> () returnType:<root>.outer.ALocal flags:[primary]'
+            DELEGATING_CONSTRUCTOR_CALL 'public constructor <init> <> () flags:[primary] declared in <root>.outer.ALocal'
             INSTANCE_INITIALIZER_CALL classDescriptor='CLASS CLASS name:Local modality:FINAL visibility:local flags:[] superTypes:[<root>.outer.ALocal]'
         FUN name:afun visibility:public modality:OPEN <> ($this:<root>.outer.Local) returnType:kotlin.Unit flags:[]
           overridden:
@@ -55,9 +55,9 @@ FILE fqName:<root> fileName:/localClassWithOverrides.kt
               FUN DEFAULT_PROPERTY_ACCESSOR name:<get-aval> visibility:public modality:ABSTRACT <> ($this:<root>.outer.ALocal) returnType:kotlin.Int flags:[]
             $this: VALUE_PARAMETER name:<this> type:<root>.outer.Local flags:[]
             BLOCK_BODY
-              RETURN type=kotlin.Nothing from='FUN DEFAULT_PROPERTY_ACCESSOR name:<get-aval> visibility:public modality:OPEN <> ($this:<root>.outer.Local) returnType:kotlin.Int flags:[]'
+              RETURN type=kotlin.Nothing from='public open fun <get-aval> <> (): kotlin.Int flags:[] declared in <root>.outer.Local'
                 GET_FIELD 'FIELD PROPERTY_BACKING_FIELD name:aval type:kotlin.Int visibility:public flags:[final]' type=kotlin.Int origin=null
-                  receiver: GET_VAR 'VALUE_PARAMETER name:<this> type:<root>.outer.Local flags:[]' type=<root>.outer.Local origin=null
+                  receiver: GET_VAR '<this>: <root>.outer.Local flags:[] declared in <root>.outer.Local.<get-aval>' type=<root>.outer.Local origin=null
         PROPERTY name:avar visibility:public modality:OPEN flags:[var]
           FIELD PROPERTY_BACKING_FIELD name:avar type:kotlin.Int visibility:public flags:[]
             EXPRESSION_BODY
@@ -68,9 +68,9 @@ FILE fqName:<root> fileName:/localClassWithOverrides.kt
               FUN DEFAULT_PROPERTY_ACCESSOR name:<get-avar> visibility:public modality:ABSTRACT <> ($this:<root>.outer.ALocal) returnType:kotlin.Int flags:[]
             $this: VALUE_PARAMETER name:<this> type:<root>.outer.Local flags:[]
             BLOCK_BODY
-              RETURN type=kotlin.Nothing from='FUN DEFAULT_PROPERTY_ACCESSOR name:<get-avar> visibility:public modality:OPEN <> ($this:<root>.outer.Local) returnType:kotlin.Int flags:[]'
+              RETURN type=kotlin.Nothing from='public open fun <get-avar> <> (): kotlin.Int flags:[] declared in <root>.outer.Local'
                 GET_FIELD 'FIELD PROPERTY_BACKING_FIELD name:avar type:kotlin.Int visibility:public flags:[]' type=kotlin.Int origin=null
-                  receiver: GET_VAR 'VALUE_PARAMETER name:<this> type:<root>.outer.Local flags:[]' type=<root>.outer.Local origin=null
+                  receiver: GET_VAR '<this>: <root>.outer.Local flags:[] declared in <root>.outer.Local.<get-avar>' type=<root>.outer.Local origin=null
           FUN DEFAULT_PROPERTY_ACCESSOR name:<set-avar> visibility:public modality:OPEN <> ($this:<root>.outer.Local, <set-?>:kotlin.Int) returnType:kotlin.Unit flags:[]
             correspondingProperty: PROPERTY name:avar visibility:public modality:OPEN flags:[var]
             overridden:
@@ -79,8 +79,8 @@ FILE fqName:<root> fileName:/localClassWithOverrides.kt
             VALUE_PARAMETER name:<set-?> index:0 type:kotlin.Int flags:[]
             BLOCK_BODY
               SET_FIELD 'FIELD PROPERTY_BACKING_FIELD name:avar type:kotlin.Int visibility:public flags:[]' type=kotlin.Unit origin=null
-                receiver: GET_VAR 'VALUE_PARAMETER name:<this> type:<root>.outer.Local flags:[]' type=<root>.outer.Local origin=null
-                value: GET_VAR 'VALUE_PARAMETER name:<set-?> index:0 type:kotlin.Int flags:[]' type=kotlin.Int origin=null
+                receiver: GET_VAR '<this>: <root>.outer.Local flags:[] declared in <root>.outer.Local.<set-avar>' type=<root>.outer.Local origin=null
+                value: GET_VAR '<set-?>: kotlin.Int flags:[] declared in <root>.outer.Local.<set-avar>' type=kotlin.Int origin=null
         FUN FAKE_OVERRIDE name:equals visibility:public modality:OPEN <> ($this:kotlin.Any, other:kotlin.Any?) returnType:kotlin.Boolean flags:[]
           overridden:
             FUN FAKE_OVERRIDE name:equals visibility:public modality:OPEN <> ($this:kotlin.Any, other:kotlin.Any?) returnType:kotlin.Boolean flags:[]

@@ -6,14 +6,14 @@ FILE fqName:<root> fileName:/varargsInAnnotationArguments.kt
     PROPERTY name:xs visibility:public modality:FINAL flags:[val]
       FIELD PROPERTY_BACKING_FIELD name:xs type:kotlin.IntArray visibility:public flags:[final]
         EXPRESSION_BODY
-          GET_VAR 'VALUE_PARAMETER name:xs index:0 type:kotlin.IntArray varargElementType:kotlin.Int flags:[vararg]' type=kotlin.IntArray origin=INITIALIZE_PROPERTY_FROM_PARAMETER
+          GET_VAR 'xs: kotlin.IntArray flags:[vararg] declared in <root>.A1.<init>' type=kotlin.IntArray origin=INITIALIZE_PROPERTY_FROM_PARAMETER
       FUN DEFAULT_PROPERTY_ACCESSOR name:<get-xs> visibility:public modality:FINAL <> ($this:<root>.A1) returnType:kotlin.IntArray flags:[]
         correspondingProperty: PROPERTY name:xs visibility:public modality:FINAL flags:[val]
         $this: VALUE_PARAMETER name:<this> type:<root>.A1 flags:[]
         BLOCK_BODY
-          RETURN type=kotlin.Nothing from='FUN DEFAULT_PROPERTY_ACCESSOR name:<get-xs> visibility:public modality:FINAL <> ($this:<root>.A1) returnType:kotlin.IntArray flags:[]'
+          RETURN type=kotlin.Nothing from='public final fun <get-xs> <> (): kotlin.IntArray flags:[] declared in <root>.A1'
             GET_FIELD 'FIELD PROPERTY_BACKING_FIELD name:xs type:kotlin.IntArray visibility:public flags:[final]' type=kotlin.IntArray origin=null
-              receiver: GET_VAR 'VALUE_PARAMETER name:<this> type:<root>.A1 flags:[]' type=<root>.A1 origin=null
+              receiver: GET_VAR '<this>: <root>.A1 flags:[] declared in <root>.A1.<get-xs>' type=<root>.A1 origin=null
     FUN FAKE_OVERRIDE name:equals visibility:public modality:OPEN <> ($this:kotlin.Any, other:kotlin.Any?) returnType:kotlin.Boolean flags:[]
       overridden:
         FUN FAKE_OVERRIDE name:equals visibility:public modality:OPEN <> ($this:kotlin.Any, other:kotlin.Any?) returnType:kotlin.Boolean flags:[]
@@ -34,14 +34,14 @@ FILE fqName:<root> fileName:/varargsInAnnotationArguments.kt
     PROPERTY name:xs visibility:public modality:FINAL flags:[val]
       FIELD PROPERTY_BACKING_FIELD name:xs type:kotlin.Array<out kotlin.String> visibility:public flags:[final]
         EXPRESSION_BODY
-          GET_VAR 'VALUE_PARAMETER name:xs index:0 type:kotlin.Array<out kotlin.String> varargElementType:kotlin.String flags:[vararg]' type=kotlin.Array<out kotlin.String> origin=INITIALIZE_PROPERTY_FROM_PARAMETER
+          GET_VAR 'xs: kotlin.Array<out kotlin.String> flags:[vararg] declared in <root>.A2.<init>' type=kotlin.Array<out kotlin.String> origin=INITIALIZE_PROPERTY_FROM_PARAMETER
       FUN DEFAULT_PROPERTY_ACCESSOR name:<get-xs> visibility:public modality:FINAL <> ($this:<root>.A2) returnType:kotlin.Array<out kotlin.String> flags:[]
         correspondingProperty: PROPERTY name:xs visibility:public modality:FINAL flags:[val]
         $this: VALUE_PARAMETER name:<this> type:<root>.A2 flags:[]
         BLOCK_BODY
-          RETURN type=kotlin.Nothing from='FUN DEFAULT_PROPERTY_ACCESSOR name:<get-xs> visibility:public modality:FINAL <> ($this:<root>.A2) returnType:kotlin.Array<out kotlin.String> flags:[]'
+          RETURN type=kotlin.Nothing from='public final fun <get-xs> <> (): kotlin.Array<out kotlin.String> flags:[] declared in <root>.A2'
             GET_FIELD 'FIELD PROPERTY_BACKING_FIELD name:xs type:kotlin.Array<out kotlin.String> visibility:public flags:[final]' type=kotlin.Array<out kotlin.String> origin=null
-              receiver: GET_VAR 'VALUE_PARAMETER name:<this> type:<root>.A2 flags:[]' type=<root>.A2 origin=null
+              receiver: GET_VAR '<this>: <root>.A2 flags:[] declared in <root>.A2.<get-xs>' type=<root>.A2 origin=null
     FUN FAKE_OVERRIDE name:equals visibility:public modality:OPEN <> ($this:kotlin.Any, other:kotlin.Any?) returnType:kotlin.Boolean flags:[]
       overridden:
         FUN FAKE_OVERRIDE name:equals visibility:public modality:OPEN <> ($this:kotlin.Any, other:kotlin.Any?) returnType:kotlin.Boolean flags:[]
@@ -62,14 +62,14 @@ FILE fqName:<root> fileName:/varargsInAnnotationArguments.kt
     PROPERTY name:xs visibility:public modality:FINAL flags:[val]
       FIELD PROPERTY_BACKING_FIELD name:xs type:kotlin.Array<out <root>.A1> visibility:public flags:[final]
         EXPRESSION_BODY
-          GET_VAR 'VALUE_PARAMETER name:xs index:0 type:kotlin.Array<out <root>.A1> varargElementType:<root>.A1 flags:[vararg]' type=kotlin.Array<out <root>.A1> origin=INITIALIZE_PROPERTY_FROM_PARAMETER
+          GET_VAR 'xs: kotlin.Array<out <root>.A1> flags:[vararg] declared in <root>.AA.<init>' type=kotlin.Array<out <root>.A1> origin=INITIALIZE_PROPERTY_FROM_PARAMETER
       FUN DEFAULT_PROPERTY_ACCESSOR name:<get-xs> visibility:public modality:FINAL <> ($this:<root>.AA) returnType:kotlin.Array<out <root>.A1> flags:[]
         correspondingProperty: PROPERTY name:xs visibility:public modality:FINAL flags:[val]
         $this: VALUE_PARAMETER name:<this> type:<root>.AA flags:[]
         BLOCK_BODY
-          RETURN type=kotlin.Nothing from='FUN DEFAULT_PROPERTY_ACCESSOR name:<get-xs> visibility:public modality:FINAL <> ($this:<root>.AA) returnType:kotlin.Array<out <root>.A1> flags:[]'
+          RETURN type=kotlin.Nothing from='public final fun <get-xs> <> (): kotlin.Array<out <root>.A1> flags:[] declared in <root>.AA'
             GET_FIELD 'FIELD PROPERTY_BACKING_FIELD name:xs type:kotlin.Array<out <root>.A1> visibility:public flags:[final]' type=kotlin.Array<out <root>.A1> origin=null
-              receiver: GET_VAR 'VALUE_PARAMETER name:<this> type:<root>.AA flags:[]' type=<root>.AA origin=null
+              receiver: GET_VAR '<this>: <root>.AA flags:[] declared in <root>.AA.<get-xs>' type=<root>.AA origin=null
     FUN FAKE_OVERRIDE name:equals visibility:public modality:OPEN <> ($this:kotlin.Any, other:kotlin.Any?) returnType:kotlin.Boolean flags:[]
       overridden:
         FUN FAKE_OVERRIDE name:equals visibility:public modality:OPEN <> ($this:kotlin.Any, other:kotlin.Any?) returnType:kotlin.Boolean flags:[]
@@ -85,88 +85,88 @@ FILE fqName:<root> fileName:/varargsInAnnotationArguments.kt
       $this: VALUE_PARAMETER name:<this> type:kotlin.Any flags:[]
   FUN name:test1 visibility:public modality:FINAL <> () returnType:kotlin.Unit flags:[]
     annotations:
-      CALL 'CONSTRUCTOR visibility:public <> (xs:kotlin.IntArray) returnType:<root>.A1 flags:[primary]' type=<root>.A1 origin=null
+      CALL 'public constructor <init> <> (vararg xs: kotlin.Int) flags:[primary] declared in <root>.A1' type=<root>.A1 origin=null
         xs: VARARG type=kotlin.IntArray varargElementType=kotlin.Int
           CONST Int type=kotlin.Int value=1
           CONST Int type=kotlin.Int value=2
           CONST Int type=kotlin.Int value=3
-      CALL 'CONSTRUCTOR visibility:public <> (xs:kotlin.Array<out kotlin.String>) returnType:<root>.A2 flags:[primary]' type=<root>.A2 origin=null
+      CALL 'public constructor <init> <> (vararg xs: kotlin.String) flags:[primary] declared in <root>.A2' type=<root>.A2 origin=null
         xs: VARARG type=kotlin.Array<out kotlin.String> varargElementType=kotlin.String
           CONST String type=kotlin.String value="a"
           CONST String type=kotlin.String value="b"
           CONST String type=kotlin.String value="c"
-      CALL 'CONSTRUCTOR visibility:public <> (xs:kotlin.Array<out <root>.A1>) returnType:<root>.AA flags:[primary]' type=<root>.AA origin=null
+      CALL 'public constructor <init> <> (vararg xs: <root>.A1) flags:[primary] declared in <root>.AA' type=<root>.AA origin=null
         xs: VARARG type=kotlin.Array<out <root>.A1> varargElementType=<root>.A1
-          CALL 'CONSTRUCTOR visibility:public <> (xs:kotlin.IntArray) returnType:<root>.A1 flags:[primary]' type=<root>.A1 origin=null
+          CALL 'public constructor <init> <> (vararg xs: kotlin.Int) flags:[primary] declared in <root>.A1' type=<root>.A1 origin=null
             xs: VARARG type=kotlin.IntArray varargElementType=kotlin.Int
               CONST Int type=kotlin.Int value=4
-          CALL 'CONSTRUCTOR visibility:public <> (xs:kotlin.IntArray) returnType:<root>.A1 flags:[primary]' type=<root>.A1 origin=null
+          CALL 'public constructor <init> <> (vararg xs: kotlin.Int) flags:[primary] declared in <root>.A1' type=<root>.A1 origin=null
             xs: VARARG type=kotlin.IntArray varargElementType=kotlin.Int
               CONST Int type=kotlin.Int value=5
-          CALL 'CONSTRUCTOR visibility:public <> (xs:kotlin.IntArray) returnType:<root>.A1 flags:[primary]' type=<root>.A1 origin=null
+          CALL 'public constructor <init> <> (vararg xs: kotlin.Int) flags:[primary] declared in <root>.A1' type=<root>.A1 origin=null
             xs: VARARG type=kotlin.IntArray varargElementType=kotlin.Int
               CONST Int type=kotlin.Int value=6
-      CALL 'CONSTRUCTOR visibility:public <> (xs:kotlin.IntArray) returnType:<root>.A1 flags:[primary]' type=<root>.A1 origin=null
+      CALL 'public constructor <init> <> (vararg xs: kotlin.Int) flags:[primary] declared in <root>.A1' type=<root>.A1 origin=null
         xs: VARARG type=kotlin.IntArray varargElementType=kotlin.Int
           CONST Int type=kotlin.Int value=1
           CONST Int type=kotlin.Int value=2
           CONST Int type=kotlin.Int value=3
-      CALL 'CONSTRUCTOR visibility:public <> (xs:kotlin.Array<out kotlin.String>) returnType:<root>.A2 flags:[primary]' type=<root>.A2 origin=null
+      CALL 'public constructor <init> <> (vararg xs: kotlin.String) flags:[primary] declared in <root>.A2' type=<root>.A2 origin=null
         xs: VARARG type=kotlin.Array<out kotlin.String> varargElementType=kotlin.String
           CONST String type=kotlin.String value="a"
           CONST String type=kotlin.String value="b"
           CONST String type=kotlin.String value="c"
-      CALL 'CONSTRUCTOR visibility:public <> (xs:kotlin.Array<out <root>.A1>) returnType:<root>.AA flags:[primary]' type=<root>.AA origin=null
+      CALL 'public constructor <init> <> (vararg xs: <root>.A1) flags:[primary] declared in <root>.AA' type=<root>.AA origin=null
         xs: VARARG type=kotlin.Array<out <root>.A1> varargElementType=<root>.A1
-          CALL 'CONSTRUCTOR visibility:public <> (xs:kotlin.IntArray) returnType:<root>.A1 flags:[primary]' type=<root>.A1 origin=null
+          CALL 'public constructor <init> <> (vararg xs: kotlin.Int) flags:[primary] declared in <root>.A1' type=<root>.A1 origin=null
             xs: VARARG type=kotlin.IntArray varargElementType=kotlin.Int
               CONST Int type=kotlin.Int value=4
-          CALL 'CONSTRUCTOR visibility:public <> (xs:kotlin.IntArray) returnType:<root>.A1 flags:[primary]' type=<root>.A1 origin=null
+          CALL 'public constructor <init> <> (vararg xs: kotlin.Int) flags:[primary] declared in <root>.A1' type=<root>.A1 origin=null
             xs: VARARG type=kotlin.IntArray varargElementType=kotlin.Int
               CONST Int type=kotlin.Int value=5
-          CALL 'CONSTRUCTOR visibility:public <> (xs:kotlin.IntArray) returnType:<root>.A1 flags:[primary]' type=<root>.A1 origin=null
+          CALL 'public constructor <init> <> (vararg xs: kotlin.Int) flags:[primary] declared in <root>.A1' type=<root>.A1 origin=null
             xs: VARARG type=kotlin.IntArray varargElementType=kotlin.Int
               CONST Int type=kotlin.Int value=6
-      CALL 'CONSTRUCTOR visibility:public <> (xs:kotlin.IntArray) returnType:<root>.A1 flags:[primary]' type=<root>.A1 origin=null
+      CALL 'public constructor <init> <> (vararg xs: kotlin.Int) flags:[primary] declared in <root>.A1' type=<root>.A1 origin=null
         xs: VARARG type=kotlin.IntArray varargElementType=kotlin.Int
           CONST Int type=kotlin.Int value=1
           CONST Int type=kotlin.Int value=2
           CONST Int type=kotlin.Int value=3
-      CALL 'CONSTRUCTOR visibility:public <> (xs:kotlin.Array<out kotlin.String>) returnType:<root>.A2 flags:[primary]' type=<root>.A2 origin=null
+      CALL 'public constructor <init> <> (vararg xs: kotlin.String) flags:[primary] declared in <root>.A2' type=<root>.A2 origin=null
         xs: VARARG type=kotlin.Array<out kotlin.String> varargElementType=kotlin.String
           CONST String type=kotlin.String value="a"
           CONST String type=kotlin.String value="b"
           CONST String type=kotlin.String value="c"
-      CALL 'CONSTRUCTOR visibility:public <> (xs:kotlin.Array<out <root>.A1>) returnType:<root>.AA flags:[primary]' type=<root>.AA origin=null
+      CALL 'public constructor <init> <> (vararg xs: <root>.A1) flags:[primary] declared in <root>.AA' type=<root>.AA origin=null
         xs: VARARG type=kotlin.Array<out <root>.A1> varargElementType=<root>.A1
-          CALL 'CONSTRUCTOR visibility:public <> (xs:kotlin.IntArray) returnType:<root>.A1 flags:[primary]' type=<root>.A1 origin=null
+          CALL 'public constructor <init> <> (vararg xs: kotlin.Int) flags:[primary] declared in <root>.A1' type=<root>.A1 origin=null
             xs: VARARG type=kotlin.IntArray varargElementType=kotlin.Int
               CONST Int type=kotlin.Int value=4
-          CALL 'CONSTRUCTOR visibility:public <> (xs:kotlin.IntArray) returnType:<root>.A1 flags:[primary]' type=<root>.A1 origin=null
+          CALL 'public constructor <init> <> (vararg xs: kotlin.Int) flags:[primary] declared in <root>.A1' type=<root>.A1 origin=null
             xs: VARARG type=kotlin.IntArray varargElementType=kotlin.Int
               CONST Int type=kotlin.Int value=5
-          CALL 'CONSTRUCTOR visibility:public <> (xs:kotlin.IntArray) returnType:<root>.A1 flags:[primary]' type=<root>.A1 origin=null
+          CALL 'public constructor <init> <> (vararg xs: kotlin.Int) flags:[primary] declared in <root>.A1' type=<root>.A1 origin=null
             xs: VARARG type=kotlin.IntArray varargElementType=kotlin.Int
               CONST Int type=kotlin.Int value=6
     BLOCK_BODY
   FUN name:test2 visibility:public modality:FINAL <> () returnType:kotlin.Unit flags:[]
     annotations:
-      CALL 'CONSTRUCTOR visibility:public <> (xs:kotlin.IntArray) returnType:<root>.A1 flags:[primary]' type=<root>.A1 origin=null
+      CALL 'public constructor <init> <> (vararg xs: kotlin.Int) flags:[primary] declared in <root>.A1' type=<root>.A1 origin=null
         xs: VARARG type=kotlin.IntArray varargElementType=kotlin.Int
-      CALL 'CONSTRUCTOR visibility:public <> (xs:kotlin.Array<out kotlin.String>) returnType:<root>.A2 flags:[primary]' type=<root>.A2 origin=null
+      CALL 'public constructor <init> <> (vararg xs: kotlin.String) flags:[primary] declared in <root>.A2' type=<root>.A2 origin=null
         xs: VARARG type=kotlin.Array<out kotlin.String> varargElementType=kotlin.String
-      CALL 'CONSTRUCTOR visibility:public <> (xs:kotlin.Array<out <root>.A1>) returnType:<root>.AA flags:[primary]' type=<root>.AA origin=null
+      CALL 'public constructor <init> <> (vararg xs: <root>.A1) flags:[primary] declared in <root>.AA' type=<root>.AA origin=null
         xs: VARARG type=kotlin.Array<out <root>.A1> varargElementType=<root>.A1
-      CALL 'CONSTRUCTOR visibility:public <> (xs:kotlin.IntArray) returnType:<root>.A1 flags:[primary]' type=<root>.A1 origin=null
+      CALL 'public constructor <init> <> (vararg xs: kotlin.Int) flags:[primary] declared in <root>.A1' type=<root>.A1 origin=null
         xs: VARARG type=kotlin.IntArray varargElementType=kotlin.Int
-      CALL 'CONSTRUCTOR visibility:public <> (xs:kotlin.Array<out kotlin.String>) returnType:<root>.A2 flags:[primary]' type=<root>.A2 origin=null
+      CALL 'public constructor <init> <> (vararg xs: kotlin.String) flags:[primary] declared in <root>.A2' type=<root>.A2 origin=null
         xs: VARARG type=kotlin.Array<out kotlin.String> varargElementType=kotlin.String
-      CALL 'CONSTRUCTOR visibility:public <> (xs:kotlin.Array<out <root>.A1>) returnType:<root>.AA flags:[primary]' type=<root>.AA origin=null
+      CALL 'public constructor <init> <> (vararg xs: <root>.A1) flags:[primary] declared in <root>.AA' type=<root>.AA origin=null
         xs: VARARG type=kotlin.Array<out <root>.A1> varargElementType=<root>.A1
-      CALL 'CONSTRUCTOR visibility:public <> (xs:kotlin.IntArray) returnType:<root>.A1 flags:[primary]' type=<root>.A1 origin=null
+      CALL 'public constructor <init> <> (vararg xs: kotlin.Int) flags:[primary] declared in <root>.A1' type=<root>.A1 origin=null
         xs: VARARG type=kotlin.IntArray varargElementType=kotlin.Int
-      CALL 'CONSTRUCTOR visibility:public <> (xs:kotlin.Array<out kotlin.String>) returnType:<root>.A2 flags:[primary]' type=<root>.A2 origin=null
+      CALL 'public constructor <init> <> (vararg xs: kotlin.String) flags:[primary] declared in <root>.A2' type=<root>.A2 origin=null
         xs: VARARG type=kotlin.Array<out kotlin.String> varargElementType=kotlin.String
-      CALL 'CONSTRUCTOR visibility:public <> (xs:kotlin.Array<out <root>.A1>) returnType:<root>.AA flags:[primary]' type=<root>.AA origin=null
+      CALL 'public constructor <init> <> (vararg xs: <root>.A1) flags:[primary] declared in <root>.AA' type=<root>.AA origin=null
         xs: VARARG type=kotlin.Array<out <root>.A1> varargElementType=<root>.A1
     BLOCK_BODY

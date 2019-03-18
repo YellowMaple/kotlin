@@ -3,47 +3,47 @@ FILE fqName:<root> fileName:/floatingPointEquals.kt
     VALUE_PARAMETER name:x index:0 type:kotlin.Double flags:[]
     VALUE_PARAMETER name:y index:1 type:kotlin.Double flags:[]
     BLOCK_BODY
-      RETURN type=kotlin.Nothing from='FUN name:test1d visibility:public modality:FINAL <> (x:kotlin.Double, y:kotlin.Double) returnType:kotlin.Boolean flags:[]'
-        CALL 'FUN FAKE_OVERRIDE name:equals visibility:public modality:OPEN <> ($this:kotlin.Any, other:kotlin.Any?) returnType:kotlin.Boolean flags:[]' type=kotlin.Boolean origin=null
-          $this: GET_VAR 'VALUE_PARAMETER name:x index:0 type:kotlin.Double flags:[]' type=kotlin.Double origin=null
-          other: GET_VAR 'VALUE_PARAMETER name:y index:1 type:kotlin.Double flags:[]' type=kotlin.Double origin=null
+      RETURN type=kotlin.Nothing from='public final fun test1d <> (x: kotlin.Double, y: kotlin.Double): kotlin.Boolean flags:[] declared in <root>'
+        CALL 'public open fun equals <> (other: kotlin.Any?): kotlin.Boolean flags:[] declared in kotlin.Double' type=kotlin.Boolean origin=null
+          $this: GET_VAR 'x: kotlin.Double flags:[] declared in <root>.test1d' type=kotlin.Double origin=null
+          other: GET_VAR 'y: kotlin.Double flags:[] declared in <root>.test1d' type=kotlin.Double origin=null
   FUN name:test2d visibility:public modality:FINAL <> (x:kotlin.Double, y:kotlin.Double?) returnType:kotlin.Boolean flags:[]
     VALUE_PARAMETER name:x index:0 type:kotlin.Double flags:[]
     VALUE_PARAMETER name:y index:1 type:kotlin.Double? flags:[]
     BLOCK_BODY
-      RETURN type=kotlin.Nothing from='FUN name:test2d visibility:public modality:FINAL <> (x:kotlin.Double, y:kotlin.Double?) returnType:kotlin.Boolean flags:[]'
-        CALL 'FUN FAKE_OVERRIDE name:equals visibility:public modality:OPEN <> ($this:kotlin.Any, other:kotlin.Any?) returnType:kotlin.Boolean flags:[]' type=kotlin.Boolean origin=null
-          $this: GET_VAR 'VALUE_PARAMETER name:x index:0 type:kotlin.Double flags:[]' type=kotlin.Double origin=null
-          other: GET_VAR 'VALUE_PARAMETER name:y index:1 type:kotlin.Double? flags:[]' type=kotlin.Double? origin=null
+      RETURN type=kotlin.Nothing from='public final fun test2d <> (x: kotlin.Double, y: kotlin.Double?): kotlin.Boolean flags:[] declared in <root>'
+        CALL 'public open fun equals <> (other: kotlin.Any?): kotlin.Boolean flags:[] declared in kotlin.Double' type=kotlin.Boolean origin=null
+          $this: GET_VAR 'x: kotlin.Double flags:[] declared in <root>.test2d' type=kotlin.Double origin=null
+          other: GET_VAR 'y: kotlin.Double? flags:[] declared in <root>.test2d' type=kotlin.Double? origin=null
   FUN name:test3d visibility:public modality:FINAL <> (x:kotlin.Double, y:kotlin.Any) returnType:kotlin.Boolean flags:[]
     VALUE_PARAMETER name:x index:0 type:kotlin.Double flags:[]
     VALUE_PARAMETER name:y index:1 type:kotlin.Any flags:[]
     BLOCK_BODY
-      RETURN type=kotlin.Nothing from='FUN name:test3d visibility:public modality:FINAL <> (x:kotlin.Double, y:kotlin.Any) returnType:kotlin.Boolean flags:[]'
-        CALL 'FUN FAKE_OVERRIDE name:equals visibility:public modality:OPEN <> ($this:kotlin.Any, other:kotlin.Any?) returnType:kotlin.Boolean flags:[]' type=kotlin.Boolean origin=null
-          $this: GET_VAR 'VALUE_PARAMETER name:x index:0 type:kotlin.Double flags:[]' type=kotlin.Double origin=null
-          other: GET_VAR 'VALUE_PARAMETER name:y index:1 type:kotlin.Any flags:[]' type=kotlin.Any origin=null
+      RETURN type=kotlin.Nothing from='public final fun test3d <> (x: kotlin.Double, y: kotlin.Any): kotlin.Boolean flags:[] declared in <root>'
+        CALL 'public open fun equals <> (other: kotlin.Any?): kotlin.Boolean flags:[] declared in kotlin.Double' type=kotlin.Boolean origin=null
+          $this: GET_VAR 'x: kotlin.Double flags:[] declared in <root>.test3d' type=kotlin.Double origin=null
+          other: GET_VAR 'y: kotlin.Any flags:[] declared in <root>.test3d' type=kotlin.Any origin=null
   FUN name:test4d visibility:public modality:FINAL <> (x:kotlin.Double, y:kotlin.Number) returnType:kotlin.Boolean flags:[]
     VALUE_PARAMETER name:x index:0 type:kotlin.Double flags:[]
     VALUE_PARAMETER name:y index:1 type:kotlin.Number flags:[]
     BLOCK_BODY
-      RETURN type=kotlin.Nothing from='FUN name:test4d visibility:public modality:FINAL <> (x:kotlin.Double, y:kotlin.Number) returnType:kotlin.Boolean flags:[]'
-        CALL 'FUN FAKE_OVERRIDE name:equals visibility:public modality:OPEN <> ($this:kotlin.Any, other:kotlin.Any?) returnType:kotlin.Boolean flags:[]' type=kotlin.Boolean origin=null
-          $this: GET_VAR 'VALUE_PARAMETER name:x index:0 type:kotlin.Double flags:[]' type=kotlin.Double origin=null
-          other: GET_VAR 'VALUE_PARAMETER name:y index:1 type:kotlin.Number flags:[]' type=kotlin.Number origin=null
+      RETURN type=kotlin.Nothing from='public final fun test4d <> (x: kotlin.Double, y: kotlin.Number): kotlin.Boolean flags:[] declared in <root>'
+        CALL 'public open fun equals <> (other: kotlin.Any?): kotlin.Boolean flags:[] declared in kotlin.Double' type=kotlin.Boolean origin=null
+          $this: GET_VAR 'x: kotlin.Double flags:[] declared in <root>.test4d' type=kotlin.Double origin=null
+          other: GET_VAR 'y: kotlin.Number flags:[] declared in <root>.test4d' type=kotlin.Number origin=null
   FUN name:test5d visibility:public modality:FINAL <> (x:kotlin.Double, y:kotlin.Any) returnType:kotlin.Boolean flags:[]
     VALUE_PARAMETER name:x index:0 type:kotlin.Double flags:[]
     VALUE_PARAMETER name:y index:1 type:kotlin.Any flags:[]
     BLOCK_BODY
-      RETURN type=kotlin.Nothing from='FUN name:test5d visibility:public modality:FINAL <> (x:kotlin.Double, y:kotlin.Any) returnType:kotlin.Boolean flags:[]'
+      RETURN type=kotlin.Nothing from='public final fun test5d <> (x: kotlin.Double, y: kotlin.Any): kotlin.Boolean flags:[] declared in <root>'
         WHEN type=kotlin.Boolean origin=ANDAND
           BRANCH
             if: TYPE_OP type=kotlin.Boolean origin=INSTANCEOF typeOperand=kotlin.Double
               typeOperand: CLASS IR_EXTERNAL_DECLARATION_STUB CLASS name:Double modality:FINAL visibility:public flags:[] superTypes:[kotlin.Number; kotlin.Comparable<kotlin.Double>; java.io.Serializable]
-              GET_VAR 'VALUE_PARAMETER name:y index:1 type:kotlin.Any flags:[]' type=kotlin.Any origin=null
-            then: CALL 'FUN FAKE_OVERRIDE name:equals visibility:public modality:OPEN <> ($this:kotlin.Any, other:kotlin.Any?) returnType:kotlin.Boolean flags:[]' type=kotlin.Boolean origin=null
-              $this: GET_VAR 'VALUE_PARAMETER name:x index:0 type:kotlin.Double flags:[]' type=kotlin.Double origin=null
-              other: GET_VAR 'VALUE_PARAMETER name:y index:1 type:kotlin.Any flags:[]' type=kotlin.Any origin=null
+              GET_VAR 'y: kotlin.Any flags:[] declared in <root>.test5d' type=kotlin.Any origin=null
+            then: CALL 'public open fun equals <> (other: kotlin.Any?): kotlin.Boolean flags:[] declared in kotlin.Double' type=kotlin.Boolean origin=null
+              $this: GET_VAR 'x: kotlin.Double flags:[] declared in <root>.test5d' type=kotlin.Double origin=null
+              other: GET_VAR 'y: kotlin.Any flags:[] declared in <root>.test5d' type=kotlin.Any origin=null
           BRANCH
             if: CONST Boolean type=kotlin.Boolean value=true
             then: CONST Boolean type=kotlin.Boolean value=false
@@ -51,23 +51,23 @@ FILE fqName:<root> fileName:/floatingPointEquals.kt
     VALUE_PARAMETER name:x index:0 type:kotlin.Any flags:[]
     VALUE_PARAMETER name:y index:1 type:kotlin.Any flags:[]
     BLOCK_BODY
-      RETURN type=kotlin.Nothing from='FUN name:test6d visibility:public modality:FINAL <> (x:kotlin.Any, y:kotlin.Any) returnType:kotlin.Boolean flags:[]'
+      RETURN type=kotlin.Nothing from='public final fun test6d <> (x: kotlin.Any, y: kotlin.Any): kotlin.Boolean flags:[] declared in <root>'
         WHEN type=kotlin.Boolean origin=ANDAND
           BRANCH
             if: WHEN type=kotlin.Boolean origin=ANDAND
               BRANCH
                 if: TYPE_OP type=kotlin.Boolean origin=INSTANCEOF typeOperand=kotlin.Double
                   typeOperand: CLASS IR_EXTERNAL_DECLARATION_STUB CLASS name:Double modality:FINAL visibility:public flags:[] superTypes:[kotlin.Number; kotlin.Comparable<kotlin.Double>; java.io.Serializable]
-                  GET_VAR 'VALUE_PARAMETER name:x index:0 type:kotlin.Any flags:[]' type=kotlin.Any origin=null
+                  GET_VAR 'x: kotlin.Any flags:[] declared in <root>.test6d' type=kotlin.Any origin=null
                 then: TYPE_OP type=kotlin.Boolean origin=INSTANCEOF typeOperand=kotlin.Double
                   typeOperand: CLASS IR_EXTERNAL_DECLARATION_STUB CLASS name:Double modality:FINAL visibility:public flags:[] superTypes:[kotlin.Number; kotlin.Comparable<kotlin.Double>; java.io.Serializable]
-                  GET_VAR 'VALUE_PARAMETER name:y index:1 type:kotlin.Any flags:[]' type=kotlin.Any origin=null
+                  GET_VAR 'y: kotlin.Any flags:[] declared in <root>.test6d' type=kotlin.Any origin=null
               BRANCH
                 if: CONST Boolean type=kotlin.Boolean value=true
                 then: CONST Boolean type=kotlin.Boolean value=false
-            then: CALL 'FUN IR_EXTERNAL_DECLARATION_STUB name:equals visibility:public modality:OPEN <> ($this:kotlin.Any, other:kotlin.Any?) returnType:kotlin.Boolean flags:[]' type=kotlin.Boolean origin=null
-              $this: GET_VAR 'VALUE_PARAMETER name:x index:0 type:kotlin.Any flags:[]' type=kotlin.Any origin=null
-              other: GET_VAR 'VALUE_PARAMETER name:y index:1 type:kotlin.Any flags:[]' type=kotlin.Any origin=null
+            then: CALL 'public open fun equals <> (other: kotlin.Any?): kotlin.Boolean flags:[] declared in kotlin.Any' type=kotlin.Boolean origin=null
+              $this: GET_VAR 'x: kotlin.Any flags:[] declared in <root>.test6d' type=kotlin.Any origin=null
+              other: GET_VAR 'y: kotlin.Any flags:[] declared in <root>.test6d' type=kotlin.Any origin=null
           BRANCH
             if: CONST Boolean type=kotlin.Boolean value=true
             then: CONST Boolean type=kotlin.Boolean value=false
@@ -75,47 +75,47 @@ FILE fqName:<root> fileName:/floatingPointEquals.kt
     VALUE_PARAMETER name:x index:0 type:kotlin.Float flags:[]
     VALUE_PARAMETER name:y index:1 type:kotlin.Float flags:[]
     BLOCK_BODY
-      RETURN type=kotlin.Nothing from='FUN name:test1f visibility:public modality:FINAL <> (x:kotlin.Float, y:kotlin.Float) returnType:kotlin.Boolean flags:[]'
-        CALL 'FUN FAKE_OVERRIDE name:equals visibility:public modality:OPEN <> ($this:kotlin.Any, other:kotlin.Any?) returnType:kotlin.Boolean flags:[]' type=kotlin.Boolean origin=null
-          $this: GET_VAR 'VALUE_PARAMETER name:x index:0 type:kotlin.Float flags:[]' type=kotlin.Float origin=null
-          other: GET_VAR 'VALUE_PARAMETER name:y index:1 type:kotlin.Float flags:[]' type=kotlin.Float origin=null
+      RETURN type=kotlin.Nothing from='public final fun test1f <> (x: kotlin.Float, y: kotlin.Float): kotlin.Boolean flags:[] declared in <root>'
+        CALL 'public open fun equals <> (other: kotlin.Any?): kotlin.Boolean flags:[] declared in kotlin.Float' type=kotlin.Boolean origin=null
+          $this: GET_VAR 'x: kotlin.Float flags:[] declared in <root>.test1f' type=kotlin.Float origin=null
+          other: GET_VAR 'y: kotlin.Float flags:[] declared in <root>.test1f' type=kotlin.Float origin=null
   FUN name:test2f visibility:public modality:FINAL <> (x:kotlin.Float, y:kotlin.Float?) returnType:kotlin.Boolean flags:[]
     VALUE_PARAMETER name:x index:0 type:kotlin.Float flags:[]
     VALUE_PARAMETER name:y index:1 type:kotlin.Float? flags:[]
     BLOCK_BODY
-      RETURN type=kotlin.Nothing from='FUN name:test2f visibility:public modality:FINAL <> (x:kotlin.Float, y:kotlin.Float?) returnType:kotlin.Boolean flags:[]'
-        CALL 'FUN FAKE_OVERRIDE name:equals visibility:public modality:OPEN <> ($this:kotlin.Any, other:kotlin.Any?) returnType:kotlin.Boolean flags:[]' type=kotlin.Boolean origin=null
-          $this: GET_VAR 'VALUE_PARAMETER name:x index:0 type:kotlin.Float flags:[]' type=kotlin.Float origin=null
-          other: GET_VAR 'VALUE_PARAMETER name:y index:1 type:kotlin.Float? flags:[]' type=kotlin.Float? origin=null
+      RETURN type=kotlin.Nothing from='public final fun test2f <> (x: kotlin.Float, y: kotlin.Float?): kotlin.Boolean flags:[] declared in <root>'
+        CALL 'public open fun equals <> (other: kotlin.Any?): kotlin.Boolean flags:[] declared in kotlin.Float' type=kotlin.Boolean origin=null
+          $this: GET_VAR 'x: kotlin.Float flags:[] declared in <root>.test2f' type=kotlin.Float origin=null
+          other: GET_VAR 'y: kotlin.Float? flags:[] declared in <root>.test2f' type=kotlin.Float? origin=null
   FUN name:test3f visibility:public modality:FINAL <> (x:kotlin.Float, y:kotlin.Any) returnType:kotlin.Boolean flags:[]
     VALUE_PARAMETER name:x index:0 type:kotlin.Float flags:[]
     VALUE_PARAMETER name:y index:1 type:kotlin.Any flags:[]
     BLOCK_BODY
-      RETURN type=kotlin.Nothing from='FUN name:test3f visibility:public modality:FINAL <> (x:kotlin.Float, y:kotlin.Any) returnType:kotlin.Boolean flags:[]'
-        CALL 'FUN FAKE_OVERRIDE name:equals visibility:public modality:OPEN <> ($this:kotlin.Any, other:kotlin.Any?) returnType:kotlin.Boolean flags:[]' type=kotlin.Boolean origin=null
-          $this: GET_VAR 'VALUE_PARAMETER name:x index:0 type:kotlin.Float flags:[]' type=kotlin.Float origin=null
-          other: GET_VAR 'VALUE_PARAMETER name:y index:1 type:kotlin.Any flags:[]' type=kotlin.Any origin=null
+      RETURN type=kotlin.Nothing from='public final fun test3f <> (x: kotlin.Float, y: kotlin.Any): kotlin.Boolean flags:[] declared in <root>'
+        CALL 'public open fun equals <> (other: kotlin.Any?): kotlin.Boolean flags:[] declared in kotlin.Float' type=kotlin.Boolean origin=null
+          $this: GET_VAR 'x: kotlin.Float flags:[] declared in <root>.test3f' type=kotlin.Float origin=null
+          other: GET_VAR 'y: kotlin.Any flags:[] declared in <root>.test3f' type=kotlin.Any origin=null
   FUN name:test4f visibility:public modality:FINAL <> (x:kotlin.Float, y:kotlin.Number) returnType:kotlin.Boolean flags:[]
     VALUE_PARAMETER name:x index:0 type:kotlin.Float flags:[]
     VALUE_PARAMETER name:y index:1 type:kotlin.Number flags:[]
     BLOCK_BODY
-      RETURN type=kotlin.Nothing from='FUN name:test4f visibility:public modality:FINAL <> (x:kotlin.Float, y:kotlin.Number) returnType:kotlin.Boolean flags:[]'
-        CALL 'FUN FAKE_OVERRIDE name:equals visibility:public modality:OPEN <> ($this:kotlin.Any, other:kotlin.Any?) returnType:kotlin.Boolean flags:[]' type=kotlin.Boolean origin=null
-          $this: GET_VAR 'VALUE_PARAMETER name:x index:0 type:kotlin.Float flags:[]' type=kotlin.Float origin=null
-          other: GET_VAR 'VALUE_PARAMETER name:y index:1 type:kotlin.Number flags:[]' type=kotlin.Number origin=null
+      RETURN type=kotlin.Nothing from='public final fun test4f <> (x: kotlin.Float, y: kotlin.Number): kotlin.Boolean flags:[] declared in <root>'
+        CALL 'public open fun equals <> (other: kotlin.Any?): kotlin.Boolean flags:[] declared in kotlin.Float' type=kotlin.Boolean origin=null
+          $this: GET_VAR 'x: kotlin.Float flags:[] declared in <root>.test4f' type=kotlin.Float origin=null
+          other: GET_VAR 'y: kotlin.Number flags:[] declared in <root>.test4f' type=kotlin.Number origin=null
   FUN name:test5f visibility:public modality:FINAL <> (x:kotlin.Float, y:kotlin.Any) returnType:kotlin.Boolean flags:[]
     VALUE_PARAMETER name:x index:0 type:kotlin.Float flags:[]
     VALUE_PARAMETER name:y index:1 type:kotlin.Any flags:[]
     BLOCK_BODY
-      RETURN type=kotlin.Nothing from='FUN name:test5f visibility:public modality:FINAL <> (x:kotlin.Float, y:kotlin.Any) returnType:kotlin.Boolean flags:[]'
+      RETURN type=kotlin.Nothing from='public final fun test5f <> (x: kotlin.Float, y: kotlin.Any): kotlin.Boolean flags:[] declared in <root>'
         WHEN type=kotlin.Boolean origin=ANDAND
           BRANCH
             if: TYPE_OP type=kotlin.Boolean origin=INSTANCEOF typeOperand=kotlin.Float
               typeOperand: CLASS IR_EXTERNAL_DECLARATION_STUB CLASS name:Float modality:FINAL visibility:public flags:[] superTypes:[kotlin.Number; kotlin.Comparable<kotlin.Float>; java.io.Serializable]
-              GET_VAR 'VALUE_PARAMETER name:y index:1 type:kotlin.Any flags:[]' type=kotlin.Any origin=null
-            then: CALL 'FUN FAKE_OVERRIDE name:equals visibility:public modality:OPEN <> ($this:kotlin.Any, other:kotlin.Any?) returnType:kotlin.Boolean flags:[]' type=kotlin.Boolean origin=null
-              $this: GET_VAR 'VALUE_PARAMETER name:x index:0 type:kotlin.Float flags:[]' type=kotlin.Float origin=null
-              other: GET_VAR 'VALUE_PARAMETER name:y index:1 type:kotlin.Any flags:[]' type=kotlin.Any origin=null
+              GET_VAR 'y: kotlin.Any flags:[] declared in <root>.test5f' type=kotlin.Any origin=null
+            then: CALL 'public open fun equals <> (other: kotlin.Any?): kotlin.Boolean flags:[] declared in kotlin.Float' type=kotlin.Boolean origin=null
+              $this: GET_VAR 'x: kotlin.Float flags:[] declared in <root>.test5f' type=kotlin.Float origin=null
+              other: GET_VAR 'y: kotlin.Any flags:[] declared in <root>.test5f' type=kotlin.Any origin=null
           BRANCH
             if: CONST Boolean type=kotlin.Boolean value=true
             then: CONST Boolean type=kotlin.Boolean value=false
@@ -123,23 +123,23 @@ FILE fqName:<root> fileName:/floatingPointEquals.kt
     VALUE_PARAMETER name:x index:0 type:kotlin.Any flags:[]
     VALUE_PARAMETER name:y index:1 type:kotlin.Any flags:[]
     BLOCK_BODY
-      RETURN type=kotlin.Nothing from='FUN name:test6f visibility:public modality:FINAL <> (x:kotlin.Any, y:kotlin.Any) returnType:kotlin.Boolean flags:[]'
+      RETURN type=kotlin.Nothing from='public final fun test6f <> (x: kotlin.Any, y: kotlin.Any): kotlin.Boolean flags:[] declared in <root>'
         WHEN type=kotlin.Boolean origin=ANDAND
           BRANCH
             if: WHEN type=kotlin.Boolean origin=ANDAND
               BRANCH
                 if: TYPE_OP type=kotlin.Boolean origin=INSTANCEOF typeOperand=kotlin.Float
                   typeOperand: CLASS IR_EXTERNAL_DECLARATION_STUB CLASS name:Float modality:FINAL visibility:public flags:[] superTypes:[kotlin.Number; kotlin.Comparable<kotlin.Float>; java.io.Serializable]
-                  GET_VAR 'VALUE_PARAMETER name:x index:0 type:kotlin.Any flags:[]' type=kotlin.Any origin=null
+                  GET_VAR 'x: kotlin.Any flags:[] declared in <root>.test6f' type=kotlin.Any origin=null
                 then: TYPE_OP type=kotlin.Boolean origin=INSTANCEOF typeOperand=kotlin.Float
                   typeOperand: CLASS IR_EXTERNAL_DECLARATION_STUB CLASS name:Float modality:FINAL visibility:public flags:[] superTypes:[kotlin.Number; kotlin.Comparable<kotlin.Float>; java.io.Serializable]
-                  GET_VAR 'VALUE_PARAMETER name:y index:1 type:kotlin.Any flags:[]' type=kotlin.Any origin=null
+                  GET_VAR 'y: kotlin.Any flags:[] declared in <root>.test6f' type=kotlin.Any origin=null
               BRANCH
                 if: CONST Boolean type=kotlin.Boolean value=true
                 then: CONST Boolean type=kotlin.Boolean value=false
-            then: CALL 'FUN IR_EXTERNAL_DECLARATION_STUB name:equals visibility:public modality:OPEN <> ($this:kotlin.Any, other:kotlin.Any?) returnType:kotlin.Boolean flags:[]' type=kotlin.Boolean origin=null
-              $this: GET_VAR 'VALUE_PARAMETER name:x index:0 type:kotlin.Any flags:[]' type=kotlin.Any origin=null
-              other: GET_VAR 'VALUE_PARAMETER name:y index:1 type:kotlin.Any flags:[]' type=kotlin.Any origin=null
+            then: CALL 'public open fun equals <> (other: kotlin.Any?): kotlin.Boolean flags:[] declared in kotlin.Any' type=kotlin.Boolean origin=null
+              $this: GET_VAR 'x: kotlin.Any flags:[] declared in <root>.test6f' type=kotlin.Any origin=null
+              other: GET_VAR 'y: kotlin.Any flags:[] declared in <root>.test6f' type=kotlin.Any origin=null
           BRANCH
             if: CONST Boolean type=kotlin.Boolean value=true
             then: CONST Boolean type=kotlin.Boolean value=false
@@ -147,23 +147,23 @@ FILE fqName:<root> fileName:/floatingPointEquals.kt
     VALUE_PARAMETER name:x index:0 type:kotlin.Any flags:[]
     VALUE_PARAMETER name:y index:1 type:kotlin.Any flags:[]
     BLOCK_BODY
-      RETURN type=kotlin.Nothing from='FUN name:testFD visibility:public modality:FINAL <> (x:kotlin.Any, y:kotlin.Any) returnType:kotlin.Boolean flags:[]'
+      RETURN type=kotlin.Nothing from='public final fun testFD <> (x: kotlin.Any, y: kotlin.Any): kotlin.Boolean flags:[] declared in <root>'
         WHEN type=kotlin.Boolean origin=ANDAND
           BRANCH
             if: WHEN type=kotlin.Boolean origin=ANDAND
               BRANCH
                 if: TYPE_OP type=kotlin.Boolean origin=INSTANCEOF typeOperand=kotlin.Float
                   typeOperand: CLASS IR_EXTERNAL_DECLARATION_STUB CLASS name:Float modality:FINAL visibility:public flags:[] superTypes:[kotlin.Number; kotlin.Comparable<kotlin.Float>; java.io.Serializable]
-                  GET_VAR 'VALUE_PARAMETER name:x index:0 type:kotlin.Any flags:[]' type=kotlin.Any origin=null
+                  GET_VAR 'x: kotlin.Any flags:[] declared in <root>.testFD' type=kotlin.Any origin=null
                 then: TYPE_OP type=kotlin.Boolean origin=INSTANCEOF typeOperand=kotlin.Double
                   typeOperand: CLASS IR_EXTERNAL_DECLARATION_STUB CLASS name:Double modality:FINAL visibility:public flags:[] superTypes:[kotlin.Number; kotlin.Comparable<kotlin.Double>; java.io.Serializable]
-                  GET_VAR 'VALUE_PARAMETER name:y index:1 type:kotlin.Any flags:[]' type=kotlin.Any origin=null
+                  GET_VAR 'y: kotlin.Any flags:[] declared in <root>.testFD' type=kotlin.Any origin=null
               BRANCH
                 if: CONST Boolean type=kotlin.Boolean value=true
                 then: CONST Boolean type=kotlin.Boolean value=false
-            then: CALL 'FUN IR_EXTERNAL_DECLARATION_STUB name:equals visibility:public modality:OPEN <> ($this:kotlin.Any, other:kotlin.Any?) returnType:kotlin.Boolean flags:[]' type=kotlin.Boolean origin=null
-              $this: GET_VAR 'VALUE_PARAMETER name:x index:0 type:kotlin.Any flags:[]' type=kotlin.Any origin=null
-              other: GET_VAR 'VALUE_PARAMETER name:y index:1 type:kotlin.Any flags:[]' type=kotlin.Any origin=null
+            then: CALL 'public open fun equals <> (other: kotlin.Any?): kotlin.Boolean flags:[] declared in kotlin.Any' type=kotlin.Boolean origin=null
+              $this: GET_VAR 'x: kotlin.Any flags:[] declared in <root>.testFD' type=kotlin.Any origin=null
+              other: GET_VAR 'y: kotlin.Any flags:[] declared in <root>.testFD' type=kotlin.Any origin=null
           BRANCH
             if: CONST Boolean type=kotlin.Boolean value=true
             then: CONST Boolean type=kotlin.Boolean value=false
@@ -171,23 +171,23 @@ FILE fqName:<root> fileName:/floatingPointEquals.kt
     VALUE_PARAMETER name:x index:0 type:kotlin.Any flags:[]
     VALUE_PARAMETER name:y index:1 type:kotlin.Any flags:[]
     BLOCK_BODY
-      RETURN type=kotlin.Nothing from='FUN name:testDF visibility:public modality:FINAL <> (x:kotlin.Any, y:kotlin.Any) returnType:kotlin.Boolean flags:[]'
+      RETURN type=kotlin.Nothing from='public final fun testDF <> (x: kotlin.Any, y: kotlin.Any): kotlin.Boolean flags:[] declared in <root>'
         WHEN type=kotlin.Boolean origin=ANDAND
           BRANCH
             if: WHEN type=kotlin.Boolean origin=ANDAND
               BRANCH
                 if: TYPE_OP type=kotlin.Boolean origin=INSTANCEOF typeOperand=kotlin.Double
                   typeOperand: CLASS IR_EXTERNAL_DECLARATION_STUB CLASS name:Double modality:FINAL visibility:public flags:[] superTypes:[kotlin.Number; kotlin.Comparable<kotlin.Double>; java.io.Serializable]
-                  GET_VAR 'VALUE_PARAMETER name:x index:0 type:kotlin.Any flags:[]' type=kotlin.Any origin=null
+                  GET_VAR 'x: kotlin.Any flags:[] declared in <root>.testDF' type=kotlin.Any origin=null
                 then: TYPE_OP type=kotlin.Boolean origin=INSTANCEOF typeOperand=kotlin.Float
                   typeOperand: CLASS IR_EXTERNAL_DECLARATION_STUB CLASS name:Float modality:FINAL visibility:public flags:[] superTypes:[kotlin.Number; kotlin.Comparable<kotlin.Float>; java.io.Serializable]
-                  GET_VAR 'VALUE_PARAMETER name:y index:1 type:kotlin.Any flags:[]' type=kotlin.Any origin=null
+                  GET_VAR 'y: kotlin.Any flags:[] declared in <root>.testDF' type=kotlin.Any origin=null
               BRANCH
                 if: CONST Boolean type=kotlin.Boolean value=true
                 then: CONST Boolean type=kotlin.Boolean value=false
-            then: CALL 'FUN IR_EXTERNAL_DECLARATION_STUB name:equals visibility:public modality:OPEN <> ($this:kotlin.Any, other:kotlin.Any?) returnType:kotlin.Boolean flags:[]' type=kotlin.Boolean origin=null
-              $this: GET_VAR 'VALUE_PARAMETER name:x index:0 type:kotlin.Any flags:[]' type=kotlin.Any origin=null
-              other: GET_VAR 'VALUE_PARAMETER name:y index:1 type:kotlin.Any flags:[]' type=kotlin.Any origin=null
+            then: CALL 'public open fun equals <> (other: kotlin.Any?): kotlin.Boolean flags:[] declared in kotlin.Any' type=kotlin.Boolean origin=null
+              $this: GET_VAR 'x: kotlin.Any flags:[] declared in <root>.testDF' type=kotlin.Any origin=null
+              other: GET_VAR 'y: kotlin.Any flags:[] declared in <root>.testDF' type=kotlin.Any origin=null
           BRANCH
             if: CONST Boolean type=kotlin.Boolean value=true
             then: CONST Boolean type=kotlin.Boolean value=false
@@ -195,47 +195,47 @@ FILE fqName:<root> fileName:/floatingPointEquals.kt
     $receiver: VALUE_PARAMETER name:<this> type:kotlin.Float flags:[]
     VALUE_PARAMETER name:x index:0 type:kotlin.Float flags:[]
     BLOCK_BODY
-      RETURN type=kotlin.Nothing from='FUN name:test1fr visibility:public modality:FINAL <> ($receiver:kotlin.Float, x:kotlin.Float) returnType:kotlin.Boolean flags:[]'
-        CALL 'FUN FAKE_OVERRIDE name:equals visibility:public modality:OPEN <> ($this:kotlin.Any, other:kotlin.Any?) returnType:kotlin.Boolean flags:[]' type=kotlin.Boolean origin=null
-          $this: GET_VAR 'VALUE_PARAMETER name:<this> type:kotlin.Float flags:[]' type=kotlin.Float origin=null
-          other: GET_VAR 'VALUE_PARAMETER name:x index:0 type:kotlin.Float flags:[]' type=kotlin.Float origin=null
+      RETURN type=kotlin.Nothing from='public final fun test1fr <> (x: kotlin.Float): kotlin.Boolean flags:[] declared in <root>'
+        CALL 'public open fun equals <> (other: kotlin.Any?): kotlin.Boolean flags:[] declared in kotlin.Float' type=kotlin.Boolean origin=null
+          $this: GET_VAR '<this>: kotlin.Float flags:[] declared in <root>.test1fr' type=kotlin.Float origin=null
+          other: GET_VAR 'x: kotlin.Float flags:[] declared in <root>.test1fr' type=kotlin.Float origin=null
   FUN name:test2fr visibility:public modality:FINAL <> ($receiver:kotlin.Float, x:kotlin.Float?) returnType:kotlin.Boolean flags:[]
     $receiver: VALUE_PARAMETER name:<this> type:kotlin.Float flags:[]
     VALUE_PARAMETER name:x index:0 type:kotlin.Float? flags:[]
     BLOCK_BODY
-      RETURN type=kotlin.Nothing from='FUN name:test2fr visibility:public modality:FINAL <> ($receiver:kotlin.Float, x:kotlin.Float?) returnType:kotlin.Boolean flags:[]'
-        CALL 'FUN FAKE_OVERRIDE name:equals visibility:public modality:OPEN <> ($this:kotlin.Any, other:kotlin.Any?) returnType:kotlin.Boolean flags:[]' type=kotlin.Boolean origin=null
-          $this: GET_VAR 'VALUE_PARAMETER name:<this> type:kotlin.Float flags:[]' type=kotlin.Float origin=null
-          other: GET_VAR 'VALUE_PARAMETER name:x index:0 type:kotlin.Float? flags:[]' type=kotlin.Float? origin=null
+      RETURN type=kotlin.Nothing from='public final fun test2fr <> (x: kotlin.Float?): kotlin.Boolean flags:[] declared in <root>'
+        CALL 'public open fun equals <> (other: kotlin.Any?): kotlin.Boolean flags:[] declared in kotlin.Float' type=kotlin.Boolean origin=null
+          $this: GET_VAR '<this>: kotlin.Float flags:[] declared in <root>.test2fr' type=kotlin.Float origin=null
+          other: GET_VAR 'x: kotlin.Float? flags:[] declared in <root>.test2fr' type=kotlin.Float? origin=null
   FUN name:test3fr visibility:public modality:FINAL <> ($receiver:kotlin.Float, x:kotlin.Any) returnType:kotlin.Boolean flags:[]
     $receiver: VALUE_PARAMETER name:<this> type:kotlin.Float flags:[]
     VALUE_PARAMETER name:x index:0 type:kotlin.Any flags:[]
     BLOCK_BODY
-      RETURN type=kotlin.Nothing from='FUN name:test3fr visibility:public modality:FINAL <> ($receiver:kotlin.Float, x:kotlin.Any) returnType:kotlin.Boolean flags:[]'
-        CALL 'FUN FAKE_OVERRIDE name:equals visibility:public modality:OPEN <> ($this:kotlin.Any, other:kotlin.Any?) returnType:kotlin.Boolean flags:[]' type=kotlin.Boolean origin=null
-          $this: GET_VAR 'VALUE_PARAMETER name:<this> type:kotlin.Float flags:[]' type=kotlin.Float origin=null
-          other: GET_VAR 'VALUE_PARAMETER name:x index:0 type:kotlin.Any flags:[]' type=kotlin.Any origin=null
+      RETURN type=kotlin.Nothing from='public final fun test3fr <> (x: kotlin.Any): kotlin.Boolean flags:[] declared in <root>'
+        CALL 'public open fun equals <> (other: kotlin.Any?): kotlin.Boolean flags:[] declared in kotlin.Float' type=kotlin.Boolean origin=null
+          $this: GET_VAR '<this>: kotlin.Float flags:[] declared in <root>.test3fr' type=kotlin.Float origin=null
+          other: GET_VAR 'x: kotlin.Any flags:[] declared in <root>.test3fr' type=kotlin.Any origin=null
   FUN name:test4fr visibility:public modality:FINAL <> ($receiver:kotlin.Float, x:kotlin.Number) returnType:kotlin.Boolean flags:[]
     $receiver: VALUE_PARAMETER name:<this> type:kotlin.Float flags:[]
     VALUE_PARAMETER name:x index:0 type:kotlin.Number flags:[]
     BLOCK_BODY
-      RETURN type=kotlin.Nothing from='FUN name:test4fr visibility:public modality:FINAL <> ($receiver:kotlin.Float, x:kotlin.Number) returnType:kotlin.Boolean flags:[]'
-        CALL 'FUN FAKE_OVERRIDE name:equals visibility:public modality:OPEN <> ($this:kotlin.Any, other:kotlin.Any?) returnType:kotlin.Boolean flags:[]' type=kotlin.Boolean origin=null
-          $this: GET_VAR 'VALUE_PARAMETER name:<this> type:kotlin.Float flags:[]' type=kotlin.Float origin=null
-          other: GET_VAR 'VALUE_PARAMETER name:x index:0 type:kotlin.Number flags:[]' type=kotlin.Number origin=null
+      RETURN type=kotlin.Nothing from='public final fun test4fr <> (x: kotlin.Number): kotlin.Boolean flags:[] declared in <root>'
+        CALL 'public open fun equals <> (other: kotlin.Any?): kotlin.Boolean flags:[] declared in kotlin.Float' type=kotlin.Boolean origin=null
+          $this: GET_VAR '<this>: kotlin.Float flags:[] declared in <root>.test4fr' type=kotlin.Float origin=null
+          other: GET_VAR 'x: kotlin.Number flags:[] declared in <root>.test4fr' type=kotlin.Number origin=null
   FUN name:test5fr visibility:public modality:FINAL <> ($receiver:kotlin.Float, x:kotlin.Any) returnType:kotlin.Boolean flags:[]
     $receiver: VALUE_PARAMETER name:<this> type:kotlin.Float flags:[]
     VALUE_PARAMETER name:x index:0 type:kotlin.Any flags:[]
     BLOCK_BODY
-      RETURN type=kotlin.Nothing from='FUN name:test5fr visibility:public modality:FINAL <> ($receiver:kotlin.Float, x:kotlin.Any) returnType:kotlin.Boolean flags:[]'
+      RETURN type=kotlin.Nothing from='public final fun test5fr <> (x: kotlin.Any): kotlin.Boolean flags:[] declared in <root>'
         WHEN type=kotlin.Boolean origin=ANDAND
           BRANCH
             if: TYPE_OP type=kotlin.Boolean origin=INSTANCEOF typeOperand=kotlin.Float
               typeOperand: CLASS IR_EXTERNAL_DECLARATION_STUB CLASS name:Float modality:FINAL visibility:public flags:[] superTypes:[kotlin.Number; kotlin.Comparable<kotlin.Float>; java.io.Serializable]
-              GET_VAR 'VALUE_PARAMETER name:x index:0 type:kotlin.Any flags:[]' type=kotlin.Any origin=null
-            then: CALL 'FUN FAKE_OVERRIDE name:equals visibility:public modality:OPEN <> ($this:kotlin.Any, other:kotlin.Any?) returnType:kotlin.Boolean flags:[]' type=kotlin.Boolean origin=null
-              $this: GET_VAR 'VALUE_PARAMETER name:<this> type:kotlin.Float flags:[]' type=kotlin.Float origin=null
-              other: GET_VAR 'VALUE_PARAMETER name:x index:0 type:kotlin.Any flags:[]' type=kotlin.Any origin=null
+              GET_VAR 'x: kotlin.Any flags:[] declared in <root>.test5fr' type=kotlin.Any origin=null
+            then: CALL 'public open fun equals <> (other: kotlin.Any?): kotlin.Boolean flags:[] declared in kotlin.Float' type=kotlin.Boolean origin=null
+              $this: GET_VAR '<this>: kotlin.Float flags:[] declared in <root>.test5fr' type=kotlin.Float origin=null
+              other: GET_VAR 'x: kotlin.Any flags:[] declared in <root>.test5fr' type=kotlin.Any origin=null
           BRANCH
             if: CONST Boolean type=kotlin.Boolean value=true
             then: CONST Boolean type=kotlin.Boolean value=false
@@ -243,15 +243,15 @@ FILE fqName:<root> fileName:/floatingPointEquals.kt
     $receiver: VALUE_PARAMETER name:<this> type:kotlin.Float flags:[]
     VALUE_PARAMETER name:x index:0 type:kotlin.Any flags:[]
     BLOCK_BODY
-      RETURN type=kotlin.Nothing from='FUN name:test6fr visibility:public modality:FINAL <> ($receiver:kotlin.Float, x:kotlin.Any) returnType:kotlin.Boolean flags:[]'
+      RETURN type=kotlin.Nothing from='public final fun test6fr <> (x: kotlin.Any): kotlin.Boolean flags:[] declared in <root>'
         WHEN type=kotlin.Boolean origin=ANDAND
           BRANCH
             if: TYPE_OP type=kotlin.Boolean origin=INSTANCEOF typeOperand=kotlin.Double
               typeOperand: CLASS IR_EXTERNAL_DECLARATION_STUB CLASS name:Double modality:FINAL visibility:public flags:[] superTypes:[kotlin.Number; kotlin.Comparable<kotlin.Double>; java.io.Serializable]
-              GET_VAR 'VALUE_PARAMETER name:x index:0 type:kotlin.Any flags:[]' type=kotlin.Any origin=null
-            then: CALL 'FUN FAKE_OVERRIDE name:equals visibility:public modality:OPEN <> ($this:kotlin.Any, other:kotlin.Any?) returnType:kotlin.Boolean flags:[]' type=kotlin.Boolean origin=null
-              $this: GET_VAR 'VALUE_PARAMETER name:<this> type:kotlin.Float flags:[]' type=kotlin.Float origin=null
-              other: GET_VAR 'VALUE_PARAMETER name:x index:0 type:kotlin.Any flags:[]' type=kotlin.Any origin=null
+              GET_VAR 'x: kotlin.Any flags:[] declared in <root>.test6fr' type=kotlin.Any origin=null
+            then: CALL 'public open fun equals <> (other: kotlin.Any?): kotlin.Boolean flags:[] declared in kotlin.Float' type=kotlin.Boolean origin=null
+              $this: GET_VAR '<this>: kotlin.Float flags:[] declared in <root>.test6fr' type=kotlin.Float origin=null
+              other: GET_VAR 'x: kotlin.Any flags:[] declared in <root>.test6fr' type=kotlin.Any origin=null
           BRANCH
             if: CONST Boolean type=kotlin.Boolean value=true
             then: CONST Boolean type=kotlin.Boolean value=false

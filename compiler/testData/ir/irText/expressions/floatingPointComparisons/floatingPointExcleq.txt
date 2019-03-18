@@ -3,54 +3,54 @@ FILE fqName:<root> fileName:/floatingPointExcleq.kt
     VALUE_PARAMETER name:x index:0 type:kotlin.Double flags:[]
     VALUE_PARAMETER name:y index:1 type:kotlin.Double flags:[]
     BLOCK_BODY
-      RETURN type=kotlin.Nothing from='FUN name:test1d visibility:public modality:FINAL <> (x:kotlin.Double, y:kotlin.Double) returnType:kotlin.Boolean flags:[]'
-        CALL 'FUN IR_BUILTINS_STUB name:NOT visibility:public modality:FINAL <> (arg0:kotlin.Boolean) returnType:kotlin.Boolean flags:[]' type=kotlin.Boolean origin=EXCLEQ
-          arg0: CALL 'FUN IR_BUILTINS_STUB name:ieee754equals visibility:public modality:FINAL <> (arg0:kotlin.Double?, arg1:kotlin.Double?) returnType:kotlin.Boolean flags:[]' type=kotlin.Boolean origin=EXCLEQ
-            arg0: GET_VAR 'VALUE_PARAMETER name:x index:0 type:kotlin.Double flags:[]' type=kotlin.Double origin=null
-            arg1: GET_VAR 'VALUE_PARAMETER name:y index:1 type:kotlin.Double flags:[]' type=kotlin.Double origin=null
+      RETURN type=kotlin.Nothing from='public final fun test1d <> (x: kotlin.Double, y: kotlin.Double): kotlin.Boolean flags:[] declared in <root>'
+        CALL 'public final fun NOT <> (arg0: kotlin.Boolean): kotlin.Boolean flags:[] declared in kotlin.internal.ir' type=kotlin.Boolean origin=EXCLEQ
+          arg0: CALL 'public final fun ieee754equals <> (arg0: kotlin.Double?, arg1: kotlin.Double?): kotlin.Boolean flags:[] declared in kotlin.internal.ir' type=kotlin.Boolean origin=EXCLEQ
+            arg0: GET_VAR 'x: kotlin.Double flags:[] declared in <root>.test1d' type=kotlin.Double origin=null
+            arg1: GET_VAR 'y: kotlin.Double flags:[] declared in <root>.test1d' type=kotlin.Double origin=null
   FUN name:test2d visibility:public modality:FINAL <> (x:kotlin.Double, y:kotlin.Double?) returnType:kotlin.Boolean flags:[]
     VALUE_PARAMETER name:x index:0 type:kotlin.Double flags:[]
     VALUE_PARAMETER name:y index:1 type:kotlin.Double? flags:[]
     BLOCK_BODY
-      RETURN type=kotlin.Nothing from='FUN name:test2d visibility:public modality:FINAL <> (x:kotlin.Double, y:kotlin.Double?) returnType:kotlin.Boolean flags:[]'
-        CALL 'FUN IR_BUILTINS_STUB name:NOT visibility:public modality:FINAL <> (arg0:kotlin.Boolean) returnType:kotlin.Boolean flags:[]' type=kotlin.Boolean origin=EXCLEQ
-          arg0: CALL 'FUN IR_BUILTINS_STUB name:ieee754equals visibility:public modality:FINAL <> (arg0:kotlin.Double?, arg1:kotlin.Double?) returnType:kotlin.Boolean flags:[]' type=kotlin.Boolean origin=EXCLEQ
-            arg0: GET_VAR 'VALUE_PARAMETER name:x index:0 type:kotlin.Double flags:[]' type=kotlin.Double origin=null
-            arg1: GET_VAR 'VALUE_PARAMETER name:y index:1 type:kotlin.Double? flags:[]' type=kotlin.Double? origin=null
+      RETURN type=kotlin.Nothing from='public final fun test2d <> (x: kotlin.Double, y: kotlin.Double?): kotlin.Boolean flags:[] declared in <root>'
+        CALL 'public final fun NOT <> (arg0: kotlin.Boolean): kotlin.Boolean flags:[] declared in kotlin.internal.ir' type=kotlin.Boolean origin=EXCLEQ
+          arg0: CALL 'public final fun ieee754equals <> (arg0: kotlin.Double?, arg1: kotlin.Double?): kotlin.Boolean flags:[] declared in kotlin.internal.ir' type=kotlin.Boolean origin=EXCLEQ
+            arg0: GET_VAR 'x: kotlin.Double flags:[] declared in <root>.test2d' type=kotlin.Double origin=null
+            arg1: GET_VAR 'y: kotlin.Double? flags:[] declared in <root>.test2d' type=kotlin.Double? origin=null
   FUN name:test3d visibility:public modality:FINAL <> (x:kotlin.Double, y:kotlin.Any) returnType:kotlin.Boolean flags:[]
     VALUE_PARAMETER name:x index:0 type:kotlin.Double flags:[]
     VALUE_PARAMETER name:y index:1 type:kotlin.Any flags:[]
     BLOCK_BODY
-      RETURN type=kotlin.Nothing from='FUN name:test3d visibility:public modality:FINAL <> (x:kotlin.Double, y:kotlin.Any) returnType:kotlin.Boolean flags:[]'
-        CALL 'FUN IR_BUILTINS_STUB name:NOT visibility:public modality:FINAL <> (arg0:kotlin.Boolean) returnType:kotlin.Boolean flags:[]' type=kotlin.Boolean origin=EXCLEQ
-          arg0: CALL 'FUN IR_BUILTINS_STUB name:EQEQ visibility:public modality:FINAL <> (arg0:kotlin.Any?, arg1:kotlin.Any?) returnType:kotlin.Boolean flags:[]' type=kotlin.Boolean origin=EXCLEQ
-            arg0: GET_VAR 'VALUE_PARAMETER name:x index:0 type:kotlin.Double flags:[]' type=kotlin.Double origin=null
-            arg1: GET_VAR 'VALUE_PARAMETER name:y index:1 type:kotlin.Any flags:[]' type=kotlin.Any origin=null
+      RETURN type=kotlin.Nothing from='public final fun test3d <> (x: kotlin.Double, y: kotlin.Any): kotlin.Boolean flags:[] declared in <root>'
+        CALL 'public final fun NOT <> (arg0: kotlin.Boolean): kotlin.Boolean flags:[] declared in kotlin.internal.ir' type=kotlin.Boolean origin=EXCLEQ
+          arg0: CALL 'public final fun EQEQ <> (arg0: kotlin.Any?, arg1: kotlin.Any?): kotlin.Boolean flags:[] declared in kotlin.internal.ir' type=kotlin.Boolean origin=EXCLEQ
+            arg0: GET_VAR 'x: kotlin.Double flags:[] declared in <root>.test3d' type=kotlin.Double origin=null
+            arg1: GET_VAR 'y: kotlin.Any flags:[] declared in <root>.test3d' type=kotlin.Any origin=null
   FUN name:test4d visibility:public modality:FINAL <> (x:kotlin.Double, y:kotlin.Number) returnType:kotlin.Boolean flags:[]
     VALUE_PARAMETER name:x index:0 type:kotlin.Double flags:[]
     VALUE_PARAMETER name:y index:1 type:kotlin.Number flags:[]
     BLOCK_BODY
-      RETURN type=kotlin.Nothing from='FUN name:test4d visibility:public modality:FINAL <> (x:kotlin.Double, y:kotlin.Number) returnType:kotlin.Boolean flags:[]'
-        CALL 'FUN IR_BUILTINS_STUB name:NOT visibility:public modality:FINAL <> (arg0:kotlin.Boolean) returnType:kotlin.Boolean flags:[]' type=kotlin.Boolean origin=EXCLEQ
-          arg0: CALL 'FUN IR_BUILTINS_STUB name:EQEQ visibility:public modality:FINAL <> (arg0:kotlin.Any?, arg1:kotlin.Any?) returnType:kotlin.Boolean flags:[]' type=kotlin.Boolean origin=EXCLEQ
-            arg0: GET_VAR 'VALUE_PARAMETER name:x index:0 type:kotlin.Double flags:[]' type=kotlin.Double origin=null
-            arg1: GET_VAR 'VALUE_PARAMETER name:y index:1 type:kotlin.Number flags:[]' type=kotlin.Number origin=null
+      RETURN type=kotlin.Nothing from='public final fun test4d <> (x: kotlin.Double, y: kotlin.Number): kotlin.Boolean flags:[] declared in <root>'
+        CALL 'public final fun NOT <> (arg0: kotlin.Boolean): kotlin.Boolean flags:[] declared in kotlin.internal.ir' type=kotlin.Boolean origin=EXCLEQ
+          arg0: CALL 'public final fun EQEQ <> (arg0: kotlin.Any?, arg1: kotlin.Any?): kotlin.Boolean flags:[] declared in kotlin.internal.ir' type=kotlin.Boolean origin=EXCLEQ
+            arg0: GET_VAR 'x: kotlin.Double flags:[] declared in <root>.test4d' type=kotlin.Double origin=null
+            arg1: GET_VAR 'y: kotlin.Number flags:[] declared in <root>.test4d' type=kotlin.Number origin=null
   FUN name:test5d visibility:public modality:FINAL <> (x:kotlin.Double, y:kotlin.Any) returnType:kotlin.Boolean flags:[]
     VALUE_PARAMETER name:x index:0 type:kotlin.Double flags:[]
     VALUE_PARAMETER name:y index:1 type:kotlin.Any flags:[]
     BLOCK_BODY
-      RETURN type=kotlin.Nothing from='FUN name:test5d visibility:public modality:FINAL <> (x:kotlin.Double, y:kotlin.Any) returnType:kotlin.Boolean flags:[]'
+      RETURN type=kotlin.Nothing from='public final fun test5d <> (x: kotlin.Double, y: kotlin.Any): kotlin.Boolean flags:[] declared in <root>'
         WHEN type=kotlin.Boolean origin=ANDAND
           BRANCH
             if: TYPE_OP type=kotlin.Boolean origin=INSTANCEOF typeOperand=kotlin.Double
               typeOperand: CLASS IR_EXTERNAL_DECLARATION_STUB CLASS name:Double modality:FINAL visibility:public flags:[] superTypes:[kotlin.Number; kotlin.Comparable<kotlin.Double>; java.io.Serializable]
-              GET_VAR 'VALUE_PARAMETER name:y index:1 type:kotlin.Any flags:[]' type=kotlin.Any origin=null
-            then: CALL 'FUN IR_BUILTINS_STUB name:NOT visibility:public modality:FINAL <> (arg0:kotlin.Boolean) returnType:kotlin.Boolean flags:[]' type=kotlin.Boolean origin=EXCLEQ
-              arg0: CALL 'FUN IR_BUILTINS_STUB name:ieee754equals visibility:public modality:FINAL <> (arg0:kotlin.Double?, arg1:kotlin.Double?) returnType:kotlin.Boolean flags:[]' type=kotlin.Boolean origin=EXCLEQ
-                arg0: GET_VAR 'VALUE_PARAMETER name:x index:0 type:kotlin.Double flags:[]' type=kotlin.Double origin=null
+              GET_VAR 'y: kotlin.Any flags:[] declared in <root>.test5d' type=kotlin.Any origin=null
+            then: CALL 'public final fun NOT <> (arg0: kotlin.Boolean): kotlin.Boolean flags:[] declared in kotlin.internal.ir' type=kotlin.Boolean origin=EXCLEQ
+              arg0: CALL 'public final fun ieee754equals <> (arg0: kotlin.Double?, arg1: kotlin.Double?): kotlin.Boolean flags:[] declared in kotlin.internal.ir' type=kotlin.Boolean origin=EXCLEQ
+                arg0: GET_VAR 'x: kotlin.Double flags:[] declared in <root>.test5d' type=kotlin.Double origin=null
                 arg1: TYPE_OP type=kotlin.Double origin=IMPLICIT_CAST typeOperand=kotlin.Double
                   typeOperand: CLASS IR_EXTERNAL_DECLARATION_STUB CLASS name:Double modality:FINAL visibility:public flags:[] superTypes:[kotlin.Number; kotlin.Comparable<kotlin.Double>; java.io.Serializable]
-                  GET_VAR 'VALUE_PARAMETER name:y index:1 type:kotlin.Any flags:[]' type=kotlin.Any origin=null
+                  GET_VAR 'y: kotlin.Any flags:[] declared in <root>.test5d' type=kotlin.Any origin=null
           BRANCH
             if: CONST Boolean type=kotlin.Boolean value=true
             then: CONST Boolean type=kotlin.Boolean value=false
@@ -58,28 +58,28 @@ FILE fqName:<root> fileName:/floatingPointExcleq.kt
     VALUE_PARAMETER name:x index:0 type:kotlin.Any flags:[]
     VALUE_PARAMETER name:y index:1 type:kotlin.Any flags:[]
     BLOCK_BODY
-      RETURN type=kotlin.Nothing from='FUN name:test6d visibility:public modality:FINAL <> (x:kotlin.Any, y:kotlin.Any) returnType:kotlin.Boolean flags:[]'
+      RETURN type=kotlin.Nothing from='public final fun test6d <> (x: kotlin.Any, y: kotlin.Any): kotlin.Boolean flags:[] declared in <root>'
         WHEN type=kotlin.Boolean origin=ANDAND
           BRANCH
             if: WHEN type=kotlin.Boolean origin=ANDAND
               BRANCH
                 if: TYPE_OP type=kotlin.Boolean origin=INSTANCEOF typeOperand=kotlin.Double
                   typeOperand: CLASS IR_EXTERNAL_DECLARATION_STUB CLASS name:Double modality:FINAL visibility:public flags:[] superTypes:[kotlin.Number; kotlin.Comparable<kotlin.Double>; java.io.Serializable]
-                  GET_VAR 'VALUE_PARAMETER name:x index:0 type:kotlin.Any flags:[]' type=kotlin.Any origin=null
+                  GET_VAR 'x: kotlin.Any flags:[] declared in <root>.test6d' type=kotlin.Any origin=null
                 then: TYPE_OP type=kotlin.Boolean origin=INSTANCEOF typeOperand=kotlin.Double
                   typeOperand: CLASS IR_EXTERNAL_DECLARATION_STUB CLASS name:Double modality:FINAL visibility:public flags:[] superTypes:[kotlin.Number; kotlin.Comparable<kotlin.Double>; java.io.Serializable]
-                  GET_VAR 'VALUE_PARAMETER name:y index:1 type:kotlin.Any flags:[]' type=kotlin.Any origin=null
+                  GET_VAR 'y: kotlin.Any flags:[] declared in <root>.test6d' type=kotlin.Any origin=null
               BRANCH
                 if: CONST Boolean type=kotlin.Boolean value=true
                 then: CONST Boolean type=kotlin.Boolean value=false
-            then: CALL 'FUN IR_BUILTINS_STUB name:NOT visibility:public modality:FINAL <> (arg0:kotlin.Boolean) returnType:kotlin.Boolean flags:[]' type=kotlin.Boolean origin=EXCLEQ
-              arg0: CALL 'FUN IR_BUILTINS_STUB name:ieee754equals visibility:public modality:FINAL <> (arg0:kotlin.Double?, arg1:kotlin.Double?) returnType:kotlin.Boolean flags:[]' type=kotlin.Boolean origin=EXCLEQ
+            then: CALL 'public final fun NOT <> (arg0: kotlin.Boolean): kotlin.Boolean flags:[] declared in kotlin.internal.ir' type=kotlin.Boolean origin=EXCLEQ
+              arg0: CALL 'public final fun ieee754equals <> (arg0: kotlin.Double?, arg1: kotlin.Double?): kotlin.Boolean flags:[] declared in kotlin.internal.ir' type=kotlin.Boolean origin=EXCLEQ
                 arg0: TYPE_OP type=kotlin.Double origin=IMPLICIT_CAST typeOperand=kotlin.Double
                   typeOperand: CLASS IR_EXTERNAL_DECLARATION_STUB CLASS name:Double modality:FINAL visibility:public flags:[] superTypes:[kotlin.Number; kotlin.Comparable<kotlin.Double>; java.io.Serializable]
-                  GET_VAR 'VALUE_PARAMETER name:x index:0 type:kotlin.Any flags:[]' type=kotlin.Any origin=null
+                  GET_VAR 'x: kotlin.Any flags:[] declared in <root>.test6d' type=kotlin.Any origin=null
                 arg1: TYPE_OP type=kotlin.Double origin=IMPLICIT_CAST typeOperand=kotlin.Double
                   typeOperand: CLASS IR_EXTERNAL_DECLARATION_STUB CLASS name:Double modality:FINAL visibility:public flags:[] superTypes:[kotlin.Number; kotlin.Comparable<kotlin.Double>; java.io.Serializable]
-                  GET_VAR 'VALUE_PARAMETER name:y index:1 type:kotlin.Any flags:[]' type=kotlin.Any origin=null
+                  GET_VAR 'y: kotlin.Any flags:[] declared in <root>.test6d' type=kotlin.Any origin=null
           BRANCH
             if: CONST Boolean type=kotlin.Boolean value=true
             then: CONST Boolean type=kotlin.Boolean value=false
@@ -87,54 +87,54 @@ FILE fqName:<root> fileName:/floatingPointExcleq.kt
     VALUE_PARAMETER name:x index:0 type:kotlin.Float flags:[]
     VALUE_PARAMETER name:y index:1 type:kotlin.Float flags:[]
     BLOCK_BODY
-      RETURN type=kotlin.Nothing from='FUN name:test1f visibility:public modality:FINAL <> (x:kotlin.Float, y:kotlin.Float) returnType:kotlin.Boolean flags:[]'
-        CALL 'FUN IR_BUILTINS_STUB name:NOT visibility:public modality:FINAL <> (arg0:kotlin.Boolean) returnType:kotlin.Boolean flags:[]' type=kotlin.Boolean origin=EXCLEQ
-          arg0: CALL 'FUN IR_BUILTINS_STUB name:ieee754equals visibility:public modality:FINAL <> (arg0:kotlin.Float?, arg1:kotlin.Float?) returnType:kotlin.Boolean flags:[]' type=kotlin.Boolean origin=EXCLEQ
-            arg0: GET_VAR 'VALUE_PARAMETER name:x index:0 type:kotlin.Float flags:[]' type=kotlin.Float origin=null
-            arg1: GET_VAR 'VALUE_PARAMETER name:y index:1 type:kotlin.Float flags:[]' type=kotlin.Float origin=null
+      RETURN type=kotlin.Nothing from='public final fun test1f <> (x: kotlin.Float, y: kotlin.Float): kotlin.Boolean flags:[] declared in <root>'
+        CALL 'public final fun NOT <> (arg0: kotlin.Boolean): kotlin.Boolean flags:[] declared in kotlin.internal.ir' type=kotlin.Boolean origin=EXCLEQ
+          arg0: CALL 'public final fun ieee754equals <> (arg0: kotlin.Float?, arg1: kotlin.Float?): kotlin.Boolean flags:[] declared in kotlin.internal.ir' type=kotlin.Boolean origin=EXCLEQ
+            arg0: GET_VAR 'x: kotlin.Float flags:[] declared in <root>.test1f' type=kotlin.Float origin=null
+            arg1: GET_VAR 'y: kotlin.Float flags:[] declared in <root>.test1f' type=kotlin.Float origin=null
   FUN name:test2f visibility:public modality:FINAL <> (x:kotlin.Float, y:kotlin.Float?) returnType:kotlin.Boolean flags:[]
     VALUE_PARAMETER name:x index:0 type:kotlin.Float flags:[]
     VALUE_PARAMETER name:y index:1 type:kotlin.Float? flags:[]
     BLOCK_BODY
-      RETURN type=kotlin.Nothing from='FUN name:test2f visibility:public modality:FINAL <> (x:kotlin.Float, y:kotlin.Float?) returnType:kotlin.Boolean flags:[]'
-        CALL 'FUN IR_BUILTINS_STUB name:NOT visibility:public modality:FINAL <> (arg0:kotlin.Boolean) returnType:kotlin.Boolean flags:[]' type=kotlin.Boolean origin=EXCLEQ
-          arg0: CALL 'FUN IR_BUILTINS_STUB name:ieee754equals visibility:public modality:FINAL <> (arg0:kotlin.Float?, arg1:kotlin.Float?) returnType:kotlin.Boolean flags:[]' type=kotlin.Boolean origin=EXCLEQ
-            arg0: GET_VAR 'VALUE_PARAMETER name:x index:0 type:kotlin.Float flags:[]' type=kotlin.Float origin=null
-            arg1: GET_VAR 'VALUE_PARAMETER name:y index:1 type:kotlin.Float? flags:[]' type=kotlin.Float? origin=null
+      RETURN type=kotlin.Nothing from='public final fun test2f <> (x: kotlin.Float, y: kotlin.Float?): kotlin.Boolean flags:[] declared in <root>'
+        CALL 'public final fun NOT <> (arg0: kotlin.Boolean): kotlin.Boolean flags:[] declared in kotlin.internal.ir' type=kotlin.Boolean origin=EXCLEQ
+          arg0: CALL 'public final fun ieee754equals <> (arg0: kotlin.Float?, arg1: kotlin.Float?): kotlin.Boolean flags:[] declared in kotlin.internal.ir' type=kotlin.Boolean origin=EXCLEQ
+            arg0: GET_VAR 'x: kotlin.Float flags:[] declared in <root>.test2f' type=kotlin.Float origin=null
+            arg1: GET_VAR 'y: kotlin.Float? flags:[] declared in <root>.test2f' type=kotlin.Float? origin=null
   FUN name:test3f visibility:public modality:FINAL <> (x:kotlin.Float, y:kotlin.Any) returnType:kotlin.Boolean flags:[]
     VALUE_PARAMETER name:x index:0 type:kotlin.Float flags:[]
     VALUE_PARAMETER name:y index:1 type:kotlin.Any flags:[]
     BLOCK_BODY
-      RETURN type=kotlin.Nothing from='FUN name:test3f visibility:public modality:FINAL <> (x:kotlin.Float, y:kotlin.Any) returnType:kotlin.Boolean flags:[]'
-        CALL 'FUN IR_BUILTINS_STUB name:NOT visibility:public modality:FINAL <> (arg0:kotlin.Boolean) returnType:kotlin.Boolean flags:[]' type=kotlin.Boolean origin=EXCLEQ
-          arg0: CALL 'FUN IR_BUILTINS_STUB name:EQEQ visibility:public modality:FINAL <> (arg0:kotlin.Any?, arg1:kotlin.Any?) returnType:kotlin.Boolean flags:[]' type=kotlin.Boolean origin=EXCLEQ
-            arg0: GET_VAR 'VALUE_PARAMETER name:x index:0 type:kotlin.Float flags:[]' type=kotlin.Float origin=null
-            arg1: GET_VAR 'VALUE_PARAMETER name:y index:1 type:kotlin.Any flags:[]' type=kotlin.Any origin=null
+      RETURN type=kotlin.Nothing from='public final fun test3f <> (x: kotlin.Float, y: kotlin.Any): kotlin.Boolean flags:[] declared in <root>'
+        CALL 'public final fun NOT <> (arg0: kotlin.Boolean): kotlin.Boolean flags:[] declared in kotlin.internal.ir' type=kotlin.Boolean origin=EXCLEQ
+          arg0: CALL 'public final fun EQEQ <> (arg0: kotlin.Any?, arg1: kotlin.Any?): kotlin.Boolean flags:[] declared in kotlin.internal.ir' type=kotlin.Boolean origin=EXCLEQ
+            arg0: GET_VAR 'x: kotlin.Float flags:[] declared in <root>.test3f' type=kotlin.Float origin=null
+            arg1: GET_VAR 'y: kotlin.Any flags:[] declared in <root>.test3f' type=kotlin.Any origin=null
   FUN name:test4f visibility:public modality:FINAL <> (x:kotlin.Float, y:kotlin.Number) returnType:kotlin.Boolean flags:[]
     VALUE_PARAMETER name:x index:0 type:kotlin.Float flags:[]
     VALUE_PARAMETER name:y index:1 type:kotlin.Number flags:[]
     BLOCK_BODY
-      RETURN type=kotlin.Nothing from='FUN name:test4f visibility:public modality:FINAL <> (x:kotlin.Float, y:kotlin.Number) returnType:kotlin.Boolean flags:[]'
-        CALL 'FUN IR_BUILTINS_STUB name:NOT visibility:public modality:FINAL <> (arg0:kotlin.Boolean) returnType:kotlin.Boolean flags:[]' type=kotlin.Boolean origin=EXCLEQ
-          arg0: CALL 'FUN IR_BUILTINS_STUB name:EQEQ visibility:public modality:FINAL <> (arg0:kotlin.Any?, arg1:kotlin.Any?) returnType:kotlin.Boolean flags:[]' type=kotlin.Boolean origin=EXCLEQ
-            arg0: GET_VAR 'VALUE_PARAMETER name:x index:0 type:kotlin.Float flags:[]' type=kotlin.Float origin=null
-            arg1: GET_VAR 'VALUE_PARAMETER name:y index:1 type:kotlin.Number flags:[]' type=kotlin.Number origin=null
+      RETURN type=kotlin.Nothing from='public final fun test4f <> (x: kotlin.Float, y: kotlin.Number): kotlin.Boolean flags:[] declared in <root>'
+        CALL 'public final fun NOT <> (arg0: kotlin.Boolean): kotlin.Boolean flags:[] declared in kotlin.internal.ir' type=kotlin.Boolean origin=EXCLEQ
+          arg0: CALL 'public final fun EQEQ <> (arg0: kotlin.Any?, arg1: kotlin.Any?): kotlin.Boolean flags:[] declared in kotlin.internal.ir' type=kotlin.Boolean origin=EXCLEQ
+            arg0: GET_VAR 'x: kotlin.Float flags:[] declared in <root>.test4f' type=kotlin.Float origin=null
+            arg1: GET_VAR 'y: kotlin.Number flags:[] declared in <root>.test4f' type=kotlin.Number origin=null
   FUN name:test5f visibility:public modality:FINAL <> (x:kotlin.Float, y:kotlin.Any) returnType:kotlin.Boolean flags:[]
     VALUE_PARAMETER name:x index:0 type:kotlin.Float flags:[]
     VALUE_PARAMETER name:y index:1 type:kotlin.Any flags:[]
     BLOCK_BODY
-      RETURN type=kotlin.Nothing from='FUN name:test5f visibility:public modality:FINAL <> (x:kotlin.Float, y:kotlin.Any) returnType:kotlin.Boolean flags:[]'
+      RETURN type=kotlin.Nothing from='public final fun test5f <> (x: kotlin.Float, y: kotlin.Any): kotlin.Boolean flags:[] declared in <root>'
         WHEN type=kotlin.Boolean origin=ANDAND
           BRANCH
             if: TYPE_OP type=kotlin.Boolean origin=INSTANCEOF typeOperand=kotlin.Float
               typeOperand: CLASS IR_EXTERNAL_DECLARATION_STUB CLASS name:Float modality:FINAL visibility:public flags:[] superTypes:[kotlin.Number; kotlin.Comparable<kotlin.Float>; java.io.Serializable]
-              GET_VAR 'VALUE_PARAMETER name:y index:1 type:kotlin.Any flags:[]' type=kotlin.Any origin=null
-            then: CALL 'FUN IR_BUILTINS_STUB name:NOT visibility:public modality:FINAL <> (arg0:kotlin.Boolean) returnType:kotlin.Boolean flags:[]' type=kotlin.Boolean origin=EXCLEQ
-              arg0: CALL 'FUN IR_BUILTINS_STUB name:ieee754equals visibility:public modality:FINAL <> (arg0:kotlin.Float?, arg1:kotlin.Float?) returnType:kotlin.Boolean flags:[]' type=kotlin.Boolean origin=EXCLEQ
-                arg0: GET_VAR 'VALUE_PARAMETER name:x index:0 type:kotlin.Float flags:[]' type=kotlin.Float origin=null
+              GET_VAR 'y: kotlin.Any flags:[] declared in <root>.test5f' type=kotlin.Any origin=null
+            then: CALL 'public final fun NOT <> (arg0: kotlin.Boolean): kotlin.Boolean flags:[] declared in kotlin.internal.ir' type=kotlin.Boolean origin=EXCLEQ
+              arg0: CALL 'public final fun ieee754equals <> (arg0: kotlin.Float?, arg1: kotlin.Float?): kotlin.Boolean flags:[] declared in kotlin.internal.ir' type=kotlin.Boolean origin=EXCLEQ
+                arg0: GET_VAR 'x: kotlin.Float flags:[] declared in <root>.test5f' type=kotlin.Float origin=null
                 arg1: TYPE_OP type=kotlin.Float origin=IMPLICIT_CAST typeOperand=kotlin.Float
                   typeOperand: CLASS IR_EXTERNAL_DECLARATION_STUB CLASS name:Float modality:FINAL visibility:public flags:[] superTypes:[kotlin.Number; kotlin.Comparable<kotlin.Float>; java.io.Serializable]
-                  GET_VAR 'VALUE_PARAMETER name:y index:1 type:kotlin.Any flags:[]' type=kotlin.Any origin=null
+                  GET_VAR 'y: kotlin.Any flags:[] declared in <root>.test5f' type=kotlin.Any origin=null
           BRANCH
             if: CONST Boolean type=kotlin.Boolean value=true
             then: CONST Boolean type=kotlin.Boolean value=false
@@ -142,28 +142,28 @@ FILE fqName:<root> fileName:/floatingPointExcleq.kt
     VALUE_PARAMETER name:x index:0 type:kotlin.Any flags:[]
     VALUE_PARAMETER name:y index:1 type:kotlin.Any flags:[]
     BLOCK_BODY
-      RETURN type=kotlin.Nothing from='FUN name:test6f visibility:public modality:FINAL <> (x:kotlin.Any, y:kotlin.Any) returnType:kotlin.Boolean flags:[]'
+      RETURN type=kotlin.Nothing from='public final fun test6f <> (x: kotlin.Any, y: kotlin.Any): kotlin.Boolean flags:[] declared in <root>'
         WHEN type=kotlin.Boolean origin=ANDAND
           BRANCH
             if: WHEN type=kotlin.Boolean origin=ANDAND
               BRANCH
                 if: TYPE_OP type=kotlin.Boolean origin=INSTANCEOF typeOperand=kotlin.Float
                   typeOperand: CLASS IR_EXTERNAL_DECLARATION_STUB CLASS name:Float modality:FINAL visibility:public flags:[] superTypes:[kotlin.Number; kotlin.Comparable<kotlin.Float>; java.io.Serializable]
-                  GET_VAR 'VALUE_PARAMETER name:x index:0 type:kotlin.Any flags:[]' type=kotlin.Any origin=null
+                  GET_VAR 'x: kotlin.Any flags:[] declared in <root>.test6f' type=kotlin.Any origin=null
                 then: TYPE_OP type=kotlin.Boolean origin=INSTANCEOF typeOperand=kotlin.Float
                   typeOperand: CLASS IR_EXTERNAL_DECLARATION_STUB CLASS name:Float modality:FINAL visibility:public flags:[] superTypes:[kotlin.Number; kotlin.Comparable<kotlin.Float>; java.io.Serializable]
-                  GET_VAR 'VALUE_PARAMETER name:y index:1 type:kotlin.Any flags:[]' type=kotlin.Any origin=null
+                  GET_VAR 'y: kotlin.Any flags:[] declared in <root>.test6f' type=kotlin.Any origin=null
               BRANCH
                 if: CONST Boolean type=kotlin.Boolean value=true
                 then: CONST Boolean type=kotlin.Boolean value=false
-            then: CALL 'FUN IR_BUILTINS_STUB name:NOT visibility:public modality:FINAL <> (arg0:kotlin.Boolean) returnType:kotlin.Boolean flags:[]' type=kotlin.Boolean origin=EXCLEQ
-              arg0: CALL 'FUN IR_BUILTINS_STUB name:ieee754equals visibility:public modality:FINAL <> (arg0:kotlin.Float?, arg1:kotlin.Float?) returnType:kotlin.Boolean flags:[]' type=kotlin.Boolean origin=EXCLEQ
+            then: CALL 'public final fun NOT <> (arg0: kotlin.Boolean): kotlin.Boolean flags:[] declared in kotlin.internal.ir' type=kotlin.Boolean origin=EXCLEQ
+              arg0: CALL 'public final fun ieee754equals <> (arg0: kotlin.Float?, arg1: kotlin.Float?): kotlin.Boolean flags:[] declared in kotlin.internal.ir' type=kotlin.Boolean origin=EXCLEQ
                 arg0: TYPE_OP type=kotlin.Float origin=IMPLICIT_CAST typeOperand=kotlin.Float
                   typeOperand: CLASS IR_EXTERNAL_DECLARATION_STUB CLASS name:Float modality:FINAL visibility:public flags:[] superTypes:[kotlin.Number; kotlin.Comparable<kotlin.Float>; java.io.Serializable]
-                  GET_VAR 'VALUE_PARAMETER name:x index:0 type:kotlin.Any flags:[]' type=kotlin.Any origin=null
+                  GET_VAR 'x: kotlin.Any flags:[] declared in <root>.test6f' type=kotlin.Any origin=null
                 arg1: TYPE_OP type=kotlin.Float origin=IMPLICIT_CAST typeOperand=kotlin.Float
                   typeOperand: CLASS IR_EXTERNAL_DECLARATION_STUB CLASS name:Float modality:FINAL visibility:public flags:[] superTypes:[kotlin.Number; kotlin.Comparable<kotlin.Float>; java.io.Serializable]
-                  GET_VAR 'VALUE_PARAMETER name:y index:1 type:kotlin.Any flags:[]' type=kotlin.Any origin=null
+                  GET_VAR 'y: kotlin.Any flags:[] declared in <root>.test6f' type=kotlin.Any origin=null
           BRANCH
             if: CONST Boolean type=kotlin.Boolean value=true
             then: CONST Boolean type=kotlin.Boolean value=false
@@ -171,29 +171,29 @@ FILE fqName:<root> fileName:/floatingPointExcleq.kt
     VALUE_PARAMETER name:x index:0 type:kotlin.Any flags:[]
     VALUE_PARAMETER name:y index:1 type:kotlin.Any flags:[]
     BLOCK_BODY
-      RETURN type=kotlin.Nothing from='FUN name:testFD visibility:public modality:FINAL <> (x:kotlin.Any, y:kotlin.Any) returnType:kotlin.Boolean flags:[]'
+      RETURN type=kotlin.Nothing from='public final fun testFD <> (x: kotlin.Any, y: kotlin.Any): kotlin.Boolean flags:[] declared in <root>'
         WHEN type=kotlin.Boolean origin=ANDAND
           BRANCH
             if: WHEN type=kotlin.Boolean origin=ANDAND
               BRANCH
                 if: TYPE_OP type=kotlin.Boolean origin=INSTANCEOF typeOperand=kotlin.Float
                   typeOperand: CLASS IR_EXTERNAL_DECLARATION_STUB CLASS name:Float modality:FINAL visibility:public flags:[] superTypes:[kotlin.Number; kotlin.Comparable<kotlin.Float>; java.io.Serializable]
-                  GET_VAR 'VALUE_PARAMETER name:x index:0 type:kotlin.Any flags:[]' type=kotlin.Any origin=null
+                  GET_VAR 'x: kotlin.Any flags:[] declared in <root>.testFD' type=kotlin.Any origin=null
                 then: TYPE_OP type=kotlin.Boolean origin=INSTANCEOF typeOperand=kotlin.Double
                   typeOperand: CLASS IR_EXTERNAL_DECLARATION_STUB CLASS name:Double modality:FINAL visibility:public flags:[] superTypes:[kotlin.Number; kotlin.Comparable<kotlin.Double>; java.io.Serializable]
-                  GET_VAR 'VALUE_PARAMETER name:y index:1 type:kotlin.Any flags:[]' type=kotlin.Any origin=null
+                  GET_VAR 'y: kotlin.Any flags:[] declared in <root>.testFD' type=kotlin.Any origin=null
               BRANCH
                 if: CONST Boolean type=kotlin.Boolean value=true
                 then: CONST Boolean type=kotlin.Boolean value=false
-            then: CALL 'FUN IR_BUILTINS_STUB name:NOT visibility:public modality:FINAL <> (arg0:kotlin.Boolean) returnType:kotlin.Boolean flags:[]' type=kotlin.Boolean origin=EXCLEQ
-              arg0: CALL 'FUN IR_BUILTINS_STUB name:ieee754equals visibility:public modality:FINAL <> (arg0:kotlin.Double?, arg1:kotlin.Double?) returnType:kotlin.Boolean flags:[]' type=kotlin.Boolean origin=EXCLEQ
-                arg0: CALL 'FUN IR_EXTERNAL_DECLARATION_STUB name:toDouble visibility:public modality:OPEN <> ($this:kotlin.Float) returnType:kotlin.Double flags:[]' type=kotlin.Double origin=null
+            then: CALL 'public final fun NOT <> (arg0: kotlin.Boolean): kotlin.Boolean flags:[] declared in kotlin.internal.ir' type=kotlin.Boolean origin=EXCLEQ
+              arg0: CALL 'public final fun ieee754equals <> (arg0: kotlin.Double?, arg1: kotlin.Double?): kotlin.Boolean flags:[] declared in kotlin.internal.ir' type=kotlin.Boolean origin=EXCLEQ
+                arg0: CALL 'public open fun toDouble <> (): kotlin.Double flags:[] declared in kotlin.Float' type=kotlin.Double origin=null
                   $this: TYPE_OP type=kotlin.Float origin=IMPLICIT_CAST typeOperand=kotlin.Float
                     typeOperand: CLASS IR_EXTERNAL_DECLARATION_STUB CLASS name:Float modality:FINAL visibility:public flags:[] superTypes:[kotlin.Number; kotlin.Comparable<kotlin.Float>; java.io.Serializable]
-                    GET_VAR 'VALUE_PARAMETER name:x index:0 type:kotlin.Any flags:[]' type=kotlin.Any origin=null
+                    GET_VAR 'x: kotlin.Any flags:[] declared in <root>.testFD' type=kotlin.Any origin=null
                 arg1: TYPE_OP type=kotlin.Double origin=IMPLICIT_CAST typeOperand=kotlin.Double
                   typeOperand: CLASS IR_EXTERNAL_DECLARATION_STUB CLASS name:Double modality:FINAL visibility:public flags:[] superTypes:[kotlin.Number; kotlin.Comparable<kotlin.Double>; java.io.Serializable]
-                  GET_VAR 'VALUE_PARAMETER name:y index:1 type:kotlin.Any flags:[]' type=kotlin.Any origin=null
+                  GET_VAR 'y: kotlin.Any flags:[] declared in <root>.testFD' type=kotlin.Any origin=null
           BRANCH
             if: CONST Boolean type=kotlin.Boolean value=true
             then: CONST Boolean type=kotlin.Boolean value=false
@@ -201,29 +201,29 @@ FILE fqName:<root> fileName:/floatingPointExcleq.kt
     VALUE_PARAMETER name:x index:0 type:kotlin.Any flags:[]
     VALUE_PARAMETER name:y index:1 type:kotlin.Any flags:[]
     BLOCK_BODY
-      RETURN type=kotlin.Nothing from='FUN name:testDF visibility:public modality:FINAL <> (x:kotlin.Any, y:kotlin.Any) returnType:kotlin.Boolean flags:[]'
+      RETURN type=kotlin.Nothing from='public final fun testDF <> (x: kotlin.Any, y: kotlin.Any): kotlin.Boolean flags:[] declared in <root>'
         WHEN type=kotlin.Boolean origin=ANDAND
           BRANCH
             if: WHEN type=kotlin.Boolean origin=ANDAND
               BRANCH
                 if: TYPE_OP type=kotlin.Boolean origin=INSTANCEOF typeOperand=kotlin.Double
                   typeOperand: CLASS IR_EXTERNAL_DECLARATION_STUB CLASS name:Double modality:FINAL visibility:public flags:[] superTypes:[kotlin.Number; kotlin.Comparable<kotlin.Double>; java.io.Serializable]
-                  GET_VAR 'VALUE_PARAMETER name:x index:0 type:kotlin.Any flags:[]' type=kotlin.Any origin=null
+                  GET_VAR 'x: kotlin.Any flags:[] declared in <root>.testDF' type=kotlin.Any origin=null
                 then: TYPE_OP type=kotlin.Boolean origin=INSTANCEOF typeOperand=kotlin.Float
                   typeOperand: CLASS IR_EXTERNAL_DECLARATION_STUB CLASS name:Float modality:FINAL visibility:public flags:[] superTypes:[kotlin.Number; kotlin.Comparable<kotlin.Float>; java.io.Serializable]
-                  GET_VAR 'VALUE_PARAMETER name:y index:1 type:kotlin.Any flags:[]' type=kotlin.Any origin=null
+                  GET_VAR 'y: kotlin.Any flags:[] declared in <root>.testDF' type=kotlin.Any origin=null
               BRANCH
                 if: CONST Boolean type=kotlin.Boolean value=true
                 then: CONST Boolean type=kotlin.Boolean value=false
-            then: CALL 'FUN IR_BUILTINS_STUB name:NOT visibility:public modality:FINAL <> (arg0:kotlin.Boolean) returnType:kotlin.Boolean flags:[]' type=kotlin.Boolean origin=EXCLEQ
-              arg0: CALL 'FUN IR_BUILTINS_STUB name:ieee754equals visibility:public modality:FINAL <> (arg0:kotlin.Double?, arg1:kotlin.Double?) returnType:kotlin.Boolean flags:[]' type=kotlin.Boolean origin=EXCLEQ
+            then: CALL 'public final fun NOT <> (arg0: kotlin.Boolean): kotlin.Boolean flags:[] declared in kotlin.internal.ir' type=kotlin.Boolean origin=EXCLEQ
+              arg0: CALL 'public final fun ieee754equals <> (arg0: kotlin.Double?, arg1: kotlin.Double?): kotlin.Boolean flags:[] declared in kotlin.internal.ir' type=kotlin.Boolean origin=EXCLEQ
                 arg0: TYPE_OP type=kotlin.Double origin=IMPLICIT_CAST typeOperand=kotlin.Double
                   typeOperand: CLASS IR_EXTERNAL_DECLARATION_STUB CLASS name:Double modality:FINAL visibility:public flags:[] superTypes:[kotlin.Number; kotlin.Comparable<kotlin.Double>; java.io.Serializable]
-                  GET_VAR 'VALUE_PARAMETER name:x index:0 type:kotlin.Any flags:[]' type=kotlin.Any origin=null
-                arg1: CALL 'FUN IR_EXTERNAL_DECLARATION_STUB name:toDouble visibility:public modality:OPEN <> ($this:kotlin.Float) returnType:kotlin.Double flags:[]' type=kotlin.Double origin=null
+                  GET_VAR 'x: kotlin.Any flags:[] declared in <root>.testDF' type=kotlin.Any origin=null
+                arg1: CALL 'public open fun toDouble <> (): kotlin.Double flags:[] declared in kotlin.Float' type=kotlin.Double origin=null
                   $this: TYPE_OP type=kotlin.Float origin=IMPLICIT_CAST typeOperand=kotlin.Float
                     typeOperand: CLASS IR_EXTERNAL_DECLARATION_STUB CLASS name:Float modality:FINAL visibility:public flags:[] superTypes:[kotlin.Number; kotlin.Comparable<kotlin.Float>; java.io.Serializable]
-                    GET_VAR 'VALUE_PARAMETER name:y index:1 type:kotlin.Any flags:[]' type=kotlin.Any origin=null
+                    GET_VAR 'y: kotlin.Any flags:[] declared in <root>.testDF' type=kotlin.Any origin=null
           BRANCH
             if: CONST Boolean type=kotlin.Boolean value=true
             then: CONST Boolean type=kotlin.Boolean value=false

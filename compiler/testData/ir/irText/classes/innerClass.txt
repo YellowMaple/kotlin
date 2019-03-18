@@ -3,14 +3,14 @@ FILE fqName:<root> fileName:/innerClass.kt
     $this: VALUE_PARAMETER INSTANCE_RECEIVER name:<this> type:<root>.Outer flags:[]
     CONSTRUCTOR visibility:public <> () returnType:<root>.Outer flags:[primary]
       BLOCK_BODY
-        DELEGATING_CONSTRUCTOR_CALL 'CONSTRUCTOR IR_EXTERNAL_DECLARATION_STUB visibility:public <> () returnType:kotlin.Any flags:[primary]'
+        DELEGATING_CONSTRUCTOR_CALL 'public constructor <init> <> () flags:[primary] declared in kotlin.Any'
         INSTANCE_INITIALIZER_CALL classDescriptor='CLASS CLASS name:Outer modality:FINAL visibility:public flags:[] superTypes:[kotlin.Any]'
     CLASS CLASS name:TestInnerClass modality:OPEN visibility:public flags:[inner] superTypes:[kotlin.Any]
       $this: VALUE_PARAMETER INSTANCE_RECEIVER name:<this> type:<root>.Outer.TestInnerClass flags:[]
       CONSTRUCTOR visibility:public <> ($this:<root>.Outer) returnType:<root>.Outer.TestInnerClass flags:[primary]
         $outer: VALUE_PARAMETER name:<this> type:<root>.Outer flags:[]
         BLOCK_BODY
-          DELEGATING_CONSTRUCTOR_CALL 'CONSTRUCTOR IR_EXTERNAL_DECLARATION_STUB visibility:public <> () returnType:kotlin.Any flags:[primary]'
+          DELEGATING_CONSTRUCTOR_CALL 'public constructor <init> <> () flags:[primary] declared in kotlin.Any'
           INSTANCE_INITIALIZER_CALL classDescriptor='CLASS CLASS name:TestInnerClass modality:OPEN visibility:public flags:[inner] superTypes:[kotlin.Any]'
       FUN FAKE_OVERRIDE name:equals visibility:public modality:OPEN <> ($this:kotlin.Any, other:kotlin.Any?) returnType:kotlin.Boolean flags:[]
         overridden:
@@ -30,8 +30,8 @@ FILE fqName:<root> fileName:/innerClass.kt
       CONSTRUCTOR visibility:public <> ($this:<root>.Outer) returnType:<root>.Outer.DerivedInnerClass flags:[primary]
         $outer: VALUE_PARAMETER name:<this> type:<root>.Outer flags:[]
         BLOCK_BODY
-          DELEGATING_CONSTRUCTOR_CALL 'CONSTRUCTOR visibility:public <> ($this:<root>.Outer) returnType:<root>.Outer.TestInnerClass flags:[primary]'
-            $this: GET_VAR 'VALUE_PARAMETER name:<this> type:<root>.Outer flags:[]' type=<root>.Outer origin=null
+          DELEGATING_CONSTRUCTOR_CALL 'public constructor <init> <> () flags:[primary] declared in <root>.Outer.TestInnerClass'
+            $this: GET_VAR '<this>: <root>.Outer flags:[] declared in <root>.Outer.DerivedInnerClass.<init>' type=<root>.Outer origin=null
           INSTANCE_INITIALIZER_CALL classDescriptor='CLASS CLASS name:DerivedInnerClass modality:FINAL visibility:public flags:[inner] superTypes:[<root>.Outer.TestInnerClass]'
       FUN FAKE_OVERRIDE name:equals visibility:public modality:OPEN <> ($this:kotlin.Any, other:kotlin.Any?) returnType:kotlin.Boolean flags:[]
         overridden:

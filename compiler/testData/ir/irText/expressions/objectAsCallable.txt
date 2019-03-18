@@ -3,7 +3,7 @@ FILE fqName:<root> fileName:/objectAsCallable.kt
     $this: VALUE_PARAMETER INSTANCE_RECEIVER name:<this> type:<root>.A flags:[]
     CONSTRUCTOR visibility:private <> () returnType:<root>.A flags:[primary]
       BLOCK_BODY
-        DELEGATING_CONSTRUCTOR_CALL 'CONSTRUCTOR IR_EXTERNAL_DECLARATION_STUB visibility:public <> () returnType:kotlin.Any flags:[primary]'
+        DELEGATING_CONSTRUCTOR_CALL 'public constructor <init> <> () flags:[primary] declared in kotlin.Any'
         INSTANCE_INITIALIZER_CALL classDescriptor='CLASS OBJECT name:A modality:FINAL visibility:public flags:[] superTypes:[kotlin.Any]'
     FUN FAKE_OVERRIDE name:equals visibility:public modality:OPEN <> ($this:kotlin.Any, other:kotlin.Any?) returnType:kotlin.Boolean flags:[]
       overridden:
@@ -22,11 +22,11 @@ FILE fqName:<root> fileName:/objectAsCallable.kt
     $this: VALUE_PARAMETER INSTANCE_RECEIVER name:<this> type:<root>.En flags:[]
     CONSTRUCTOR visibility:private <> () returnType:<root>.En flags:[primary]
       BLOCK_BODY
-        ENUM_CONSTRUCTOR_CALL 'CONSTRUCTOR IR_EXTERNAL_DECLARATION_STUB visibility:public <> (name:kotlin.String, ordinal:kotlin.Int) returnType:kotlin.Enum<kotlin.Enum.E> flags:[primary]'
+        ENUM_CONSTRUCTOR_CALL 'public constructor <init> <> (name: kotlin.String, ordinal: kotlin.Int) flags:[primary] declared in kotlin.Enum'
           <E : Enum<E>>: <root>.En
         INSTANCE_INITIALIZER_CALL classDescriptor='CLASS ENUM_CLASS name:En modality:FINAL visibility:public flags:[] superTypes:[kotlin.Enum<<root>.En>]'
     ENUM_ENTRY name:X
-      init: ENUM_CONSTRUCTOR_CALL 'CONSTRUCTOR visibility:private <> () returnType:<root>.En flags:[primary]'
+      init: ENUM_CONSTRUCTOR_CALL 'private constructor <init> <> () flags:[primary] declared in <root>.En'
     FUN FAKE_OVERRIDE name:clone visibility:protected modality:FINAL <> ($this:kotlin.Enum<<root>.En>) returnType:kotlin.Any flags:[]
       overridden:
         FUN IR_EXTERNAL_DECLARATION_STUB name:clone visibility:protected modality:FINAL <> ($this:kotlin.Enum<kotlin.Enum.E>) returnType:kotlin.Any flags:[]
@@ -78,33 +78,33 @@ FILE fqName:<root> fileName:/objectAsCallable.kt
     $receiver: VALUE_PARAMETER name:<this> type:<root>.A flags:[]
     VALUE_PARAMETER name:i index:0 type:kotlin.Int flags:[]
     BLOCK_BODY
-      RETURN type=kotlin.Nothing from='FUN name:invoke visibility:public modality:FINAL <> ($receiver:<root>.A, i:kotlin.Int) returnType:kotlin.Int flags:[]'
-        GET_VAR 'VALUE_PARAMETER name:i index:0 type:kotlin.Int flags:[]' type=kotlin.Int origin=null
+      RETURN type=kotlin.Nothing from='public final fun invoke <> (i: kotlin.Int): kotlin.Int flags:[] declared in <root>'
+        GET_VAR 'i: kotlin.Int flags:[] declared in <root>.invoke' type=kotlin.Int origin=null
   FUN name:invoke visibility:public modality:FINAL <> ($receiver:<root>.En, i:kotlin.Int) returnType:kotlin.Int flags:[]
     $receiver: VALUE_PARAMETER name:<this> type:<root>.En flags:[]
     VALUE_PARAMETER name:i index:0 type:kotlin.Int flags:[]
     BLOCK_BODY
-      RETURN type=kotlin.Nothing from='FUN name:invoke visibility:public modality:FINAL <> ($receiver:<root>.En, i:kotlin.Int) returnType:kotlin.Int flags:[]'
-        GET_VAR 'VALUE_PARAMETER name:i index:0 type:kotlin.Int flags:[]' type=kotlin.Int origin=null
+      RETURN type=kotlin.Nothing from='public final fun invoke <> (i: kotlin.Int): kotlin.Int flags:[] declared in <root>'
+        GET_VAR 'i: kotlin.Int flags:[] declared in <root>.invoke' type=kotlin.Int origin=null
   PROPERTY name:test1 visibility:public modality:FINAL flags:[val]
     FIELD PROPERTY_BACKING_FIELD name:test1 type:kotlin.Int visibility:public flags:[final,static]
       EXPRESSION_BODY
-        CALL 'FUN name:invoke visibility:public modality:FINAL <> ($receiver:<root>.A, i:kotlin.Int) returnType:kotlin.Int flags:[]' type=kotlin.Int origin=INVOKE
+        CALL 'public final fun invoke <> (i: kotlin.Int): kotlin.Int flags:[] declared in <root>' type=kotlin.Int origin=INVOKE
           $receiver: GET_OBJECT 'CLASS OBJECT name:A modality:FINAL visibility:public flags:[] superTypes:[kotlin.Any]' type=<root>.A
           i: CONST Int type=kotlin.Int value=42
     FUN DEFAULT_PROPERTY_ACCESSOR name:<get-test1> visibility:public modality:FINAL <> () returnType:kotlin.Int flags:[]
       correspondingProperty: PROPERTY name:test1 visibility:public modality:FINAL flags:[val]
       BLOCK_BODY
-        RETURN type=kotlin.Nothing from='FUN DEFAULT_PROPERTY_ACCESSOR name:<get-test1> visibility:public modality:FINAL <> () returnType:kotlin.Int flags:[]'
+        RETURN type=kotlin.Nothing from='public final fun <get-test1> <> (): kotlin.Int flags:[] declared in <root>'
           GET_FIELD 'FIELD PROPERTY_BACKING_FIELD name:test1 type:kotlin.Int visibility:public flags:[final,static]' type=kotlin.Int origin=null
   PROPERTY name:test2 visibility:public modality:FINAL flags:[val]
     FIELD PROPERTY_BACKING_FIELD name:test2 type:kotlin.Int visibility:public flags:[final,static]
       EXPRESSION_BODY
-        CALL 'FUN name:invoke visibility:public modality:FINAL <> ($receiver:<root>.En, i:kotlin.Int) returnType:kotlin.Int flags:[]' type=kotlin.Int origin=INVOKE
+        CALL 'public final fun invoke <> (i: kotlin.Int): kotlin.Int flags:[] declared in <root>' type=kotlin.Int origin=INVOKE
           $receiver: GET_ENUM 'ENUM_ENTRY name:X' type=<root>.En
           i: CONST Int type=kotlin.Int value=42
     FUN DEFAULT_PROPERTY_ACCESSOR name:<get-test2> visibility:public modality:FINAL <> () returnType:kotlin.Int flags:[]
       correspondingProperty: PROPERTY name:test2 visibility:public modality:FINAL flags:[val]
       BLOCK_BODY
-        RETURN type=kotlin.Nothing from='FUN DEFAULT_PROPERTY_ACCESSOR name:<get-test2> visibility:public modality:FINAL <> () returnType:kotlin.Int flags:[]'
+        RETURN type=kotlin.Nothing from='public final fun <get-test2> <> (): kotlin.Int flags:[] declared in <root>'
           GET_FIELD 'FIELD PROPERTY_BACKING_FIELD name:test2 type:kotlin.Int visibility:public flags:[final,static]' type=kotlin.Int origin=null

@@ -7,14 +7,14 @@ FILE fqName:<root> fileName:/useImportedMember.kt
       $this: VALUE_PARAMETER name:<this> type:<root>.I<<root>.I.G> flags:[]
       $receiver: VALUE_PARAMETER name:<this> type:<root>.I.fromInterface.T flags:[]
       BLOCK_BODY
-        RETURN type=kotlin.Nothing from='FUN name:fromInterface visibility:public modality:OPEN <T> ($this:<root>.I<<root>.I.G>, $receiver:<root>.I.fromInterface.T) returnType:<root>.I.fromInterface.T flags:[]'
-          GET_VAR 'VALUE_PARAMETER name:<this> type:<root>.I.fromInterface.T flags:[]' type=<root>.I.fromInterface.T origin=null
+        RETURN type=kotlin.Nothing from='public open fun fromInterface <T> (): <root>.I.fromInterface.T flags:[] declared in <root>.I'
+          GET_VAR '<this>: <root>.I.fromInterface.T flags:[] declared in <root>.I.fromInterface' type=<root>.I.fromInterface.T origin=null
     FUN name:genericFromSuper visibility:public modality:OPEN <> ($this:<root>.I<<root>.I.G>, g:<root>.I.G) returnType:<root>.I.G flags:[]
       $this: VALUE_PARAMETER name:<this> type:<root>.I<<root>.I.G> flags:[]
       VALUE_PARAMETER name:g index:0 type:<root>.I.G flags:[]
       BLOCK_BODY
-        RETURN type=kotlin.Nothing from='FUN name:genericFromSuper visibility:public modality:OPEN <> ($this:<root>.I<<root>.I.G>, g:<root>.I.G) returnType:<root>.I.G flags:[]'
-          GET_VAR 'VALUE_PARAMETER name:g index:0 type:<root>.I.G flags:[]' type=<root>.I.G origin=null
+        RETURN type=kotlin.Nothing from='public open fun genericFromSuper <> (g: <root>.I.G): <root>.I.G flags:[] declared in <root>.I'
+          GET_VAR 'g: <root>.I.G flags:[] declared in <root>.I.genericFromSuper' type=<root>.I.G origin=null
     FUN FAKE_OVERRIDE name:equals visibility:public modality:OPEN <> ($this:kotlin.Any, other:kotlin.Any?) returnType:kotlin.Boolean flags:[]
       overridden:
         FUN IR_EXTERNAL_DECLARATION_STUB name:equals visibility:public modality:OPEN <> ($this:kotlin.Any, other:kotlin.Any?) returnType:kotlin.Boolean flags:[]
@@ -32,7 +32,7 @@ FILE fqName:<root> fileName:/useImportedMember.kt
     $this: VALUE_PARAMETER INSTANCE_RECEIVER name:<this> type:<root>.BaseClass flags:[]
     CONSTRUCTOR visibility:public <> () returnType:<root>.BaseClass flags:[primary]
       BLOCK_BODY
-        DELEGATING_CONSTRUCTOR_CALL 'CONSTRUCTOR IR_EXTERNAL_DECLARATION_STUB visibility:public <> () returnType:kotlin.Any flags:[primary]'
+        DELEGATING_CONSTRUCTOR_CALL 'public constructor <init> <> () flags:[primary] declared in kotlin.Any'
         INSTANCE_INITIALIZER_CALL classDescriptor='CLASS CLASS name:BaseClass modality:OPEN visibility:public flags:[] superTypes:[kotlin.Any]'
     PROPERTY name:fromClass visibility:public modality:FINAL flags:[val]
       FUN name:<get-fromClass> visibility:public modality:FINAL <T> ($this:<root>.BaseClass, $receiver:<root>.BaseClass.<get-fromClass>.T) returnType:<root>.BaseClass.<get-fromClass>.T flags:[]
@@ -41,8 +41,8 @@ FILE fqName:<root> fileName:/useImportedMember.kt
         $this: VALUE_PARAMETER name:<this> type:<root>.BaseClass flags:[]
         $receiver: VALUE_PARAMETER name:<this> type:<root>.BaseClass.<get-fromClass>.T flags:[]
         BLOCK_BODY
-          RETURN type=kotlin.Nothing from='FUN name:<get-fromClass> visibility:public modality:FINAL <T> ($this:<root>.BaseClass, $receiver:<root>.BaseClass.<get-fromClass>.T) returnType:<root>.BaseClass.<get-fromClass>.T flags:[]'
-            GET_VAR 'VALUE_PARAMETER name:<this> type:<root>.BaseClass.<get-fromClass>.T flags:[]' type=<root>.BaseClass.<get-fromClass>.T origin=null
+          RETURN type=kotlin.Nothing from='public final fun <get-fromClass> <T> (): <root>.BaseClass.<get-fromClass>.T flags:[] declared in <root>.BaseClass'
+            GET_VAR '<this>: <root>.BaseClass.<get-fromClass>.T flags:[] declared in <root>.BaseClass.<get-fromClass>' type=<root>.BaseClass.<get-fromClass>.T origin=null
     FUN FAKE_OVERRIDE name:equals visibility:public modality:OPEN <> ($this:kotlin.Any, other:kotlin.Any?) returnType:kotlin.Boolean flags:[]
       overridden:
         FUN IR_EXTERNAL_DECLARATION_STUB name:equals visibility:public modality:OPEN <> ($this:kotlin.Any, other:kotlin.Any?) returnType:kotlin.Boolean flags:[]
@@ -60,25 +60,25 @@ FILE fqName:<root> fileName:/useImportedMember.kt
     $this: VALUE_PARAMETER INSTANCE_RECEIVER name:<this> type:<root>.C flags:[]
     CONSTRUCTOR visibility:private <> () returnType:<root>.C flags:[primary]
       BLOCK_BODY
-        DELEGATING_CONSTRUCTOR_CALL 'CONSTRUCTOR visibility:public <> () returnType:<root>.BaseClass flags:[primary]'
+        DELEGATING_CONSTRUCTOR_CALL 'public constructor <init> <> () flags:[primary] declared in <root>.BaseClass'
         INSTANCE_INITIALIZER_CALL classDescriptor='CLASS OBJECT name:C modality:FINAL visibility:public flags:[] superTypes:[<root>.BaseClass; <root>.I<kotlin.String>]'
     FUN name:f visibility:public modality:FINAL <> ($this:<root>.C, s:kotlin.Int) returnType:kotlin.Int flags:[]
       $this: VALUE_PARAMETER name:<this> type:<root>.C flags:[]
       VALUE_PARAMETER name:s index:0 type:kotlin.Int flags:[]
       BLOCK_BODY
-        RETURN type=kotlin.Nothing from='FUN name:f visibility:public modality:FINAL <> ($this:<root>.C, s:kotlin.Int) returnType:kotlin.Int flags:[]'
+        RETURN type=kotlin.Nothing from='public final fun f <> (s: kotlin.Int): kotlin.Int flags:[] declared in <root>.C'
           CONST Int type=kotlin.Int value=1
     FUN name:f visibility:public modality:FINAL <> ($this:<root>.C, s:kotlin.String) returnType:kotlin.Int flags:[]
       $this: VALUE_PARAMETER name:<this> type:<root>.C flags:[]
       VALUE_PARAMETER name:s index:0 type:kotlin.String flags:[]
       BLOCK_BODY
-        RETURN type=kotlin.Nothing from='FUN name:f visibility:public modality:FINAL <> ($this:<root>.C, s:kotlin.String) returnType:kotlin.Int flags:[]'
+        RETURN type=kotlin.Nothing from='public final fun f <> (s: kotlin.String): kotlin.Int flags:[] declared in <root>.C'
           CONST Int type=kotlin.Int value=2
     FUN name:f visibility:public modality:FINAL <> ($this:<root>.C, $receiver:kotlin.Boolean) returnType:kotlin.Int flags:[]
       $this: VALUE_PARAMETER name:<this> type:<root>.C flags:[]
       $receiver: VALUE_PARAMETER name:<this> type:kotlin.Boolean flags:[]
       BLOCK_BODY
-        RETURN type=kotlin.Nothing from='FUN name:f visibility:public modality:FINAL <> ($this:<root>.C, $receiver:kotlin.Boolean) returnType:kotlin.Int flags:[]'
+        RETURN type=kotlin.Nothing from='public final fun f <> (): kotlin.Int flags:[] declared in <root>.C'
           CONST Int type=kotlin.Int value=3
     PROPERTY name:p visibility:public modality:FINAL flags:[var]
       FIELD PROPERTY_BACKING_FIELD name:p type:kotlin.Int visibility:public flags:[]
@@ -88,32 +88,32 @@ FILE fqName:<root> fileName:/useImportedMember.kt
         correspondingProperty: PROPERTY name:p visibility:public modality:FINAL flags:[var]
         $this: VALUE_PARAMETER name:<this> type:<root>.C flags:[]
         BLOCK_BODY
-          RETURN type=kotlin.Nothing from='FUN DEFAULT_PROPERTY_ACCESSOR name:<get-p> visibility:public modality:FINAL <> ($this:<root>.C) returnType:kotlin.Int flags:[]'
+          RETURN type=kotlin.Nothing from='public final fun <get-p> <> (): kotlin.Int flags:[] declared in <root>.C'
             GET_FIELD 'FIELD PROPERTY_BACKING_FIELD name:p type:kotlin.Int visibility:public flags:[]' type=kotlin.Int origin=null
-              receiver: GET_VAR 'VALUE_PARAMETER name:<this> type:<root>.C flags:[]' type=<root>.C origin=null
+              receiver: GET_VAR '<this>: <root>.C flags:[] declared in <root>.C.<get-p>' type=<root>.C origin=null
       FUN DEFAULT_PROPERTY_ACCESSOR name:<set-p> visibility:public modality:FINAL <> ($this:<root>.C, <set-?>:kotlin.Int) returnType:kotlin.Unit flags:[]
         correspondingProperty: PROPERTY name:p visibility:public modality:FINAL flags:[var]
         $this: VALUE_PARAMETER name:<this> type:<root>.C flags:[]
         VALUE_PARAMETER name:<set-?> index:0 type:kotlin.Int flags:[]
         BLOCK_BODY
           SET_FIELD 'FIELD PROPERTY_BACKING_FIELD name:p type:kotlin.Int visibility:public flags:[]' type=kotlin.Unit origin=null
-            receiver: GET_VAR 'VALUE_PARAMETER name:<this> type:<root>.C flags:[]' type=<root>.C origin=null
-            value: GET_VAR 'VALUE_PARAMETER name:<set-?> index:0 type:kotlin.Int flags:[]' type=kotlin.Int origin=null
+            receiver: GET_VAR '<this>: <root>.C flags:[] declared in <root>.C.<set-p>' type=<root>.C origin=null
+            value: GET_VAR '<set-?>: kotlin.Int flags:[] declared in <root>.C.<set-p>' type=kotlin.Int origin=null
     PROPERTY name:ext visibility:public modality:FINAL flags:[val]
       FUN name:<get-ext> visibility:public modality:FINAL <> ($this:<root>.C, $receiver:kotlin.Int) returnType:kotlin.Int flags:[]
         correspondingProperty: PROPERTY name:ext visibility:public modality:FINAL flags:[val]
         $this: VALUE_PARAMETER name:<this> type:<root>.C flags:[]
         $receiver: VALUE_PARAMETER name:<this> type:kotlin.Int flags:[]
         BLOCK_BODY
-          RETURN type=kotlin.Nothing from='FUN name:<get-ext> visibility:public modality:FINAL <> ($this:<root>.C, $receiver:kotlin.Int) returnType:kotlin.Int flags:[]'
+          RETURN type=kotlin.Nothing from='public final fun <get-ext> <> (): kotlin.Int flags:[] declared in <root>.C'
             CONST Int type=kotlin.Int value=6
     FUN name:g1 visibility:public modality:FINAL <T> ($this:<root>.C, t:<root>.C.g1.T) returnType:<root>.C.g1.T flags:[]
       TYPE_PARAMETER name:T index:0 variance: superTypes:[kotlin.Any?]
       $this: VALUE_PARAMETER name:<this> type:<root>.C flags:[]
       VALUE_PARAMETER name:t index:0 type:<root>.C.g1.T flags:[]
       BLOCK_BODY
-        RETURN type=kotlin.Nothing from='FUN name:g1 visibility:public modality:FINAL <T> ($this:<root>.C, t:<root>.C.g1.T) returnType:<root>.C.g1.T flags:[]'
-          GET_VAR 'VALUE_PARAMETER name:t index:0 type:<root>.C.g1.T flags:[]' type=<root>.C.g1.T origin=null
+        RETURN type=kotlin.Nothing from='public final fun g1 <T> (t: <root>.C.g1.T): <root>.C.g1.T flags:[] declared in <root>.C'
+          GET_VAR 't: <root>.C.g1.T flags:[] declared in <root>.C.g1' type=<root>.C.g1.T origin=null
     PROPERTY name:g2 visibility:public modality:FINAL flags:[val]
       FUN name:<get-g2> visibility:public modality:FINAL <T> ($this:<root>.C, $receiver:<root>.C.<get-g2>.T) returnType:<root>.C.<get-g2>.T flags:[]
         correspondingProperty: PROPERTY name:g2 visibility:public modality:FINAL flags:[val]
@@ -121,8 +121,8 @@ FILE fqName:<root> fileName:/useImportedMember.kt
         $this: VALUE_PARAMETER name:<this> type:<root>.C flags:[]
         $receiver: VALUE_PARAMETER name:<this> type:<root>.C.<get-g2>.T flags:[]
         BLOCK_BODY
-          RETURN type=kotlin.Nothing from='FUN name:<get-g2> visibility:public modality:FINAL <T> ($this:<root>.C, $receiver:<root>.C.<get-g2>.T) returnType:<root>.C.<get-g2>.T flags:[]'
-            GET_VAR 'VALUE_PARAMETER name:<this> type:<root>.C.<get-g2>.T flags:[]' type=<root>.C.<get-g2>.T origin=null
+          RETURN type=kotlin.Nothing from='public final fun <get-g2> <T> (): <root>.C.<get-g2>.T flags:[] declared in <root>.C'
+            GET_VAR '<this>: <root>.C.<get-g2>.T flags:[] declared in <root>.C.<get-g2>' type=<root>.C.<get-g2>.T origin=null
     PROPERTY FAKE_OVERRIDE name:fromClass visibility:public modality:FINAL flags:[val]
       FUN FAKE_OVERRIDE name:<get-fromClass> visibility:public modality:FINAL <T> ($this:<root>.BaseClass, $receiver:<root>.C.<get-fromClass>.T) returnType:<root>.C.<get-fromClass>.T flags:[]
         correspondingProperty: PROPERTY FAKE_OVERRIDE name:fromClass visibility:public modality:FINAL flags:[val]
@@ -162,118 +162,118 @@ FILE fqName:<root> fileName:/useImportedMember.kt
     BLOCK_BODY
       WHEN type=kotlin.Unit origin=IF
         BRANCH
-          if: CALL 'FUN IR_BUILTINS_STUB name:NOT visibility:public modality:FINAL <> (arg0:kotlin.Boolean) returnType:kotlin.Boolean flags:[]' type=kotlin.Boolean origin=EXCLEQ
-            arg0: CALL 'FUN IR_BUILTINS_STUB name:EQEQ visibility:public modality:FINAL <> (arg0:kotlin.Any?, arg1:kotlin.Any?) returnType:kotlin.Boolean flags:[]' type=kotlin.Boolean origin=EXCLEQ
-              arg0: CALL 'FUN name:f visibility:public modality:FINAL <> ($this:<root>.C, s:kotlin.Int) returnType:kotlin.Int flags:[]' type=kotlin.Int origin=null
+          if: CALL 'public final fun NOT <> (arg0: kotlin.Boolean): kotlin.Boolean flags:[] declared in kotlin.internal.ir' type=kotlin.Boolean origin=EXCLEQ
+            arg0: CALL 'public final fun EQEQ <> (arg0: kotlin.Any?, arg1: kotlin.Any?): kotlin.Boolean flags:[] declared in kotlin.internal.ir' type=kotlin.Boolean origin=EXCLEQ
+              arg0: CALL 'public final fun f <> (s: kotlin.Int): kotlin.Int flags:[] declared in <root>.C' type=kotlin.Int origin=null
                 $this: GET_OBJECT 'CLASS OBJECT name:C modality:FINAL visibility:public flags:[] superTypes:[<root>.BaseClass; <root>.I<kotlin.String>]' type=<root>.C
                 s: CONST Int type=kotlin.Int value=1
               arg1: CONST Int type=kotlin.Int value=1
-          then: RETURN type=kotlin.Nothing from='FUN name:box visibility:public modality:FINAL <> () returnType:kotlin.String flags:[]'
+          then: RETURN type=kotlin.Nothing from='public final fun box <> (): kotlin.String flags:[] declared in <root>'
             CONST String type=kotlin.String value="1"
       WHEN type=kotlin.Unit origin=IF
         BRANCH
-          if: CALL 'FUN IR_BUILTINS_STUB name:NOT visibility:public modality:FINAL <> (arg0:kotlin.Boolean) returnType:kotlin.Boolean flags:[]' type=kotlin.Boolean origin=EXCLEQ
-            arg0: CALL 'FUN IR_BUILTINS_STUB name:EQEQ visibility:public modality:FINAL <> (arg0:kotlin.Any?, arg1:kotlin.Any?) returnType:kotlin.Boolean flags:[]' type=kotlin.Boolean origin=EXCLEQ
-              arg0: CALL 'FUN name:f visibility:public modality:FINAL <> ($this:<root>.C, s:kotlin.String) returnType:kotlin.Int flags:[]' type=kotlin.Int origin=null
+          if: CALL 'public final fun NOT <> (arg0: kotlin.Boolean): kotlin.Boolean flags:[] declared in kotlin.internal.ir' type=kotlin.Boolean origin=EXCLEQ
+            arg0: CALL 'public final fun EQEQ <> (arg0: kotlin.Any?, arg1: kotlin.Any?): kotlin.Boolean flags:[] declared in kotlin.internal.ir' type=kotlin.Boolean origin=EXCLEQ
+              arg0: CALL 'public final fun f <> (s: kotlin.String): kotlin.Int flags:[] declared in <root>.C' type=kotlin.Int origin=null
                 $this: GET_OBJECT 'CLASS OBJECT name:C modality:FINAL visibility:public flags:[] superTypes:[<root>.BaseClass; <root>.I<kotlin.String>]' type=<root>.C
                 s: CONST String type=kotlin.String value="s"
               arg1: CONST Int type=kotlin.Int value=2
-          then: RETURN type=kotlin.Nothing from='FUN name:box visibility:public modality:FINAL <> () returnType:kotlin.String flags:[]'
+          then: RETURN type=kotlin.Nothing from='public final fun box <> (): kotlin.String flags:[] declared in <root>'
             CONST String type=kotlin.String value="2"
       WHEN type=kotlin.Unit origin=IF
         BRANCH
-          if: CALL 'FUN IR_BUILTINS_STUB name:NOT visibility:public modality:FINAL <> (arg0:kotlin.Boolean) returnType:kotlin.Boolean flags:[]' type=kotlin.Boolean origin=EXCLEQ
-            arg0: CALL 'FUN IR_BUILTINS_STUB name:EQEQ visibility:public modality:FINAL <> (arg0:kotlin.Any?, arg1:kotlin.Any?) returnType:kotlin.Boolean flags:[]' type=kotlin.Boolean origin=EXCLEQ
-              arg0: CALL 'FUN name:f visibility:public modality:FINAL <> ($this:<root>.C, $receiver:kotlin.Boolean) returnType:kotlin.Int flags:[]' type=kotlin.Int origin=null
+          if: CALL 'public final fun NOT <> (arg0: kotlin.Boolean): kotlin.Boolean flags:[] declared in kotlin.internal.ir' type=kotlin.Boolean origin=EXCLEQ
+            arg0: CALL 'public final fun EQEQ <> (arg0: kotlin.Any?, arg1: kotlin.Any?): kotlin.Boolean flags:[] declared in kotlin.internal.ir' type=kotlin.Boolean origin=EXCLEQ
+              arg0: CALL 'public final fun f <> (): kotlin.Int flags:[] declared in <root>.C' type=kotlin.Int origin=null
                 $this: GET_OBJECT 'CLASS OBJECT name:C modality:FINAL visibility:public flags:[] superTypes:[<root>.BaseClass; <root>.I<kotlin.String>]' type=<root>.C
                 $receiver: CONST Boolean type=kotlin.Boolean value=true
               arg1: CONST Int type=kotlin.Int value=3
-          then: RETURN type=kotlin.Nothing from='FUN name:box visibility:public modality:FINAL <> () returnType:kotlin.String flags:[]'
+          then: RETURN type=kotlin.Nothing from='public final fun box <> (): kotlin.String flags:[] declared in <root>'
             CONST String type=kotlin.String value="3"
       WHEN type=kotlin.Unit origin=IF
         BRANCH
-          if: CALL 'FUN IR_BUILTINS_STUB name:NOT visibility:public modality:FINAL <> (arg0:kotlin.Boolean) returnType:kotlin.Boolean flags:[]' type=kotlin.Boolean origin=EXCLEQ
-            arg0: CALL 'FUN IR_BUILTINS_STUB name:EQEQ visibility:public modality:FINAL <> (arg0:kotlin.Any?, arg1:kotlin.Any?) returnType:kotlin.Boolean flags:[]' type=kotlin.Boolean origin=EXCLEQ
-              arg0: CALL 'FUN DEFAULT_PROPERTY_ACCESSOR name:<get-p> visibility:public modality:FINAL <> ($this:<root>.C) returnType:kotlin.Int flags:[]' type=kotlin.Int origin=GET_PROPERTY
+          if: CALL 'public final fun NOT <> (arg0: kotlin.Boolean): kotlin.Boolean flags:[] declared in kotlin.internal.ir' type=kotlin.Boolean origin=EXCLEQ
+            arg0: CALL 'public final fun EQEQ <> (arg0: kotlin.Any?, arg1: kotlin.Any?): kotlin.Boolean flags:[] declared in kotlin.internal.ir' type=kotlin.Boolean origin=EXCLEQ
+              arg0: CALL 'public final fun <get-p> <> (): kotlin.Int flags:[] declared in <root>.C' type=kotlin.Int origin=GET_PROPERTY
                 $this: GET_OBJECT 'CLASS OBJECT name:C modality:FINAL visibility:public flags:[] superTypes:[<root>.BaseClass; <root>.I<kotlin.String>]' type=<root>.C
               arg1: CONST Int type=kotlin.Int value=4
-          then: RETURN type=kotlin.Nothing from='FUN name:box visibility:public modality:FINAL <> () returnType:kotlin.String flags:[]'
+          then: RETURN type=kotlin.Nothing from='public final fun box <> (): kotlin.String flags:[] declared in <root>'
             CONST String type=kotlin.String value="4"
-      CALL 'FUN DEFAULT_PROPERTY_ACCESSOR name:<set-p> visibility:public modality:FINAL <> ($this:<root>.C, <set-?>:kotlin.Int) returnType:kotlin.Unit flags:[]' type=kotlin.Unit origin=EQ
+      CALL 'public final fun <set-p> <> (<set-?>: kotlin.Int): kotlin.Unit flags:[] declared in <root>.C' type=kotlin.Unit origin=EQ
         $this: GET_OBJECT 'CLASS OBJECT name:C modality:FINAL visibility:public flags:[] superTypes:[<root>.BaseClass; <root>.I<kotlin.String>]' type=<root>.C
         <set-?>: CONST Int type=kotlin.Int value=5
       WHEN type=kotlin.Unit origin=IF
         BRANCH
-          if: CALL 'FUN IR_BUILTINS_STUB name:NOT visibility:public modality:FINAL <> (arg0:kotlin.Boolean) returnType:kotlin.Boolean flags:[]' type=kotlin.Boolean origin=EXCLEQ
-            arg0: CALL 'FUN IR_BUILTINS_STUB name:EQEQ visibility:public modality:FINAL <> (arg0:kotlin.Any?, arg1:kotlin.Any?) returnType:kotlin.Boolean flags:[]' type=kotlin.Boolean origin=EXCLEQ
-              arg0: CALL 'FUN DEFAULT_PROPERTY_ACCESSOR name:<get-p> visibility:public modality:FINAL <> ($this:<root>.C) returnType:kotlin.Int flags:[]' type=kotlin.Int origin=GET_PROPERTY
+          if: CALL 'public final fun NOT <> (arg0: kotlin.Boolean): kotlin.Boolean flags:[] declared in kotlin.internal.ir' type=kotlin.Boolean origin=EXCLEQ
+            arg0: CALL 'public final fun EQEQ <> (arg0: kotlin.Any?, arg1: kotlin.Any?): kotlin.Boolean flags:[] declared in kotlin.internal.ir' type=kotlin.Boolean origin=EXCLEQ
+              arg0: CALL 'public final fun <get-p> <> (): kotlin.Int flags:[] declared in <root>.C' type=kotlin.Int origin=GET_PROPERTY
                 $this: GET_OBJECT 'CLASS OBJECT name:C modality:FINAL visibility:public flags:[] superTypes:[<root>.BaseClass; <root>.I<kotlin.String>]' type=<root>.C
               arg1: CONST Int type=kotlin.Int value=5
-          then: RETURN type=kotlin.Nothing from='FUN name:box visibility:public modality:FINAL <> () returnType:kotlin.String flags:[]'
+          then: RETURN type=kotlin.Nothing from='public final fun box <> (): kotlin.String flags:[] declared in <root>'
             CONST String type=kotlin.String value="5"
       WHEN type=kotlin.Unit origin=IF
         BRANCH
-          if: CALL 'FUN IR_BUILTINS_STUB name:NOT visibility:public modality:FINAL <> (arg0:kotlin.Boolean) returnType:kotlin.Boolean flags:[]' type=kotlin.Boolean origin=EXCLEQ
-            arg0: CALL 'FUN IR_BUILTINS_STUB name:EQEQ visibility:public modality:FINAL <> (arg0:kotlin.Any?, arg1:kotlin.Any?) returnType:kotlin.Boolean flags:[]' type=kotlin.Boolean origin=EXCLEQ
-              arg0: CALL 'FUN name:<get-ext> visibility:public modality:FINAL <> ($this:<root>.C, $receiver:kotlin.Int) returnType:kotlin.Int flags:[]' type=kotlin.Int origin=GET_PROPERTY
+          if: CALL 'public final fun NOT <> (arg0: kotlin.Boolean): kotlin.Boolean flags:[] declared in kotlin.internal.ir' type=kotlin.Boolean origin=EXCLEQ
+            arg0: CALL 'public final fun EQEQ <> (arg0: kotlin.Any?, arg1: kotlin.Any?): kotlin.Boolean flags:[] declared in kotlin.internal.ir' type=kotlin.Boolean origin=EXCLEQ
+              arg0: CALL 'public final fun <get-ext> <> (): kotlin.Int flags:[] declared in <root>.C' type=kotlin.Int origin=GET_PROPERTY
                 $this: GET_OBJECT 'CLASS OBJECT name:C modality:FINAL visibility:public flags:[] superTypes:[<root>.BaseClass; <root>.I<kotlin.String>]' type=<root>.C
                 $receiver: CONST Int type=kotlin.Int value=5
               arg1: CONST Int type=kotlin.Int value=6
-          then: RETURN type=kotlin.Nothing from='FUN name:box visibility:public modality:FINAL <> () returnType:kotlin.String flags:[]'
+          then: RETURN type=kotlin.Nothing from='public final fun box <> (): kotlin.String flags:[] declared in <root>'
             CONST String type=kotlin.String value="6"
       WHEN type=kotlin.Unit origin=IF
         BRANCH
-          if: CALL 'FUN IR_BUILTINS_STUB name:NOT visibility:public modality:FINAL <> (arg0:kotlin.Boolean) returnType:kotlin.Boolean flags:[]' type=kotlin.Boolean origin=EXCLEQ
-            arg0: CALL 'FUN IR_BUILTINS_STUB name:EQEQ visibility:public modality:FINAL <> (arg0:kotlin.Any?, arg1:kotlin.Any?) returnType:kotlin.Boolean flags:[]' type=kotlin.Boolean origin=EXCLEQ
-              arg0: CALL 'FUN name:g1 visibility:public modality:FINAL <T> ($this:<root>.C, t:<root>.C.g1.T) returnType:<root>.C.g1.T flags:[]' type=kotlin.String origin=null
+          if: CALL 'public final fun NOT <> (arg0: kotlin.Boolean): kotlin.Boolean flags:[] declared in kotlin.internal.ir' type=kotlin.Boolean origin=EXCLEQ
+            arg0: CALL 'public final fun EQEQ <> (arg0: kotlin.Any?, arg1: kotlin.Any?): kotlin.Boolean flags:[] declared in kotlin.internal.ir' type=kotlin.Boolean origin=EXCLEQ
+              arg0: CALL 'public final fun g1 <T> (t: <root>.C.g1.T): <root>.C.g1.T flags:[] declared in <root>.C' type=kotlin.String origin=null
                 <T>: kotlin.String
                 $this: GET_OBJECT 'CLASS OBJECT name:C modality:FINAL visibility:public flags:[] superTypes:[<root>.BaseClass; <root>.I<kotlin.String>]' type=<root>.C
                 t: CONST String type=kotlin.String value="7"
               arg1: CONST String type=kotlin.String value="7"
-          then: RETURN type=kotlin.Nothing from='FUN name:box visibility:public modality:FINAL <> () returnType:kotlin.String flags:[]'
+          then: RETURN type=kotlin.Nothing from='public final fun box <> (): kotlin.String flags:[] declared in <root>'
             CONST String type=kotlin.String value="7"
       WHEN type=kotlin.Unit origin=IF
         BRANCH
-          if: CALL 'FUN IR_BUILTINS_STUB name:NOT visibility:public modality:FINAL <> (arg0:kotlin.Boolean) returnType:kotlin.Boolean flags:[]' type=kotlin.Boolean origin=EXCLEQ
-            arg0: CALL 'FUN IR_BUILTINS_STUB name:EQEQ visibility:public modality:FINAL <> (arg0:kotlin.Any?, arg1:kotlin.Any?) returnType:kotlin.Boolean flags:[]' type=kotlin.Boolean origin=EXCLEQ
-              arg0: CALL 'FUN name:<get-g2> visibility:public modality:FINAL <T> ($this:<root>.C, $receiver:<root>.C.<get-g2>.T) returnType:<root>.C.<get-g2>.T flags:[]' type=kotlin.String origin=GET_PROPERTY
+          if: CALL 'public final fun NOT <> (arg0: kotlin.Boolean): kotlin.Boolean flags:[] declared in kotlin.internal.ir' type=kotlin.Boolean origin=EXCLEQ
+            arg0: CALL 'public final fun EQEQ <> (arg0: kotlin.Any?, arg1: kotlin.Any?): kotlin.Boolean flags:[] declared in kotlin.internal.ir' type=kotlin.Boolean origin=EXCLEQ
+              arg0: CALL 'public final fun <get-g2> <T> (): <root>.C.<get-g2>.T flags:[] declared in <root>.C' type=kotlin.String origin=GET_PROPERTY
                 <`0>: kotlin.String
                 $this: GET_OBJECT 'CLASS OBJECT name:C modality:FINAL visibility:public flags:[] superTypes:[<root>.BaseClass; <root>.I<kotlin.String>]' type=<root>.C
                 $receiver: CONST String type=kotlin.String value="8"
               arg1: CONST String type=kotlin.String value="8"
-          then: RETURN type=kotlin.Nothing from='FUN name:box visibility:public modality:FINAL <> () returnType:kotlin.String flags:[]'
+          then: RETURN type=kotlin.Nothing from='public final fun box <> (): kotlin.String flags:[] declared in <root>'
             CONST String type=kotlin.String value="8"
       WHEN type=kotlin.Unit origin=IF
         BRANCH
-          if: CALL 'FUN IR_BUILTINS_STUB name:NOT visibility:public modality:FINAL <> (arg0:kotlin.Boolean) returnType:kotlin.Boolean flags:[]' type=kotlin.Boolean origin=EXCLEQ
-            arg0: CALL 'FUN IR_BUILTINS_STUB name:EQEQ visibility:public modality:FINAL <> (arg0:kotlin.Any?, arg1:kotlin.Any?) returnType:kotlin.Boolean flags:[]' type=kotlin.Boolean origin=EXCLEQ
-              arg0: CALL 'FUN FAKE_OVERRIDE name:fromInterface visibility:public modality:OPEN <T> ($this:<root>.I<kotlin.String>, $receiver:<root>.C.fromInterface.T) returnType:<root>.C.fromInterface.T flags:[]' type=kotlin.Int origin=null
+          if: CALL 'public final fun NOT <> (arg0: kotlin.Boolean): kotlin.Boolean flags:[] declared in kotlin.internal.ir' type=kotlin.Boolean origin=EXCLEQ
+            arg0: CALL 'public final fun EQEQ <> (arg0: kotlin.Any?, arg1: kotlin.Any?): kotlin.Boolean flags:[] declared in kotlin.internal.ir' type=kotlin.Boolean origin=EXCLEQ
+              arg0: CALL 'public open fun fromInterface <T> (): <root>.C.fromInterface.T flags:[] declared in <root>.C' type=kotlin.Int origin=null
                 <T>: kotlin.Int
                 $this: GET_OBJECT 'CLASS OBJECT name:C modality:FINAL visibility:public flags:[] superTypes:[<root>.BaseClass; <root>.I<kotlin.String>]' type=<root>.C
                 $receiver: CONST Int type=kotlin.Int value=9
               arg1: CONST Int type=kotlin.Int value=9
-          then: RETURN type=kotlin.Nothing from='FUN name:box visibility:public modality:FINAL <> () returnType:kotlin.String flags:[]'
+          then: RETURN type=kotlin.Nothing from='public final fun box <> (): kotlin.String flags:[] declared in <root>'
             CONST String type=kotlin.String value="9"
       WHEN type=kotlin.Unit origin=IF
         BRANCH
-          if: CALL 'FUN IR_BUILTINS_STUB name:NOT visibility:public modality:FINAL <> (arg0:kotlin.Boolean) returnType:kotlin.Boolean flags:[]' type=kotlin.Boolean origin=EXCLEQ
-            arg0: CALL 'FUN IR_BUILTINS_STUB name:EQEQ visibility:public modality:FINAL <> (arg0:kotlin.Any?, arg1:kotlin.Any?) returnType:kotlin.Boolean flags:[]' type=kotlin.Boolean origin=EXCLEQ
-              arg0: CALL 'FUN FAKE_OVERRIDE name:<get-fromClass> visibility:public modality:FINAL <T> ($this:<root>.BaseClass, $receiver:<root>.C.<get-fromClass>.T) returnType:<root>.C.<get-fromClass>.T flags:[]' type=kotlin.String origin=GET_PROPERTY
+          if: CALL 'public final fun NOT <> (arg0: kotlin.Boolean): kotlin.Boolean flags:[] declared in kotlin.internal.ir' type=kotlin.Boolean origin=EXCLEQ
+            arg0: CALL 'public final fun EQEQ <> (arg0: kotlin.Any?, arg1: kotlin.Any?): kotlin.Boolean flags:[] declared in kotlin.internal.ir' type=kotlin.Boolean origin=EXCLEQ
+              arg0: CALL 'public final fun <get-fromClass> <T> (): <root>.C.<get-fromClass>.T flags:[] declared in <root>.C' type=kotlin.String origin=GET_PROPERTY
                 <`0>: kotlin.String
                 $this: GET_OBJECT 'CLASS OBJECT name:C modality:FINAL visibility:public flags:[] superTypes:[<root>.BaseClass; <root>.I<kotlin.String>]' type=<root>.C
                 $receiver: CONST String type=kotlin.String value="10"
               arg1: CONST String type=kotlin.String value="10"
-          then: RETURN type=kotlin.Nothing from='FUN name:box visibility:public modality:FINAL <> () returnType:kotlin.String flags:[]'
+          then: RETURN type=kotlin.Nothing from='public final fun box <> (): kotlin.String flags:[] declared in <root>'
             CONST String type=kotlin.String value="10"
       WHEN type=kotlin.Unit origin=IF
         BRANCH
-          if: CALL 'FUN IR_BUILTINS_STUB name:NOT visibility:public modality:FINAL <> (arg0:kotlin.Boolean) returnType:kotlin.Boolean flags:[]' type=kotlin.Boolean origin=EXCLEQ
-            arg0: CALL 'FUN IR_BUILTINS_STUB name:EQEQ visibility:public modality:FINAL <> (arg0:kotlin.Any?, arg1:kotlin.Any?) returnType:kotlin.Boolean flags:[]' type=kotlin.Boolean origin=EXCLEQ
-              arg0: CALL 'FUN FAKE_OVERRIDE name:genericFromSuper visibility:public modality:OPEN <> ($this:<root>.I<kotlin.String>, g:kotlin.String) returnType:kotlin.String flags:[]' type=kotlin.String origin=null
+          if: CALL 'public final fun NOT <> (arg0: kotlin.Boolean): kotlin.Boolean flags:[] declared in kotlin.internal.ir' type=kotlin.Boolean origin=EXCLEQ
+            arg0: CALL 'public final fun EQEQ <> (arg0: kotlin.Any?, arg1: kotlin.Any?): kotlin.Boolean flags:[] declared in kotlin.internal.ir' type=kotlin.Boolean origin=EXCLEQ
+              arg0: CALL 'public open fun genericFromSuper <> (g: kotlin.String): kotlin.String flags:[] declared in <root>.C' type=kotlin.String origin=null
                 $this: GET_OBJECT 'CLASS OBJECT name:C modality:FINAL visibility:public flags:[] superTypes:[<root>.BaseClass; <root>.I<kotlin.String>]' type=<root>.C
                 g: CONST String type=kotlin.String value="11"
               arg1: CONST String type=kotlin.String value="11"
-          then: RETURN type=kotlin.Nothing from='FUN name:box visibility:public modality:FINAL <> () returnType:kotlin.String flags:[]'
+          then: RETURN type=kotlin.Nothing from='public final fun box <> (): kotlin.String flags:[] declared in <root>'
             CONST String type=kotlin.String value="11"
-      RETURN type=kotlin.Nothing from='FUN name:box visibility:public modality:FINAL <> () returnType:kotlin.String flags:[]'
+      RETURN type=kotlin.Nothing from='public final fun box <> (): kotlin.String flags:[] declared in <root>'
         CONST String type=kotlin.String value="OK"

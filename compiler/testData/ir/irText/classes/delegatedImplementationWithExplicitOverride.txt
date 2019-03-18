@@ -22,7 +22,7 @@ FILE fqName:<root> fileName:/delegatedImplementationWithExplicitOverride.kt
     $this: VALUE_PARAMETER INSTANCE_RECEIVER name:<this> type:<root>.FooBarImpl flags:[]
     CONSTRUCTOR visibility:private <> () returnType:<root>.FooBarImpl flags:[primary]
       BLOCK_BODY
-        DELEGATING_CONSTRUCTOR_CALL 'CONSTRUCTOR IR_EXTERNAL_DECLARATION_STUB visibility:public <> () returnType:kotlin.Any flags:[primary]'
+        DELEGATING_CONSTRUCTOR_CALL 'public constructor <init> <> () flags:[primary] declared in kotlin.Any'
         INSTANCE_INITIALIZER_CALL classDescriptor='CLASS OBJECT name:FooBarImpl modality:FINAL visibility:public flags:[] superTypes:[<root>.IFooBar]'
     FUN name:foo visibility:public modality:OPEN <> ($this:<root>.FooBarImpl) returnType:kotlin.Unit flags:[]
       overridden:
@@ -51,7 +51,7 @@ FILE fqName:<root> fileName:/delegatedImplementationWithExplicitOverride.kt
     $this: VALUE_PARAMETER INSTANCE_RECEIVER name:<this> type:<root>.C flags:[]
     CONSTRUCTOR visibility:public <> () returnType:<root>.C flags:[primary]
       BLOCK_BODY
-        DELEGATING_CONSTRUCTOR_CALL 'CONSTRUCTOR IR_EXTERNAL_DECLARATION_STUB visibility:public <> () returnType:kotlin.Any flags:[primary]'
+        DELEGATING_CONSTRUCTOR_CALL 'public constructor <init> <> () flags:[primary] declared in kotlin.Any'
         INSTANCE_INITIALIZER_CALL classDescriptor='CLASS CLASS name:C modality:FINAL visibility:public flags:[] superTypes:[<root>.IFooBar]'
     FIELD DELEGATE name:C$IFooBar$delegate type:<root>.FooBarImpl visibility:private flags:[final]
       EXPRESSION_BODY
@@ -61,9 +61,9 @@ FILE fqName:<root> fileName:/delegatedImplementationWithExplicitOverride.kt
         FUN name:foo visibility:public modality:ABSTRACT <> ($this:<root>.IFooBar) returnType:kotlin.Unit flags:[]
       $this: VALUE_PARAMETER name:<this> type:<root>.C flags:[]
       BLOCK_BODY
-        CALL 'FUN name:foo visibility:public modality:ABSTRACT <> ($this:<root>.IFooBar) returnType:kotlin.Unit flags:[]' type=kotlin.Unit origin=null
+        CALL 'public abstract fun foo <> (): kotlin.Unit flags:[] declared in <root>.IFooBar' type=kotlin.Unit origin=null
           $this: GET_FIELD 'FIELD DELEGATE name:C$IFooBar$delegate type:<root>.FooBarImpl visibility:private flags:[final]' type=<root>.FooBarImpl origin=null
-            receiver: GET_VAR 'VALUE_PARAMETER name:<this> type:<root>.C flags:[]' type=<root>.C origin=null
+            receiver: GET_VAR '<this>: <root>.C flags:[] declared in <root>.C.foo' type=<root>.C origin=null
     FUN name:bar visibility:public modality:OPEN <> ($this:<root>.C) returnType:kotlin.Unit flags:[]
       overridden:
         FUN name:bar visibility:public modality:ABSTRACT <> ($this:<root>.IFooBar) returnType:kotlin.Unit flags:[]

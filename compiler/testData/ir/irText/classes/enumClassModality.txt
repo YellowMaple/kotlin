@@ -3,11 +3,11 @@ FILE fqName:<root> fileName:/enumClassModality.kt
     $this: VALUE_PARAMETER INSTANCE_RECEIVER name:<this> type:<root>.TestFinalEnum1 flags:[]
     CONSTRUCTOR visibility:private <> () returnType:<root>.TestFinalEnum1 flags:[primary]
       BLOCK_BODY
-        ENUM_CONSTRUCTOR_CALL 'CONSTRUCTOR IR_EXTERNAL_DECLARATION_STUB visibility:public <> (name:kotlin.String, ordinal:kotlin.Int) returnType:kotlin.Enum<kotlin.Enum.E> flags:[primary]'
+        ENUM_CONSTRUCTOR_CALL 'public constructor <init> <> (name: kotlin.String, ordinal: kotlin.Int) flags:[primary] declared in kotlin.Enum'
           <E : Enum<E>>: <root>.TestFinalEnum1
         INSTANCE_INITIALIZER_CALL classDescriptor='CLASS ENUM_CLASS name:TestFinalEnum1 modality:FINAL visibility:public flags:[] superTypes:[kotlin.Enum<<root>.TestFinalEnum1>]'
     ENUM_ENTRY name:X1
-      init: ENUM_CONSTRUCTOR_CALL 'CONSTRUCTOR visibility:private <> () returnType:<root>.TestFinalEnum1 flags:[primary]'
+      init: ENUM_CONSTRUCTOR_CALL 'private constructor <init> <> () flags:[primary] declared in <root>.TestFinalEnum1'
     FUN FAKE_OVERRIDE name:clone visibility:protected modality:FINAL <> ($this:kotlin.Enum<<root>.TestFinalEnum1>) returnType:kotlin.Any flags:[]
       overridden:
         FUN IR_EXTERNAL_DECLARATION_STUB name:clone visibility:protected modality:FINAL <> ($this:kotlin.Enum<kotlin.Enum.E>) returnType:kotlin.Any flags:[]
@@ -60,22 +60,22 @@ FILE fqName:<root> fileName:/enumClassModality.kt
     CONSTRUCTOR visibility:private <> (x:kotlin.Int) returnType:<root>.TestFinalEnum2 flags:[primary]
       VALUE_PARAMETER name:x index:0 type:kotlin.Int flags:[]
       BLOCK_BODY
-        ENUM_CONSTRUCTOR_CALL 'CONSTRUCTOR IR_EXTERNAL_DECLARATION_STUB visibility:public <> (name:kotlin.String, ordinal:kotlin.Int) returnType:kotlin.Enum<kotlin.Enum.E> flags:[primary]'
+        ENUM_CONSTRUCTOR_CALL 'public constructor <init> <> (name: kotlin.String, ordinal: kotlin.Int) flags:[primary] declared in kotlin.Enum'
           <E : Enum<E>>: <root>.TestFinalEnum2
         INSTANCE_INITIALIZER_CALL classDescriptor='CLASS ENUM_CLASS name:TestFinalEnum2 modality:FINAL visibility:public flags:[] superTypes:[kotlin.Enum<<root>.TestFinalEnum2>]'
     PROPERTY name:x visibility:public modality:FINAL flags:[val]
       FIELD PROPERTY_BACKING_FIELD name:x type:kotlin.Int visibility:public flags:[final]
         EXPRESSION_BODY
-          GET_VAR 'VALUE_PARAMETER name:x index:0 type:kotlin.Int flags:[]' type=kotlin.Int origin=INITIALIZE_PROPERTY_FROM_PARAMETER
+          GET_VAR 'x: kotlin.Int flags:[] declared in <root>.TestFinalEnum2.<init>' type=kotlin.Int origin=INITIALIZE_PROPERTY_FROM_PARAMETER
       FUN DEFAULT_PROPERTY_ACCESSOR name:<get-x> visibility:public modality:FINAL <> ($this:<root>.TestFinalEnum2) returnType:kotlin.Int flags:[]
         correspondingProperty: PROPERTY name:x visibility:public modality:FINAL flags:[val]
         $this: VALUE_PARAMETER name:<this> type:<root>.TestFinalEnum2 flags:[]
         BLOCK_BODY
-          RETURN type=kotlin.Nothing from='FUN DEFAULT_PROPERTY_ACCESSOR name:<get-x> visibility:public modality:FINAL <> ($this:<root>.TestFinalEnum2) returnType:kotlin.Int flags:[]'
+          RETURN type=kotlin.Nothing from='public final fun <get-x> <> (): kotlin.Int flags:[] declared in <root>.TestFinalEnum2'
             GET_FIELD 'FIELD PROPERTY_BACKING_FIELD name:x type:kotlin.Int visibility:public flags:[final]' type=kotlin.Int origin=null
-              receiver: GET_VAR 'VALUE_PARAMETER name:<this> type:<root>.TestFinalEnum2 flags:[]' type=<root>.TestFinalEnum2 origin=null
+              receiver: GET_VAR '<this>: <root>.TestFinalEnum2 flags:[] declared in <root>.TestFinalEnum2.<get-x>' type=<root>.TestFinalEnum2 origin=null
     ENUM_ENTRY name:X1
-      init: ENUM_CONSTRUCTOR_CALL 'CONSTRUCTOR visibility:private <> (x:kotlin.Int) returnType:<root>.TestFinalEnum2 flags:[primary]'
+      init: ENUM_CONSTRUCTOR_CALL 'private constructor <init> <> (x: kotlin.Int) flags:[primary] declared in <root>.TestFinalEnum2'
         x: CONST Int type=kotlin.Int value=1
     FUN FAKE_OVERRIDE name:clone visibility:protected modality:FINAL <> ($this:kotlin.Enum<<root>.TestFinalEnum2>) returnType:kotlin.Any flags:[]
       overridden:
@@ -128,11 +128,11 @@ FILE fqName:<root> fileName:/enumClassModality.kt
     $this: VALUE_PARAMETER INSTANCE_RECEIVER name:<this> type:<root>.TestFinalEnum3 flags:[]
     CONSTRUCTOR visibility:private <> () returnType:<root>.TestFinalEnum3 flags:[primary]
       BLOCK_BODY
-        ENUM_CONSTRUCTOR_CALL 'CONSTRUCTOR IR_EXTERNAL_DECLARATION_STUB visibility:public <> (name:kotlin.String, ordinal:kotlin.Int) returnType:kotlin.Enum<kotlin.Enum.E> flags:[primary]'
+        ENUM_CONSTRUCTOR_CALL 'public constructor <init> <> (name: kotlin.String, ordinal: kotlin.Int) flags:[primary] declared in kotlin.Enum'
           <E : Enum<E>>: <root>.TestFinalEnum3
         INSTANCE_INITIALIZER_CALL classDescriptor='CLASS ENUM_CLASS name:TestFinalEnum3 modality:FINAL visibility:public flags:[] superTypes:[kotlin.Enum<<root>.TestFinalEnum3>]'
     ENUM_ENTRY name:X1
-      init: ENUM_CONSTRUCTOR_CALL 'CONSTRUCTOR visibility:private <> () returnType:<root>.TestFinalEnum3 flags:[primary]'
+      init: ENUM_CONSTRUCTOR_CALL 'private constructor <init> <> () flags:[primary] declared in <root>.TestFinalEnum3'
     FUN name:doStuff visibility:public modality:FINAL <> ($this:<root>.TestFinalEnum3) returnType:kotlin.Unit flags:[]
       $this: VALUE_PARAMETER name:<this> type:<root>.TestFinalEnum3 flags:[]
       BLOCK_BODY
@@ -187,25 +187,25 @@ FILE fqName:<root> fileName:/enumClassModality.kt
     $this: VALUE_PARAMETER INSTANCE_RECEIVER name:<this> type:<root>.TestOpenEnum1 flags:[]
     CONSTRUCTOR visibility:private <> () returnType:<root>.TestOpenEnum1 flags:[primary]
       BLOCK_BODY
-        ENUM_CONSTRUCTOR_CALL 'CONSTRUCTOR IR_EXTERNAL_DECLARATION_STUB visibility:public <> (name:kotlin.String, ordinal:kotlin.Int) returnType:kotlin.Enum<kotlin.Enum.E> flags:[primary]'
+        ENUM_CONSTRUCTOR_CALL 'public constructor <init> <> (name: kotlin.String, ordinal: kotlin.Int) flags:[primary] declared in kotlin.Enum'
           <E : Enum<E>>: <root>.TestOpenEnum1
         INSTANCE_INITIALIZER_CALL classDescriptor='CLASS ENUM_CLASS name:TestOpenEnum1 modality:OPEN visibility:public flags:[] superTypes:[kotlin.Enum<<root>.TestOpenEnum1>]'
     ENUM_ENTRY name:X1
-      init: ENUM_CONSTRUCTOR_CALL 'CONSTRUCTOR visibility:private <> () returnType:<root>.TestOpenEnum1.X1 flags:[primary]'
+      init: ENUM_CONSTRUCTOR_CALL 'private constructor <init> <> () flags:[primary] declared in <root>.TestOpenEnum1.X1'
       class: CLASS ENUM_ENTRY name:X1 modality:FINAL visibility:public flags:[] superTypes:[<root>.TestOpenEnum1]
         $this: VALUE_PARAMETER INSTANCE_RECEIVER name:<this> type:<root>.TestOpenEnum1.X1 flags:[]
         CONSTRUCTOR visibility:private <> () returnType:<root>.TestOpenEnum1.X1 flags:[primary]
           BLOCK_BODY
             TYPE_OP type=kotlin.Unit origin=IMPLICIT_COERCION_TO_UNIT typeOperand=kotlin.Unit
               typeOperand: CLASS IR_EXTERNAL_DECLARATION_STUB OBJECT name:Unit modality:FINAL visibility:public flags:[] superTypes:[kotlin.Any]
-              ENUM_CONSTRUCTOR_CALL 'CONSTRUCTOR visibility:private <> () returnType:<root>.TestOpenEnum1 flags:[primary]'
+              ENUM_CONSTRUCTOR_CALL 'private constructor <init> <> () flags:[primary] declared in <root>.TestOpenEnum1'
             INSTANCE_INITIALIZER_CALL classDescriptor='CLASS ENUM_ENTRY name:X1 modality:FINAL visibility:public flags:[] superTypes:[<root>.TestOpenEnum1]'
         FUN name:toString visibility:public modality:OPEN <> ($this:<root>.TestOpenEnum1.X1) returnType:kotlin.String flags:[]
           overridden:
             FUN FAKE_OVERRIDE name:toString visibility:public modality:OPEN <> ($this:kotlin.Enum<<root>.TestOpenEnum1>) returnType:kotlin.String flags:[]
           $this: VALUE_PARAMETER name:<this> type:<root>.TestOpenEnum1.X1 flags:[]
           BLOCK_BODY
-            RETURN type=kotlin.Nothing from='FUN name:toString visibility:public modality:OPEN <> ($this:<root>.TestOpenEnum1.X1) returnType:kotlin.String flags:[]'
+            RETURN type=kotlin.Nothing from='public open fun toString <> (): kotlin.String flags:[] declared in <root>.TestOpenEnum1.X1'
               CONST String type=kotlin.String value="X1"
         FUN FAKE_OVERRIDE name:clone visibility:protected modality:FINAL <> ($this:kotlin.Enum<<root>.TestOpenEnum1>) returnType:kotlin.Any flags:[]
           overridden:
@@ -296,18 +296,18 @@ FILE fqName:<root> fileName:/enumClassModality.kt
     $this: VALUE_PARAMETER INSTANCE_RECEIVER name:<this> type:<root>.TestOpenEnum2 flags:[]
     CONSTRUCTOR visibility:private <> () returnType:<root>.TestOpenEnum2 flags:[primary]
       BLOCK_BODY
-        ENUM_CONSTRUCTOR_CALL 'CONSTRUCTOR IR_EXTERNAL_DECLARATION_STUB visibility:public <> (name:kotlin.String, ordinal:kotlin.Int) returnType:kotlin.Enum<kotlin.Enum.E> flags:[primary]'
+        ENUM_CONSTRUCTOR_CALL 'public constructor <init> <> (name: kotlin.String, ordinal: kotlin.Int) flags:[primary] declared in kotlin.Enum'
           <E : Enum<E>>: <root>.TestOpenEnum2
         INSTANCE_INITIALIZER_CALL classDescriptor='CLASS ENUM_CLASS name:TestOpenEnum2 modality:OPEN visibility:public flags:[] superTypes:[kotlin.Enum<<root>.TestOpenEnum2>]'
     ENUM_ENTRY name:X1
-      init: ENUM_CONSTRUCTOR_CALL 'CONSTRUCTOR visibility:private <> () returnType:<root>.TestOpenEnum2.X1 flags:[primary]'
+      init: ENUM_CONSTRUCTOR_CALL 'private constructor <init> <> () flags:[primary] declared in <root>.TestOpenEnum2.X1'
       class: CLASS ENUM_ENTRY name:X1 modality:FINAL visibility:public flags:[] superTypes:[<root>.TestOpenEnum2]
         $this: VALUE_PARAMETER INSTANCE_RECEIVER name:<this> type:<root>.TestOpenEnum2.X1 flags:[]
         CONSTRUCTOR visibility:private <> () returnType:<root>.TestOpenEnum2.X1 flags:[primary]
           BLOCK_BODY
             TYPE_OP type=kotlin.Unit origin=IMPLICIT_COERCION_TO_UNIT typeOperand=kotlin.Unit
               typeOperand: CLASS IR_EXTERNAL_DECLARATION_STUB OBJECT name:Unit modality:FINAL visibility:public flags:[] superTypes:[kotlin.Any]
-              ENUM_CONSTRUCTOR_CALL 'CONSTRUCTOR visibility:private <> () returnType:<root>.TestOpenEnum2 flags:[primary]'
+              ENUM_CONSTRUCTOR_CALL 'private constructor <init> <> () flags:[primary] declared in <root>.TestOpenEnum2'
             INSTANCE_INITIALIZER_CALL classDescriptor='CLASS ENUM_ENTRY name:X1 modality:FINAL visibility:public flags:[] superTypes:[<root>.TestOpenEnum2]'
         FUN name:foo visibility:public modality:OPEN <> ($this:<root>.TestOpenEnum2.X1) returnType:kotlin.Unit flags:[]
           overridden:
@@ -410,18 +410,18 @@ FILE fqName:<root> fileName:/enumClassModality.kt
     $this: VALUE_PARAMETER INSTANCE_RECEIVER name:<this> type:<root>.TestAbstractEnum1 flags:[]
     CONSTRUCTOR visibility:private <> () returnType:<root>.TestAbstractEnum1 flags:[primary]
       BLOCK_BODY
-        ENUM_CONSTRUCTOR_CALL 'CONSTRUCTOR IR_EXTERNAL_DECLARATION_STUB visibility:public <> (name:kotlin.String, ordinal:kotlin.Int) returnType:kotlin.Enum<kotlin.Enum.E> flags:[primary]'
+        ENUM_CONSTRUCTOR_CALL 'public constructor <init> <> (name: kotlin.String, ordinal: kotlin.Int) flags:[primary] declared in kotlin.Enum'
           <E : Enum<E>>: <root>.TestAbstractEnum1
         INSTANCE_INITIALIZER_CALL classDescriptor='CLASS ENUM_CLASS name:TestAbstractEnum1 modality:ABSTRACT visibility:public flags:[] superTypes:[kotlin.Enum<<root>.TestAbstractEnum1>]'
     ENUM_ENTRY name:X1
-      init: ENUM_CONSTRUCTOR_CALL 'CONSTRUCTOR visibility:private <> () returnType:<root>.TestAbstractEnum1.X1 flags:[primary]'
+      init: ENUM_CONSTRUCTOR_CALL 'private constructor <init> <> () flags:[primary] declared in <root>.TestAbstractEnum1.X1'
       class: CLASS ENUM_ENTRY name:X1 modality:FINAL visibility:public flags:[] superTypes:[<root>.TestAbstractEnum1]
         $this: VALUE_PARAMETER INSTANCE_RECEIVER name:<this> type:<root>.TestAbstractEnum1.X1 flags:[]
         CONSTRUCTOR visibility:private <> () returnType:<root>.TestAbstractEnum1.X1 flags:[primary]
           BLOCK_BODY
             TYPE_OP type=kotlin.Unit origin=IMPLICIT_COERCION_TO_UNIT typeOperand=kotlin.Unit
               typeOperand: CLASS IR_EXTERNAL_DECLARATION_STUB OBJECT name:Unit modality:FINAL visibility:public flags:[] superTypes:[kotlin.Any]
-              ENUM_CONSTRUCTOR_CALL 'CONSTRUCTOR visibility:private <> () returnType:<root>.TestAbstractEnum1 flags:[primary]'
+              ENUM_CONSTRUCTOR_CALL 'private constructor <init> <> () flags:[primary] declared in <root>.TestAbstractEnum1'
             INSTANCE_INITIALIZER_CALL classDescriptor='CLASS ENUM_ENTRY name:X1 modality:FINAL visibility:public flags:[] superTypes:[<root>.TestAbstractEnum1]'
         FUN name:foo visibility:public modality:OPEN <> ($this:<root>.TestAbstractEnum1.X1) returnType:kotlin.Unit flags:[]
           overridden:
@@ -540,18 +540,18 @@ FILE fqName:<root> fileName:/enumClassModality.kt
     $this: VALUE_PARAMETER INSTANCE_RECEIVER name:<this> type:<root>.TestAbstractEnum2 flags:[]
     CONSTRUCTOR visibility:private <> () returnType:<root>.TestAbstractEnum2 flags:[primary]
       BLOCK_BODY
-        ENUM_CONSTRUCTOR_CALL 'CONSTRUCTOR IR_EXTERNAL_DECLARATION_STUB visibility:public <> (name:kotlin.String, ordinal:kotlin.Int) returnType:kotlin.Enum<kotlin.Enum.E> flags:[primary]'
+        ENUM_CONSTRUCTOR_CALL 'public constructor <init> <> (name: kotlin.String, ordinal: kotlin.Int) flags:[primary] declared in kotlin.Enum'
           <E : Enum<E>>: <root>.TestAbstractEnum2
         INSTANCE_INITIALIZER_CALL classDescriptor='CLASS ENUM_CLASS name:TestAbstractEnum2 modality:ABSTRACT visibility:public flags:[] superTypes:[kotlin.Enum<<root>.TestAbstractEnum2>; <root>.IFoo]'
     ENUM_ENTRY name:X1
-      init: ENUM_CONSTRUCTOR_CALL 'CONSTRUCTOR visibility:private <> () returnType:<root>.TestAbstractEnum2.X1 flags:[primary]'
+      init: ENUM_CONSTRUCTOR_CALL 'private constructor <init> <> () flags:[primary] declared in <root>.TestAbstractEnum2.X1'
       class: CLASS ENUM_ENTRY name:X1 modality:FINAL visibility:public flags:[] superTypes:[<root>.TestAbstractEnum2]
         $this: VALUE_PARAMETER INSTANCE_RECEIVER name:<this> type:<root>.TestAbstractEnum2.X1 flags:[]
         CONSTRUCTOR visibility:private <> () returnType:<root>.TestAbstractEnum2.X1 flags:[primary]
           BLOCK_BODY
             TYPE_OP type=kotlin.Unit origin=IMPLICIT_COERCION_TO_UNIT typeOperand=kotlin.Unit
               typeOperand: CLASS IR_EXTERNAL_DECLARATION_STUB OBJECT name:Unit modality:FINAL visibility:public flags:[] superTypes:[kotlin.Any]
-              ENUM_CONSTRUCTOR_CALL 'CONSTRUCTOR visibility:private <> () returnType:<root>.TestAbstractEnum2 flags:[primary]'
+              ENUM_CONSTRUCTOR_CALL 'private constructor <init> <> () flags:[primary] declared in <root>.TestAbstractEnum2'
             INSTANCE_INITIALIZER_CALL classDescriptor='CLASS ENUM_ENTRY name:X1 modality:FINAL visibility:public flags:[] superTypes:[<root>.TestAbstractEnum2]'
         FUN name:foo visibility:public modality:OPEN <> ($this:<root>.TestAbstractEnum2.X1) returnType:kotlin.Unit flags:[]
           overridden:

@@ -54,15 +54,15 @@ FILE fqName:<root> fileName:/expectedEnumClass.kt
     $this: VALUE_PARAMETER INSTANCE_RECEIVER name:<this> type:<root>.MyEnum flags:[]
     CONSTRUCTOR visibility:private <> () returnType:<root>.MyEnum flags:[primary]
       BLOCK_BODY
-        ENUM_CONSTRUCTOR_CALL 'CONSTRUCTOR IR_EXTERNAL_DECLARATION_STUB visibility:public <> (name:kotlin.String, ordinal:kotlin.Int) returnType:kotlin.Enum<kotlin.Enum.E> flags:[primary]'
+        ENUM_CONSTRUCTOR_CALL 'public constructor <init> <> (name: kotlin.String, ordinal: kotlin.Int) flags:[primary] declared in kotlin.Enum'
           <E : Enum<E>>: <root>.MyEnum
         INSTANCE_INITIALIZER_CALL classDescriptor='CLASS ENUM_CLASS name:MyEnum modality:FINAL visibility:public flags:[] superTypes:[kotlin.Enum<<root>.MyEnum>]'
     ENUM_ENTRY name:FOO
-      init: ENUM_CONSTRUCTOR_CALL 'CONSTRUCTOR visibility:private <> () returnType:<root>.MyEnum flags:[primary]'
+      init: ENUM_CONSTRUCTOR_CALL 'private constructor <init> <> () flags:[primary] declared in <root>.MyEnum'
     ENUM_ENTRY name:BAR
-      init: ENUM_CONSTRUCTOR_CALL 'CONSTRUCTOR visibility:private <> () returnType:<root>.MyEnum flags:[primary]'
+      init: ENUM_CONSTRUCTOR_CALL 'private constructor <init> <> () flags:[primary] declared in <root>.MyEnum'
     ENUM_ENTRY name:BAZ
-      init: ENUM_CONSTRUCTOR_CALL 'CONSTRUCTOR visibility:private <> () returnType:<root>.MyEnum flags:[primary]'
+      init: ENUM_CONSTRUCTOR_CALL 'private constructor <init> <> () flags:[primary] declared in <root>.MyEnum'
     FUN FAKE_OVERRIDE name:clone visibility:protected modality:FINAL <> ($this:kotlin.Enum<<root>.MyEnum>) returnType:kotlin.Any flags:[]
       overridden:
         FUN IR_EXTERNAL_DECLARATION_STUB name:clone visibility:protected modality:FINAL <> ($this:kotlin.Enum<kotlin.Enum.E>) returnType:kotlin.Any flags:[]

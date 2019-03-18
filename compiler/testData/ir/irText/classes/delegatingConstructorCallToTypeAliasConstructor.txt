@@ -5,19 +5,19 @@ FILE fqName:<root> fileName:/delegatingConstructorCallToTypeAliasConstructor.kt
     CONSTRUCTOR visibility:public <> (value:<root>.Cell.T) returnType:<root>.Cell<<root>.Cell.T> flags:[primary]
       VALUE_PARAMETER name:value index:0 type:<root>.Cell.T flags:[]
       BLOCK_BODY
-        DELEGATING_CONSTRUCTOR_CALL 'CONSTRUCTOR IR_EXTERNAL_DECLARATION_STUB visibility:public <> () returnType:kotlin.Any flags:[primary]'
+        DELEGATING_CONSTRUCTOR_CALL 'public constructor <init> <> () flags:[primary] declared in kotlin.Any'
         INSTANCE_INITIALIZER_CALL classDescriptor='CLASS CLASS name:Cell modality:OPEN visibility:public flags:[] superTypes:[kotlin.Any]'
     PROPERTY name:value visibility:public modality:FINAL flags:[val]
       FIELD PROPERTY_BACKING_FIELD name:value type:<root>.Cell.T visibility:public flags:[final]
         EXPRESSION_BODY
-          GET_VAR 'VALUE_PARAMETER name:value index:0 type:<root>.Cell.T flags:[]' type=<root>.Cell.T origin=INITIALIZE_PROPERTY_FROM_PARAMETER
+          GET_VAR 'value: <root>.Cell.T flags:[] declared in <root>.Cell.<init>' type=<root>.Cell.T origin=INITIALIZE_PROPERTY_FROM_PARAMETER
       FUN DEFAULT_PROPERTY_ACCESSOR name:<get-value> visibility:public modality:FINAL <> ($this:<root>.Cell<<root>.Cell.T>) returnType:<root>.Cell.T flags:[]
         correspondingProperty: PROPERTY name:value visibility:public modality:FINAL flags:[val]
         $this: VALUE_PARAMETER name:<this> type:<root>.Cell<<root>.Cell.T> flags:[]
         BLOCK_BODY
-          RETURN type=kotlin.Nothing from='FUN DEFAULT_PROPERTY_ACCESSOR name:<get-value> visibility:public modality:FINAL <> ($this:<root>.Cell<<root>.Cell.T>) returnType:<root>.Cell.T flags:[]'
+          RETURN type=kotlin.Nothing from='public final fun <get-value> <> (): <root>.Cell.T flags:[] declared in <root>.Cell'
             GET_FIELD 'FIELD PROPERTY_BACKING_FIELD name:value type:<root>.Cell.T visibility:public flags:[final]' type=<root>.Cell.T origin=null
-              receiver: GET_VAR 'VALUE_PARAMETER name:<this> type:<root>.Cell<<root>.Cell.T> flags:[]' type=<root>.Cell<<root>.Cell.T> origin=null
+              receiver: GET_VAR '<this>: <root>.Cell<<root>.Cell.T> flags:[] declared in <root>.Cell.<get-value>' type=<root>.Cell<<root>.Cell.T> origin=null
     FUN FAKE_OVERRIDE name:equals visibility:public modality:OPEN <> ($this:kotlin.Any, other:kotlin.Any?) returnType:kotlin.Boolean flags:[]
       overridden:
         FUN IR_EXTERNAL_DECLARATION_STUB name:equals visibility:public modality:OPEN <> ($this:kotlin.Any, other:kotlin.Any?) returnType:kotlin.Boolean flags:[]
@@ -35,7 +35,7 @@ FILE fqName:<root> fileName:/delegatingConstructorCallToTypeAliasConstructor.kt
     $this: VALUE_PARAMETER INSTANCE_RECEIVER name:<this> type:<root>.C1 flags:[]
     CONSTRUCTOR visibility:public <> () returnType:<root>.C1 flags:[primary]
       BLOCK_BODY
-        DELEGATING_CONSTRUCTOR_CALL 'CONSTRUCTOR visibility:public <> (value:<root>.Cell.T) returnType:<root>.Cell<<root>.Cell.T> flags:[primary]'
+        DELEGATING_CONSTRUCTOR_CALL 'public constructor <init> <> (value: <root>.Cell.T) flags:[primary] declared in <root>.Cell'
           <T>: kotlin.String
           value: CONST String type=kotlin.String value="O"
         INSTANCE_INITIALIZER_CALL classDescriptor='CLASS CLASS name:C1 modality:FINAL visibility:public flags:[] superTypes:[<root>.Cell<kotlin.String>]'
@@ -62,7 +62,7 @@ FILE fqName:<root> fileName:/delegatingConstructorCallToTypeAliasConstructor.kt
     $this: VALUE_PARAMETER INSTANCE_RECEIVER name:<this> type:<root>.C2 flags:[]
     CONSTRUCTOR visibility:public <> () returnType:<root>.C2 flags:[primary]
       BLOCK_BODY
-        DELEGATING_CONSTRUCTOR_CALL 'CONSTRUCTOR visibility:public <> (value:<root>.Cell.T) returnType:<root>.Cell<<root>.Cell.T> flags:[primary]'
+        DELEGATING_CONSTRUCTOR_CALL 'public constructor <init> <> (value: <root>.Cell.T) flags:[primary] declared in <root>.Cell'
           <T>: kotlin.String
           value: CONST String type=kotlin.String value="K"
         INSTANCE_INITIALIZER_CALL classDescriptor='CLASS CLASS name:C2 modality:FINAL visibility:public flags:[] superTypes:[<root>.Cell<kotlin.String>]'

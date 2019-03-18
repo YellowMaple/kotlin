@@ -3,7 +3,7 @@ FILE fqName:<root> fileName:/suppressedNonPublicCall.kt
     $this: VALUE_PARAMETER INSTANCE_RECEIVER name:<this> type:<root>.C flags:[]
     CONSTRUCTOR visibility:public <> () returnType:<root>.C flags:[primary]
       BLOCK_BODY
-        DELEGATING_CONSTRUCTOR_CALL 'CONSTRUCTOR IR_EXTERNAL_DECLARATION_STUB visibility:public <> () returnType:kotlin.Any flags:[primary]'
+        DELEGATING_CONSTRUCTOR_CALL 'public constructor <init> <> () flags:[primary] declared in kotlin.Any'
         INSTANCE_INITIALIZER_CALL classDescriptor='CLASS CLASS name:C modality:FINAL visibility:public flags:[] superTypes:[kotlin.Any]'
     FUN name:bar visibility:internal modality:FINAL <> ($this:<root>.C) returnType:kotlin.Unit flags:[]
       $this: VALUE_PARAMETER name:<this> type:<root>.C flags:[]
@@ -24,5 +24,5 @@ FILE fqName:<root> fileName:/suppressedNonPublicCall.kt
   FUN name:foo visibility:public modality:FINAL <> ($receiver:<root>.C) returnType:kotlin.Unit flags:[inline]
     $receiver: VALUE_PARAMETER name:<this> type:<root>.C flags:[]
     BLOCK_BODY
-      CALL 'FUN name:bar visibility:internal modality:FINAL <> ($this:<root>.C) returnType:kotlin.Unit flags:[]' type=kotlin.Unit origin=null
-        $this: GET_VAR 'VALUE_PARAMETER name:<this> type:<root>.C flags:[]' type=<root>.C origin=null
+      CALL 'internal final fun bar <> (): kotlin.Unit flags:[] declared in <root>.C' type=kotlin.Unit origin=null
+        $this: GET_VAR '<this>: <root>.C flags:[] declared in <root>.foo' type=<root>.C origin=null

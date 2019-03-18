@@ -10,7 +10,7 @@ FILE fqName:<root> fileName:/interfaceProperties.kt
         correspondingProperty: PROPERTY name:test2 visibility:public modality:OPEN flags:[val]
         $this: VALUE_PARAMETER name:<this> type:<root>.C flags:[]
         BLOCK_BODY
-          RETURN type=kotlin.Nothing from='FUN name:<get-test2> visibility:public modality:OPEN <> ($this:<root>.C) returnType:kotlin.Int flags:[]'
+          RETURN type=kotlin.Nothing from='public open fun <get-test2> <> (): kotlin.Int flags:[] declared in <root>.C'
             CONST Int type=kotlin.Int value=0
     PROPERTY name:test3 visibility:public modality:ABSTRACT flags:[var]
       FUN DEFAULT_PROPERTY_ACCESSOR name:<get-test3> visibility:public modality:ABSTRACT <> ($this:<root>.C) returnType:kotlin.Int flags:[]
@@ -25,7 +25,7 @@ FILE fqName:<root> fileName:/interfaceProperties.kt
         correspondingProperty: PROPERTY name:test4 visibility:public modality:OPEN flags:[var]
         $this: VALUE_PARAMETER name:<this> type:<root>.C flags:[]
         BLOCK_BODY
-          RETURN type=kotlin.Nothing from='FUN name:<get-test4> visibility:public modality:OPEN <> ($this:<root>.C) returnType:kotlin.Int flags:[]'
+          RETURN type=kotlin.Nothing from='public open fun <get-test4> <> (): kotlin.Int flags:[] declared in <root>.C'
             CONST Int type=kotlin.Int value=0
       FUN name:<set-test4> visibility:public modality:OPEN <> ($this:<root>.C, value:kotlin.Int) returnType:kotlin.Unit flags:[]
         correspondingProperty: PROPERTY name:test4 visibility:public modality:OPEN flags:[var]

@@ -3,44 +3,44 @@ FILE fqName:<root> fileName:/kt23030.kt
     $receiver: VALUE_PARAMETER name:<this> type:kotlin.Int flags:[]
     VALUE_PARAMETER name:c index:0 type:kotlin.Char flags:[]
     BLOCK_BODY
-      RETURN type=kotlin.Nothing from='FUN name:compareTo visibility:public modality:FINAL <> ($receiver:kotlin.Int, c:kotlin.Char) returnType:kotlin.Int flags:[]'
+      RETURN type=kotlin.Nothing from='public final fun compareTo <> (c: kotlin.Char): kotlin.Int flags:[] declared in <root>'
         CONST Int type=kotlin.Int value=0
   FUN name:testOverloadedCompareToCall visibility:public modality:FINAL <> (x:kotlin.Int, y:kotlin.Char) returnType:kotlin.Boolean flags:[]
     VALUE_PARAMETER name:x index:0 type:kotlin.Int flags:[]
     VALUE_PARAMETER name:y index:1 type:kotlin.Char flags:[]
     BLOCK_BODY
-      RETURN type=kotlin.Nothing from='FUN name:testOverloadedCompareToCall visibility:public modality:FINAL <> (x:kotlin.Int, y:kotlin.Char) returnType:kotlin.Boolean flags:[]'
-        CALL 'FUN IR_BUILTINS_STUB name:less visibility:public modality:FINAL <> (arg0:kotlin.Int, arg1:kotlin.Int) returnType:kotlin.Boolean flags:[]' type=kotlin.Boolean origin=LT
-          arg0: CALL 'FUN name:compareTo visibility:public modality:FINAL <> ($receiver:kotlin.Int, c:kotlin.Char) returnType:kotlin.Int flags:[]' type=kotlin.Int origin=LT
-            $receiver: GET_VAR 'VALUE_PARAMETER name:x index:0 type:kotlin.Int flags:[]' type=kotlin.Int origin=null
-            c: GET_VAR 'VALUE_PARAMETER name:y index:1 type:kotlin.Char flags:[]' type=kotlin.Char origin=null
+      RETURN type=kotlin.Nothing from='public final fun testOverloadedCompareToCall <> (x: kotlin.Int, y: kotlin.Char): kotlin.Boolean flags:[] declared in <root>'
+        CALL 'public final fun less <> (arg0: kotlin.Int, arg1: kotlin.Int): kotlin.Boolean flags:[] declared in kotlin.internal.ir' type=kotlin.Boolean origin=LT
+          arg0: CALL 'public final fun compareTo <> (c: kotlin.Char): kotlin.Int flags:[] declared in <root>' type=kotlin.Int origin=LT
+            $receiver: GET_VAR 'x: kotlin.Int flags:[] declared in <root>.testOverloadedCompareToCall' type=kotlin.Int origin=null
+            c: GET_VAR 'y: kotlin.Char flags:[] declared in <root>.testOverloadedCompareToCall' type=kotlin.Char origin=null
           arg1: CONST Int type=kotlin.Int value=0
   FUN name:testOverloadedCompareToCallWithSmartCast visibility:public modality:FINAL <> (x:kotlin.Any, y:kotlin.Any) returnType:kotlin.Boolean flags:[]
     VALUE_PARAMETER name:x index:0 type:kotlin.Any flags:[]
     VALUE_PARAMETER name:y index:1 type:kotlin.Any flags:[]
     BLOCK_BODY
-      RETURN type=kotlin.Nothing from='FUN name:testOverloadedCompareToCallWithSmartCast visibility:public modality:FINAL <> (x:kotlin.Any, y:kotlin.Any) returnType:kotlin.Boolean flags:[]'
+      RETURN type=kotlin.Nothing from='public final fun testOverloadedCompareToCallWithSmartCast <> (x: kotlin.Any, y: kotlin.Any): kotlin.Boolean flags:[] declared in <root>'
         WHEN type=kotlin.Boolean origin=ANDAND
           BRANCH
             if: WHEN type=kotlin.Boolean origin=ANDAND
               BRANCH
                 if: TYPE_OP type=kotlin.Boolean origin=INSTANCEOF typeOperand=kotlin.Int
                   typeOperand: CLASS IR_EXTERNAL_DECLARATION_STUB CLASS name:Int modality:FINAL visibility:public flags:[] superTypes:[kotlin.Number; kotlin.Comparable<kotlin.Int>; java.io.Serializable]
-                  GET_VAR 'VALUE_PARAMETER name:x index:0 type:kotlin.Any flags:[]' type=kotlin.Any origin=null
+                  GET_VAR 'x: kotlin.Any flags:[] declared in <root>.testOverloadedCompareToCallWithSmartCast' type=kotlin.Any origin=null
                 then: TYPE_OP type=kotlin.Boolean origin=INSTANCEOF typeOperand=kotlin.Char
                   typeOperand: CLASS IR_EXTERNAL_DECLARATION_STUB CLASS name:Char modality:FINAL visibility:public flags:[] superTypes:[kotlin.Comparable<kotlin.Char>; java.io.Serializable]
-                  GET_VAR 'VALUE_PARAMETER name:y index:1 type:kotlin.Any flags:[]' type=kotlin.Any origin=null
+                  GET_VAR 'y: kotlin.Any flags:[] declared in <root>.testOverloadedCompareToCallWithSmartCast' type=kotlin.Any origin=null
               BRANCH
                 if: CONST Boolean type=kotlin.Boolean value=true
                 then: CONST Boolean type=kotlin.Boolean value=false
-            then: CALL 'FUN IR_BUILTINS_STUB name:less visibility:public modality:FINAL <> (arg0:kotlin.Int, arg1:kotlin.Int) returnType:kotlin.Boolean flags:[]' type=kotlin.Boolean origin=LT
-              arg0: CALL 'FUN name:compareTo visibility:public modality:FINAL <> ($receiver:kotlin.Int, c:kotlin.Char) returnType:kotlin.Int flags:[]' type=kotlin.Int origin=LT
+            then: CALL 'public final fun less <> (arg0: kotlin.Int, arg1: kotlin.Int): kotlin.Boolean flags:[] declared in kotlin.internal.ir' type=kotlin.Boolean origin=LT
+              arg0: CALL 'public final fun compareTo <> (c: kotlin.Char): kotlin.Int flags:[] declared in <root>' type=kotlin.Int origin=LT
                 $receiver: TYPE_OP type=kotlin.Int origin=IMPLICIT_CAST typeOperand=kotlin.Int
                   typeOperand: CLASS IR_EXTERNAL_DECLARATION_STUB CLASS name:Int modality:FINAL visibility:public flags:[] superTypes:[kotlin.Number; kotlin.Comparable<kotlin.Int>; java.io.Serializable]
-                  GET_VAR 'VALUE_PARAMETER name:x index:0 type:kotlin.Any flags:[]' type=kotlin.Any origin=null
+                  GET_VAR 'x: kotlin.Any flags:[] declared in <root>.testOverloadedCompareToCallWithSmartCast' type=kotlin.Any origin=null
                 c: TYPE_OP type=kotlin.Char origin=IMPLICIT_CAST typeOperand=kotlin.Char
                   typeOperand: CLASS IR_EXTERNAL_DECLARATION_STUB CLASS name:Char modality:FINAL visibility:public flags:[] superTypes:[kotlin.Comparable<kotlin.Char>; java.io.Serializable]
-                  GET_VAR 'VALUE_PARAMETER name:y index:1 type:kotlin.Any flags:[]' type=kotlin.Any origin=null
+                  GET_VAR 'y: kotlin.Any flags:[] declared in <root>.testOverloadedCompareToCallWithSmartCast' type=kotlin.Any origin=null
               arg1: CONST Int type=kotlin.Int value=0
           BRANCH
             if: CONST Boolean type=kotlin.Boolean value=true
@@ -49,23 +49,23 @@ FILE fqName:<root> fileName:/kt23030.kt
     VALUE_PARAMETER name:x index:0 type:kotlin.Any flags:[]
     VALUE_PARAMETER name:y index:1 type:kotlin.Any flags:[]
     BLOCK_BODY
-      RETURN type=kotlin.Nothing from='FUN name:testEqualsWithSmartCast visibility:public modality:FINAL <> (x:kotlin.Any, y:kotlin.Any) returnType:kotlin.Boolean flags:[]'
+      RETURN type=kotlin.Nothing from='public final fun testEqualsWithSmartCast <> (x: kotlin.Any, y: kotlin.Any): kotlin.Boolean flags:[] declared in <root>'
         WHEN type=kotlin.Boolean origin=ANDAND
           BRANCH
             if: WHEN type=kotlin.Boolean origin=ANDAND
               BRANCH
                 if: TYPE_OP type=kotlin.Boolean origin=INSTANCEOF typeOperand=kotlin.Int
                   typeOperand: CLASS IR_EXTERNAL_DECLARATION_STUB CLASS name:Int modality:FINAL visibility:public flags:[] superTypes:[kotlin.Number; kotlin.Comparable<kotlin.Int>; java.io.Serializable]
-                  GET_VAR 'VALUE_PARAMETER name:x index:0 type:kotlin.Any flags:[]' type=kotlin.Any origin=null
+                  GET_VAR 'x: kotlin.Any flags:[] declared in <root>.testEqualsWithSmartCast' type=kotlin.Any origin=null
                 then: TYPE_OP type=kotlin.Boolean origin=INSTANCEOF typeOperand=kotlin.Char
                   typeOperand: CLASS IR_EXTERNAL_DECLARATION_STUB CLASS name:Char modality:FINAL visibility:public flags:[] superTypes:[kotlin.Comparable<kotlin.Char>; java.io.Serializable]
-                  GET_VAR 'VALUE_PARAMETER name:y index:1 type:kotlin.Any flags:[]' type=kotlin.Any origin=null
+                  GET_VAR 'y: kotlin.Any flags:[] declared in <root>.testEqualsWithSmartCast' type=kotlin.Any origin=null
               BRANCH
                 if: CONST Boolean type=kotlin.Boolean value=true
                 then: CONST Boolean type=kotlin.Boolean value=false
-            then: CALL 'FUN IR_BUILTINS_STUB name:EQEQ visibility:public modality:FINAL <> (arg0:kotlin.Any?, arg1:kotlin.Any?) returnType:kotlin.Boolean flags:[]' type=kotlin.Boolean origin=EQEQ
-              arg0: GET_VAR 'VALUE_PARAMETER name:x index:0 type:kotlin.Any flags:[]' type=kotlin.Any origin=null
-              arg1: GET_VAR 'VALUE_PARAMETER name:y index:1 type:kotlin.Any flags:[]' type=kotlin.Any origin=null
+            then: CALL 'public final fun EQEQ <> (arg0: kotlin.Any?, arg1: kotlin.Any?): kotlin.Boolean flags:[] declared in kotlin.internal.ir' type=kotlin.Boolean origin=EQEQ
+              arg0: GET_VAR 'x: kotlin.Any flags:[] declared in <root>.testEqualsWithSmartCast' type=kotlin.Any origin=null
+              arg1: GET_VAR 'y: kotlin.Any flags:[] declared in <root>.testEqualsWithSmartCast' type=kotlin.Any origin=null
           BRANCH
             if: CONST Boolean type=kotlin.Boolean value=true
             then: CONST Boolean type=kotlin.Boolean value=false
@@ -73,55 +73,55 @@ FILE fqName:<root> fileName:/kt23030.kt
     $this: VALUE_PARAMETER INSTANCE_RECEIVER name:<this> type:<root>.C flags:[]
     CONSTRUCTOR visibility:public <> () returnType:<root>.C flags:[primary]
       BLOCK_BODY
-        DELEGATING_CONSTRUCTOR_CALL 'CONSTRUCTOR IR_EXTERNAL_DECLARATION_STUB visibility:public <> () returnType:kotlin.Any flags:[primary]'
+        DELEGATING_CONSTRUCTOR_CALL 'public constructor <init> <> () flags:[primary] declared in kotlin.Any'
         INSTANCE_INITIALIZER_CALL classDescriptor='CLASS CLASS name:C modality:FINAL visibility:public flags:[] superTypes:[kotlin.Any]'
     FUN name:compareTo visibility:public modality:FINAL <> ($this:<root>.C, $receiver:kotlin.Int, c:kotlin.Char) returnType:kotlin.Int flags:[]
       $this: VALUE_PARAMETER name:<this> type:<root>.C flags:[]
       $receiver: VALUE_PARAMETER name:<this> type:kotlin.Int flags:[]
       VALUE_PARAMETER name:c index:0 type:kotlin.Char flags:[]
       BLOCK_BODY
-        RETURN type=kotlin.Nothing from='FUN name:compareTo visibility:public modality:FINAL <> ($this:<root>.C, $receiver:kotlin.Int, c:kotlin.Char) returnType:kotlin.Int flags:[]'
+        RETURN type=kotlin.Nothing from='public final fun compareTo <> (c: kotlin.Char): kotlin.Int flags:[] declared in <root>.C'
           CONST Int type=kotlin.Int value=0
     FUN name:testMemberExtensionCompareToCall visibility:public modality:FINAL <> ($this:<root>.C, x:kotlin.Int, y:kotlin.Char) returnType:kotlin.Boolean flags:[]
       $this: VALUE_PARAMETER name:<this> type:<root>.C flags:[]
       VALUE_PARAMETER name:x index:0 type:kotlin.Int flags:[]
       VALUE_PARAMETER name:y index:1 type:kotlin.Char flags:[]
       BLOCK_BODY
-        RETURN type=kotlin.Nothing from='FUN name:testMemberExtensionCompareToCall visibility:public modality:FINAL <> ($this:<root>.C, x:kotlin.Int, y:kotlin.Char) returnType:kotlin.Boolean flags:[]'
-          CALL 'FUN IR_BUILTINS_STUB name:less visibility:public modality:FINAL <> (arg0:kotlin.Int, arg1:kotlin.Int) returnType:kotlin.Boolean flags:[]' type=kotlin.Boolean origin=LT
-            arg0: CALL 'FUN name:compareTo visibility:public modality:FINAL <> ($this:<root>.C, $receiver:kotlin.Int, c:kotlin.Char) returnType:kotlin.Int flags:[]' type=kotlin.Int origin=LT
-              $this: GET_VAR 'VALUE_PARAMETER name:<this> type:<root>.C flags:[]' type=<root>.C origin=null
-              $receiver: GET_VAR 'VALUE_PARAMETER name:x index:0 type:kotlin.Int flags:[]' type=kotlin.Int origin=null
-              c: GET_VAR 'VALUE_PARAMETER name:y index:1 type:kotlin.Char flags:[]' type=kotlin.Char origin=null
+        RETURN type=kotlin.Nothing from='public final fun testMemberExtensionCompareToCall <> (x: kotlin.Int, y: kotlin.Char): kotlin.Boolean flags:[] declared in <root>.C'
+          CALL 'public final fun less <> (arg0: kotlin.Int, arg1: kotlin.Int): kotlin.Boolean flags:[] declared in kotlin.internal.ir' type=kotlin.Boolean origin=LT
+            arg0: CALL 'public final fun compareTo <> (c: kotlin.Char): kotlin.Int flags:[] declared in <root>.C' type=kotlin.Int origin=LT
+              $this: GET_VAR '<this>: <root>.C flags:[] declared in <root>.C.testMemberExtensionCompareToCall' type=<root>.C origin=null
+              $receiver: GET_VAR 'x: kotlin.Int flags:[] declared in <root>.C.testMemberExtensionCompareToCall' type=kotlin.Int origin=null
+              c: GET_VAR 'y: kotlin.Char flags:[] declared in <root>.C.testMemberExtensionCompareToCall' type=kotlin.Char origin=null
             arg1: CONST Int type=kotlin.Int value=0
     FUN name:testMemberExtensionCompareToCallWithSmartCast visibility:public modality:FINAL <> ($this:<root>.C, x:kotlin.Any, y:kotlin.Any) returnType:kotlin.Boolean flags:[]
       $this: VALUE_PARAMETER name:<this> type:<root>.C flags:[]
       VALUE_PARAMETER name:x index:0 type:kotlin.Any flags:[]
       VALUE_PARAMETER name:y index:1 type:kotlin.Any flags:[]
       BLOCK_BODY
-        RETURN type=kotlin.Nothing from='FUN name:testMemberExtensionCompareToCallWithSmartCast visibility:public modality:FINAL <> ($this:<root>.C, x:kotlin.Any, y:kotlin.Any) returnType:kotlin.Boolean flags:[]'
+        RETURN type=kotlin.Nothing from='public final fun testMemberExtensionCompareToCallWithSmartCast <> (x: kotlin.Any, y: kotlin.Any): kotlin.Boolean flags:[] declared in <root>.C'
           WHEN type=kotlin.Boolean origin=ANDAND
             BRANCH
               if: WHEN type=kotlin.Boolean origin=ANDAND
                 BRANCH
                   if: TYPE_OP type=kotlin.Boolean origin=INSTANCEOF typeOperand=kotlin.Int
                     typeOperand: CLASS IR_EXTERNAL_DECLARATION_STUB CLASS name:Int modality:FINAL visibility:public flags:[] superTypes:[kotlin.Number; kotlin.Comparable<kotlin.Int>; java.io.Serializable]
-                    GET_VAR 'VALUE_PARAMETER name:x index:0 type:kotlin.Any flags:[]' type=kotlin.Any origin=null
+                    GET_VAR 'x: kotlin.Any flags:[] declared in <root>.C.testMemberExtensionCompareToCallWithSmartCast' type=kotlin.Any origin=null
                   then: TYPE_OP type=kotlin.Boolean origin=INSTANCEOF typeOperand=kotlin.Char
                     typeOperand: CLASS IR_EXTERNAL_DECLARATION_STUB CLASS name:Char modality:FINAL visibility:public flags:[] superTypes:[kotlin.Comparable<kotlin.Char>; java.io.Serializable]
-                    GET_VAR 'VALUE_PARAMETER name:y index:1 type:kotlin.Any flags:[]' type=kotlin.Any origin=null
+                    GET_VAR 'y: kotlin.Any flags:[] declared in <root>.C.testMemberExtensionCompareToCallWithSmartCast' type=kotlin.Any origin=null
                 BRANCH
                   if: CONST Boolean type=kotlin.Boolean value=true
                   then: CONST Boolean type=kotlin.Boolean value=false
-              then: CALL 'FUN IR_BUILTINS_STUB name:less visibility:public modality:FINAL <> (arg0:kotlin.Int, arg1:kotlin.Int) returnType:kotlin.Boolean flags:[]' type=kotlin.Boolean origin=LT
-                arg0: CALL 'FUN name:compareTo visibility:public modality:FINAL <> ($this:<root>.C, $receiver:kotlin.Int, c:kotlin.Char) returnType:kotlin.Int flags:[]' type=kotlin.Int origin=LT
-                  $this: GET_VAR 'VALUE_PARAMETER name:<this> type:<root>.C flags:[]' type=<root>.C origin=null
+              then: CALL 'public final fun less <> (arg0: kotlin.Int, arg1: kotlin.Int): kotlin.Boolean flags:[] declared in kotlin.internal.ir' type=kotlin.Boolean origin=LT
+                arg0: CALL 'public final fun compareTo <> (c: kotlin.Char): kotlin.Int flags:[] declared in <root>.C' type=kotlin.Int origin=LT
+                  $this: GET_VAR '<this>: <root>.C flags:[] declared in <root>.C.testMemberExtensionCompareToCallWithSmartCast' type=<root>.C origin=null
                   $receiver: TYPE_OP type=kotlin.Int origin=IMPLICIT_CAST typeOperand=kotlin.Int
                     typeOperand: CLASS IR_EXTERNAL_DECLARATION_STUB CLASS name:Int modality:FINAL visibility:public flags:[] superTypes:[kotlin.Number; kotlin.Comparable<kotlin.Int>; java.io.Serializable]
-                    GET_VAR 'VALUE_PARAMETER name:x index:0 type:kotlin.Any flags:[]' type=kotlin.Any origin=null
+                    GET_VAR 'x: kotlin.Any flags:[] declared in <root>.C.testMemberExtensionCompareToCallWithSmartCast' type=kotlin.Any origin=null
                   c: TYPE_OP type=kotlin.Char origin=IMPLICIT_CAST typeOperand=kotlin.Char
                     typeOperand: CLASS IR_EXTERNAL_DECLARATION_STUB CLASS name:Char modality:FINAL visibility:public flags:[] superTypes:[kotlin.Comparable<kotlin.Char>; java.io.Serializable]
-                    GET_VAR 'VALUE_PARAMETER name:y index:1 type:kotlin.Any flags:[]' type=kotlin.Any origin=null
+                    GET_VAR 'y: kotlin.Any flags:[] declared in <root>.C.testMemberExtensionCompareToCallWithSmartCast' type=kotlin.Any origin=null
                 arg1: CONST Int type=kotlin.Int value=0
             BRANCH
               if: CONST Boolean type=kotlin.Boolean value=true

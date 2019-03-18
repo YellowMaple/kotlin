@@ -3,7 +3,7 @@ FILE fqName:<root> fileName:/secondaryConstructorWithInitializersFromClassBody.k
     $this: VALUE_PARAMETER INSTANCE_RECEIVER name:<this> type:<root>.Base flags:[]
     CONSTRUCTOR visibility:public <> () returnType:<root>.Base flags:[primary]
       BLOCK_BODY
-        DELEGATING_CONSTRUCTOR_CALL 'CONSTRUCTOR IR_EXTERNAL_DECLARATION_STUB visibility:public <> () returnType:kotlin.Any flags:[primary]'
+        DELEGATING_CONSTRUCTOR_CALL 'public constructor <init> <> () flags:[primary] declared in kotlin.Any'
         INSTANCE_INITIALIZER_CALL classDescriptor='CLASS CLASS name:Base modality:OPEN visibility:public flags:[] superTypes:[kotlin.Any]'
     FUN FAKE_OVERRIDE name:equals visibility:public modality:OPEN <> ($this:kotlin.Any, other:kotlin.Any?) returnType:kotlin.Boolean flags:[]
       overridden:
@@ -28,12 +28,12 @@ FILE fqName:<root> fileName:/secondaryConstructorWithInitializersFromClassBody.k
         correspondingProperty: PROPERTY name:x visibility:public modality:FINAL flags:[val]
         $this: VALUE_PARAMETER name:<this> type:<root>.TestProperty flags:[]
         BLOCK_BODY
-          RETURN type=kotlin.Nothing from='FUN DEFAULT_PROPERTY_ACCESSOR name:<get-x> visibility:public modality:FINAL <> ($this:<root>.TestProperty) returnType:kotlin.Int flags:[]'
+          RETURN type=kotlin.Nothing from='public final fun <get-x> <> (): kotlin.Int flags:[] declared in <root>.TestProperty'
             GET_FIELD 'FIELD PROPERTY_BACKING_FIELD name:x type:kotlin.Int visibility:public flags:[final]' type=kotlin.Int origin=null
-              receiver: GET_VAR 'VALUE_PARAMETER name:<this> type:<root>.TestProperty flags:[]' type=<root>.TestProperty origin=null
+              receiver: GET_VAR '<this>: <root>.TestProperty flags:[] declared in <root>.TestProperty.<get-x>' type=<root>.TestProperty origin=null
     CONSTRUCTOR visibility:public <> () returnType:<root>.TestProperty flags:[]
       BLOCK_BODY
-        DELEGATING_CONSTRUCTOR_CALL 'CONSTRUCTOR visibility:public <> () returnType:<root>.Base flags:[primary]'
+        DELEGATING_CONSTRUCTOR_CALL 'public constructor <init> <> () flags:[primary] declared in <root>.Base'
         INSTANCE_INITIALIZER_CALL classDescriptor='CLASS CLASS name:TestProperty modality:FINAL visibility:public flags:[] superTypes:[<root>.Base]'
     FUN FAKE_OVERRIDE name:equals visibility:public modality:OPEN <> ($this:kotlin.Any, other:kotlin.Any?) returnType:kotlin.Boolean flags:[]
       overridden:
@@ -56,27 +56,27 @@ FILE fqName:<root> fileName:/secondaryConstructorWithInitializersFromClassBody.k
         correspondingProperty: PROPERTY name:x visibility:public modality:FINAL flags:[val]
         $this: VALUE_PARAMETER name:<this> type:<root>.TestInitBlock flags:[]
         BLOCK_BODY
-          RETURN type=kotlin.Nothing from='FUN DEFAULT_PROPERTY_ACCESSOR name:<get-x> visibility:public modality:FINAL <> ($this:<root>.TestInitBlock) returnType:kotlin.Int flags:[]'
+          RETURN type=kotlin.Nothing from='public final fun <get-x> <> (): kotlin.Int flags:[] declared in <root>.TestInitBlock'
             GET_FIELD 'FIELD PROPERTY_BACKING_FIELD name:x type:kotlin.Int visibility:public flags:[final]' type=kotlin.Int origin=null
-              receiver: GET_VAR 'VALUE_PARAMETER name:<this> type:<root>.TestInitBlock flags:[]' type=<root>.TestInitBlock origin=null
+              receiver: GET_VAR '<this>: <root>.TestInitBlock flags:[] declared in <root>.TestInitBlock.<get-x>' type=<root>.TestInitBlock origin=null
     ANONYMOUS_INITIALIZER isStatic=false
       BLOCK_BODY
         SET_FIELD 'FIELD PROPERTY_BACKING_FIELD name:x type:kotlin.Int visibility:public flags:[final]' type=kotlin.Unit origin=null
-          receiver: GET_VAR 'VALUE_PARAMETER INSTANCE_RECEIVER name:<this> type:<root>.TestInitBlock flags:[]' type=<root>.TestInitBlock origin=null
+          receiver: GET_VAR '<this>: <root>.TestInitBlock flags:[] declared in <root>.TestInitBlock' type=<root>.TestInitBlock origin=null
           value: CONST Int type=kotlin.Int value=0
     CONSTRUCTOR visibility:public <> () returnType:<root>.TestInitBlock flags:[]
       BLOCK_BODY
-        DELEGATING_CONSTRUCTOR_CALL 'CONSTRUCTOR visibility:public <> () returnType:<root>.Base flags:[primary]'
+        DELEGATING_CONSTRUCTOR_CALL 'public constructor <init> <> () flags:[primary] declared in <root>.Base'
         INSTANCE_INITIALIZER_CALL classDescriptor='CLASS CLASS name:TestInitBlock modality:FINAL visibility:public flags:[] superTypes:[<root>.Base]'
     CONSTRUCTOR visibility:public <> (z:kotlin.Any) returnType:<root>.TestInitBlock flags:[]
       VALUE_PARAMETER name:z index:0 type:kotlin.Any flags:[]
       BLOCK_BODY
-        DELEGATING_CONSTRUCTOR_CALL 'CONSTRUCTOR visibility:public <> () returnType:<root>.Base flags:[primary]'
+        DELEGATING_CONSTRUCTOR_CALL 'public constructor <init> <> () flags:[primary] declared in <root>.Base'
         INSTANCE_INITIALIZER_CALL classDescriptor='CLASS CLASS name:TestInitBlock modality:FINAL visibility:public flags:[] superTypes:[<root>.Base]'
     CONSTRUCTOR visibility:public <> (y:kotlin.Int) returnType:<root>.TestInitBlock flags:[]
       VALUE_PARAMETER name:y index:0 type:kotlin.Int flags:[]
       BLOCK_BODY
-        DELEGATING_CONSTRUCTOR_CALL 'CONSTRUCTOR visibility:public <> () returnType:<root>.TestInitBlock flags:[]'
+        DELEGATING_CONSTRUCTOR_CALL 'public constructor <init> <> () flags:[] declared in <root>.TestInitBlock'
     FUN FAKE_OVERRIDE name:equals visibility:public modality:OPEN <> ($this:kotlin.Any, other:kotlin.Any?) returnType:kotlin.Boolean flags:[]
       overridden:
         FUN FAKE_OVERRIDE name:equals visibility:public modality:OPEN <> ($this:kotlin.Any, other:kotlin.Any?) returnType:kotlin.Boolean flags:[]

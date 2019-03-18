@@ -4,7 +4,7 @@ FILE fqName:<root> fileName:/typeParameterBoundedBySubclass.kt
     TYPE_PARAMETER name:T index:0 variance: superTypes:[<root>.Derived1]
     CONSTRUCTOR visibility:public <> () returnType:<root>.Base1<<root>.Base1.T> flags:[primary]
       BLOCK_BODY
-        DELEGATING_CONSTRUCTOR_CALL 'CONSTRUCTOR IR_EXTERNAL_DECLARATION_STUB visibility:public <> () returnType:kotlin.Any flags:[primary]'
+        DELEGATING_CONSTRUCTOR_CALL 'public constructor <init> <> () flags:[primary] declared in kotlin.Any'
         INSTANCE_INITIALIZER_CALL classDescriptor='CLASS CLASS name:Base1 modality:ABSTRACT visibility:public flags:[] superTypes:[kotlin.Any]'
     FUN FAKE_OVERRIDE name:equals visibility:public modality:OPEN <> ($this:kotlin.Any, other:kotlin.Any?) returnType:kotlin.Boolean flags:[]
       overridden:
@@ -23,7 +23,7 @@ FILE fqName:<root> fileName:/typeParameterBoundedBySubclass.kt
     $this: VALUE_PARAMETER INSTANCE_RECEIVER name:<this> type:<root>.Derived1 flags:[]
     CONSTRUCTOR visibility:public <> () returnType:<root>.Derived1 flags:[primary]
       BLOCK_BODY
-        DELEGATING_CONSTRUCTOR_CALL 'CONSTRUCTOR visibility:public <> () returnType:<root>.Base1<<root>.Base1.T> flags:[primary]'
+        DELEGATING_CONSTRUCTOR_CALL 'public constructor <init> <> () flags:[primary] declared in <root>.Base1'
           <T : Derived1>: <root>.Derived1
         INSTANCE_INITIALIZER_CALL classDescriptor='CLASS CLASS name:Derived1 modality:FINAL visibility:public flags:[] superTypes:[<root>.Base1<<root>.Derived1>]'
     FUN FAKE_OVERRIDE name:equals visibility:public modality:OPEN <> ($this:kotlin.Any, other:kotlin.Any?) returnType:kotlin.Boolean flags:[]
@@ -43,7 +43,7 @@ FILE fqName:<root> fileName:/typeParameterBoundedBySubclass.kt
     $this: VALUE_PARAMETER INSTANCE_RECEIVER name:<this> type:<root>.Base2 flags:[]
     CONSTRUCTOR visibility:public <> () returnType:<root>.Base2 flags:[primary]
       BLOCK_BODY
-        DELEGATING_CONSTRUCTOR_CALL 'CONSTRUCTOR IR_EXTERNAL_DECLARATION_STUB visibility:public <> () returnType:kotlin.Any flags:[primary]'
+        DELEGATING_CONSTRUCTOR_CALL 'public constructor <init> <> () flags:[primary] declared in kotlin.Any'
         INSTANCE_INITIALIZER_CALL classDescriptor='CLASS CLASS name:Base2 modality:ABSTRACT visibility:public flags:[] superTypes:[kotlin.Any]'
     FUN name:foo visibility:public modality:FINAL <T> ($this:<root>.Base2, x:<root>.Base2.foo.T) returnType:kotlin.Unit flags:[]
       TYPE_PARAMETER name:T index:0 variance: superTypes:[<root>.Derived2]
@@ -67,7 +67,7 @@ FILE fqName:<root> fileName:/typeParameterBoundedBySubclass.kt
     $this: VALUE_PARAMETER INSTANCE_RECEIVER name:<this> type:<root>.Derived2 flags:[]
     CONSTRUCTOR visibility:public <> () returnType:<root>.Derived2 flags:[primary]
       BLOCK_BODY
-        DELEGATING_CONSTRUCTOR_CALL 'CONSTRUCTOR visibility:public <> () returnType:<root>.Base2 flags:[primary]'
+        DELEGATING_CONSTRUCTOR_CALL 'public constructor <init> <> () flags:[primary] declared in <root>.Base2'
         INSTANCE_INITIALIZER_CALL classDescriptor='CLASS CLASS name:Derived2 modality:FINAL visibility:public flags:[] superTypes:[<root>.Base2]'
     FUN FAKE_OVERRIDE name:foo visibility:public modality:FINAL <T> ($this:<root>.Base2, x:<root>.Derived2.foo.T) returnType:kotlin.Unit flags:[]
       overridden:

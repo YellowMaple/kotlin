@@ -21,7 +21,7 @@ FILE fqName:<root> fileName:/badBreakContinue.kt
                 BLOCK_BODY
                   ERROR_EXPR 'Loop not found for break expression: break@L1' type=kotlin.Nothing
                   ERROR_EXPR 'Loop not found for continue expression: continue@L1' type=kotlin.Nothing
-              FUNCTION_REFERENCE 'FUN LOCAL_FUNCTION_FOR_LAMBDA name:<anonymous> visibility:local modality:FINAL <> () returnType:kotlin.Nothing flags:[]' type=kotlin.Function0<kotlin.Nothing> origin=LAMBDA
+              FUNCTION_REFERENCE 'local final fun <anonymous> <> (): kotlin.Nothing flags:[] declared in <root>.test3' type=kotlin.Function0<kotlin.Nothing> origin=LAMBDA
   FUN name:test4 visibility:public modality:FINAL <> () returnType:kotlin.Unit flags:[]
     BLOCK_BODY
       WHILE label=null origin=WHILE_LOOP

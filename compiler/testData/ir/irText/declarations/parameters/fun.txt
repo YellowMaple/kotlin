@@ -24,7 +24,7 @@ FILE fqName:<root> fileName:/fun.kt
     $this: VALUE_PARAMETER INSTANCE_RECEIVER name:<this> type:<root>.Host flags:[]
     CONSTRUCTOR visibility:public <> () returnType:<root>.Host flags:[primary]
       BLOCK_BODY
-        DELEGATING_CONSTRUCTOR_CALL 'CONSTRUCTOR IR_EXTERNAL_DECLARATION_STUB visibility:public <> () returnType:kotlin.Any flags:[primary]'
+        DELEGATING_CONSTRUCTOR_CALL 'public constructor <init> <> () flags:[primary] declared in kotlin.Any'
         INSTANCE_INITIALIZER_CALL classDescriptor='CLASS CLASS name:Host modality:FINAL visibility:public flags:[] superTypes:[kotlin.Any]'
     FUN name:testMembetExt1 visibility:public modality:FINAL <> ($this:<root>.Host, $receiver:kotlin.String, i:kotlin.Int, j:kotlin.String) returnType:kotlin.Unit flags:[]
       $this: VALUE_PARAMETER name:<this> type:<root>.Host flags:[]

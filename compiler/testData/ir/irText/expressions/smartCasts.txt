@@ -8,13 +8,13 @@ FILE fqName:<root> fileName:/smartCasts.kt
   FUN name:overloaded visibility:public modality:FINAL <> (s:kotlin.String) returnType:kotlin.String flags:[]
     VALUE_PARAMETER name:s index:0 type:kotlin.String flags:[]
     BLOCK_BODY
-      RETURN type=kotlin.Nothing from='FUN name:overloaded visibility:public modality:FINAL <> (s:kotlin.String) returnType:kotlin.String flags:[]'
-        GET_VAR 'VALUE_PARAMETER name:s index:0 type:kotlin.String flags:[]' type=kotlin.String origin=null
+      RETURN type=kotlin.Nothing from='public final fun overloaded <> (s: kotlin.String): kotlin.String flags:[] declared in <root>'
+        GET_VAR 's: kotlin.String flags:[] declared in <root>.overloaded' type=kotlin.String origin=null
   FUN name:overloaded visibility:public modality:FINAL <> (x:kotlin.Any) returnType:kotlin.Any flags:[]
     VALUE_PARAMETER name:x index:0 type:kotlin.Any flags:[]
     BLOCK_BODY
-      RETURN type=kotlin.Nothing from='FUN name:overloaded visibility:public modality:FINAL <> (x:kotlin.Any) returnType:kotlin.Any flags:[]'
-        GET_VAR 'VALUE_PARAMETER name:x index:0 type:kotlin.Any flags:[]' type=kotlin.Any origin=null
+      RETURN type=kotlin.Nothing from='public final fun overloaded <> (x: kotlin.Any): kotlin.Any flags:[] declared in <root>'
+        GET_VAR 'x: kotlin.Any flags:[] declared in <root>.overloaded' type=kotlin.Any origin=null
   FUN name:test1 visibility:public modality:FINAL <> (x:kotlin.Any) returnType:kotlin.Unit flags:[]
     VALUE_PARAMETER name:x index:0 type:kotlin.Any flags:[]
     BLOCK_BODY
@@ -22,28 +22,28 @@ FILE fqName:<root> fileName:/smartCasts.kt
         BRANCH
           if: TYPE_OP type=kotlin.Boolean origin=NOT_INSTANCEOF typeOperand=kotlin.String
             typeOperand: CLASS IR_EXTERNAL_DECLARATION_STUB CLASS name:String modality:FINAL visibility:public flags:[] superTypes:[kotlin.Comparable<kotlin.String>; kotlin.CharSequence; java.io.Serializable]
-            GET_VAR 'VALUE_PARAMETER name:x index:0 type:kotlin.Any flags:[]' type=kotlin.Any origin=null
-          then: RETURN type=kotlin.Nothing from='FUN name:test1 visibility:public modality:FINAL <> (x:kotlin.Any) returnType:kotlin.Unit flags:[]'
+            GET_VAR 'x: kotlin.Any flags:[] declared in <root>.test1' type=kotlin.Any origin=null
+          then: RETURN type=kotlin.Nothing from='public final fun test1 <> (x: kotlin.Any): kotlin.Unit flags:[] declared in <root>'
             GET_OBJECT 'CLASS IR_EXTERNAL_DECLARATION_STUB OBJECT name:Unit modality:FINAL visibility:public flags:[] superTypes:[kotlin.Any]' type=kotlin.Unit
-      CALL 'FUN IR_EXTERNAL_DECLARATION_STUB name:println visibility:public modality:FINAL <> (message:kotlin.Int) returnType:kotlin.Unit flags:[inline]' type=kotlin.Unit origin=null
-        message: CALL 'FUN IR_EXTERNAL_DECLARATION_STUB name:<get-length> visibility:public modality:OPEN <> ($this:kotlin.String) returnType:kotlin.Int flags:[]' type=kotlin.Int origin=GET_PROPERTY
+      CALL 'public final fun println <> (message: kotlin.Int): kotlin.Unit flags:[inline] declared in kotlin.io' type=kotlin.Unit origin=null
+        message: CALL 'public open fun <get-length> <> (): kotlin.Int flags:[] declared in kotlin.String' type=kotlin.Int origin=GET_PROPERTY
           $this: TYPE_OP type=kotlin.String origin=IMPLICIT_CAST typeOperand=kotlin.String
             typeOperand: CLASS IR_EXTERNAL_DECLARATION_STUB CLASS name:String modality:FINAL visibility:public flags:[] superTypes:[kotlin.Comparable<kotlin.String>; kotlin.CharSequence; java.io.Serializable]
-            GET_VAR 'VALUE_PARAMETER name:x index:0 type:kotlin.Any flags:[]' type=kotlin.Any origin=null
-      CALL 'FUN name:expectsString visibility:public modality:FINAL <> (s:kotlin.String) returnType:kotlin.Unit flags:[]' type=kotlin.Unit origin=null
+            GET_VAR 'x: kotlin.Any flags:[] declared in <root>.test1' type=kotlin.Any origin=null
+      CALL 'public final fun expectsString <> (s: kotlin.String): kotlin.Unit flags:[] declared in <root>' type=kotlin.Unit origin=null
         s: TYPE_OP type=kotlin.String origin=IMPLICIT_CAST typeOperand=kotlin.String
           typeOperand: CLASS IR_EXTERNAL_DECLARATION_STUB CLASS name:String modality:FINAL visibility:public flags:[] superTypes:[kotlin.Comparable<kotlin.String>; kotlin.CharSequence; java.io.Serializable]
-          GET_VAR 'VALUE_PARAMETER name:x index:0 type:kotlin.Any flags:[]' type=kotlin.Any origin=null
-      CALL 'FUN name:expectsInt visibility:public modality:FINAL <> (i:kotlin.Int) returnType:kotlin.Unit flags:[]' type=kotlin.Unit origin=null
-        i: CALL 'FUN IR_EXTERNAL_DECLARATION_STUB name:<get-length> visibility:public modality:OPEN <> ($this:kotlin.String) returnType:kotlin.Int flags:[]' type=kotlin.Int origin=GET_PROPERTY
+          GET_VAR 'x: kotlin.Any flags:[] declared in <root>.test1' type=kotlin.Any origin=null
+      CALL 'public final fun expectsInt <> (i: kotlin.Int): kotlin.Unit flags:[] declared in <root>' type=kotlin.Unit origin=null
+        i: CALL 'public open fun <get-length> <> (): kotlin.Int flags:[] declared in kotlin.String' type=kotlin.Int origin=GET_PROPERTY
           $this: TYPE_OP type=kotlin.String origin=IMPLICIT_CAST typeOperand=kotlin.String
             typeOperand: CLASS IR_EXTERNAL_DECLARATION_STUB CLASS name:String modality:FINAL visibility:public flags:[] superTypes:[kotlin.Comparable<kotlin.String>; kotlin.CharSequence; java.io.Serializable]
-            GET_VAR 'VALUE_PARAMETER name:x index:0 type:kotlin.Any flags:[]' type=kotlin.Any origin=null
-      CALL 'FUN name:expectsString visibility:public modality:FINAL <> (s:kotlin.String) returnType:kotlin.Unit flags:[]' type=kotlin.Unit origin=null
-        s: CALL 'FUN name:overloaded visibility:public modality:FINAL <> (s:kotlin.String) returnType:kotlin.String flags:[]' type=kotlin.String origin=null
+            GET_VAR 'x: kotlin.Any flags:[] declared in <root>.test1' type=kotlin.Any origin=null
+      CALL 'public final fun expectsString <> (s: kotlin.String): kotlin.Unit flags:[] declared in <root>' type=kotlin.Unit origin=null
+        s: CALL 'public final fun overloaded <> (s: kotlin.String): kotlin.String flags:[] declared in <root>' type=kotlin.String origin=null
           s: TYPE_OP type=kotlin.String origin=IMPLICIT_CAST typeOperand=kotlin.String
             typeOperand: CLASS IR_EXTERNAL_DECLARATION_STUB CLASS name:String modality:FINAL visibility:public flags:[] superTypes:[kotlin.Comparable<kotlin.String>; kotlin.CharSequence; java.io.Serializable]
-            GET_VAR 'VALUE_PARAMETER name:x index:0 type:kotlin.Any flags:[]' type=kotlin.Any origin=null
+            GET_VAR 'x: kotlin.Any flags:[] declared in <root>.test1' type=kotlin.Any origin=null
   FUN name:test2 visibility:public modality:FINAL <> (x:kotlin.Any) returnType:kotlin.String flags:[]
     VALUE_PARAMETER name:x index:0 type:kotlin.Any flags:[]
     BLOCK_BODY
@@ -51,14 +51,14 @@ FILE fqName:<root> fileName:/smartCasts.kt
         BRANCH
           if: TYPE_OP type=kotlin.Boolean origin=NOT_INSTANCEOF typeOperand=kotlin.String
             typeOperand: CLASS IR_EXTERNAL_DECLARATION_STUB CLASS name:String modality:FINAL visibility:public flags:[] superTypes:[kotlin.Comparable<kotlin.String>; kotlin.CharSequence; java.io.Serializable]
-            GET_VAR 'VALUE_PARAMETER name:x index:0 type:kotlin.Any flags:[]' type=kotlin.Any origin=null
-          then: RETURN type=kotlin.Nothing from='FUN name:test2 visibility:public modality:FINAL <> (x:kotlin.Any) returnType:kotlin.String flags:[]'
+            GET_VAR 'x: kotlin.Any flags:[] declared in <root>.test2' type=kotlin.Any origin=null
+          then: RETURN type=kotlin.Nothing from='public final fun test2 <> (x: kotlin.Any): kotlin.String flags:[] declared in <root>'
             CONST String type=kotlin.String value=""
-      RETURN type=kotlin.Nothing from='FUN name:test2 visibility:public modality:FINAL <> (x:kotlin.Any) returnType:kotlin.String flags:[]'
-        CALL 'FUN name:overloaded visibility:public modality:FINAL <> (s:kotlin.String) returnType:kotlin.String flags:[]' type=kotlin.String origin=null
+      RETURN type=kotlin.Nothing from='public final fun test2 <> (x: kotlin.Any): kotlin.String flags:[] declared in <root>'
+        CALL 'public final fun overloaded <> (s: kotlin.String): kotlin.String flags:[] declared in <root>' type=kotlin.String origin=null
           s: TYPE_OP type=kotlin.String origin=IMPLICIT_CAST typeOperand=kotlin.String
             typeOperand: CLASS IR_EXTERNAL_DECLARATION_STUB CLASS name:String modality:FINAL visibility:public flags:[] superTypes:[kotlin.Comparable<kotlin.String>; kotlin.CharSequence; java.io.Serializable]
-            GET_VAR 'VALUE_PARAMETER name:x index:0 type:kotlin.Any flags:[]' type=kotlin.Any origin=null
+            GET_VAR 'x: kotlin.Any flags:[] declared in <root>.test2' type=kotlin.Any origin=null
   FUN name:test3 visibility:public modality:FINAL <> (x:kotlin.Any) returnType:kotlin.String flags:[]
     VALUE_PARAMETER name:x index:0 type:kotlin.Any flags:[]
     BLOCK_BODY
@@ -66,10 +66,10 @@ FILE fqName:<root> fileName:/smartCasts.kt
         BRANCH
           if: TYPE_OP type=kotlin.Boolean origin=NOT_INSTANCEOF typeOperand=kotlin.String
             typeOperand: CLASS IR_EXTERNAL_DECLARATION_STUB CLASS name:String modality:FINAL visibility:public flags:[] superTypes:[kotlin.Comparable<kotlin.String>; kotlin.CharSequence; java.io.Serializable]
-            GET_VAR 'VALUE_PARAMETER name:x index:0 type:kotlin.Any flags:[]' type=kotlin.Any origin=null
-          then: RETURN type=kotlin.Nothing from='FUN name:test3 visibility:public modality:FINAL <> (x:kotlin.Any) returnType:kotlin.String flags:[]'
+            GET_VAR 'x: kotlin.Any flags:[] declared in <root>.test3' type=kotlin.Any origin=null
+          then: RETURN type=kotlin.Nothing from='public final fun test3 <> (x: kotlin.Any): kotlin.String flags:[] declared in <root>'
             CONST String type=kotlin.String value=""
-      RETURN type=kotlin.Nothing from='FUN name:test3 visibility:public modality:FINAL <> (x:kotlin.Any) returnType:kotlin.String flags:[]'
+      RETURN type=kotlin.Nothing from='public final fun test3 <> (x: kotlin.Any): kotlin.String flags:[] declared in <root>'
         TYPE_OP type=kotlin.String origin=IMPLICIT_CAST typeOperand=kotlin.String
           typeOperand: CLASS IR_EXTERNAL_DECLARATION_STUB CLASS name:String modality:FINAL visibility:public flags:[] superTypes:[kotlin.Comparable<kotlin.String>; kotlin.CharSequence; java.io.Serializable]
-          GET_VAR 'VALUE_PARAMETER name:x index:0 type:kotlin.Any flags:[]' type=kotlin.Any origin=null
+          GET_VAR 'x: kotlin.Any flags:[] declared in <root>.test3' type=kotlin.Any origin=null

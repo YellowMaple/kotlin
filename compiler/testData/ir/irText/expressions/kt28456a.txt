@@ -3,7 +3,7 @@ FILE fqName:<root> fileName:/kt28456a.kt
     $this: VALUE_PARAMETER INSTANCE_RECEIVER name:<this> type:<root>.A flags:[]
     CONSTRUCTOR visibility:public <> () returnType:<root>.A flags:[primary]
       BLOCK_BODY
-        DELEGATING_CONSTRUCTOR_CALL 'CONSTRUCTOR IR_EXTERNAL_DECLARATION_STUB visibility:public <> () returnType:kotlin.Any flags:[primary]'
+        DELEGATING_CONSTRUCTOR_CALL 'public constructor <init> <> () flags:[primary] declared in kotlin.Any'
         INSTANCE_INITIALIZER_CALL classDescriptor='CLASS CLASS name:A modality:FINAL visibility:public flags:[] superTypes:[kotlin.Any]'
     FUN FAKE_OVERRIDE name:equals visibility:public modality:OPEN <> ($this:kotlin.Any, other:kotlin.Any?) returnType:kotlin.Boolean flags:[]
       overridden:
@@ -26,8 +26,8 @@ FILE fqName:<root> fileName:/kt28456a.kt
   FUN name:testSimpleAssignment visibility:public modality:FINAL <> (a:<root>.A) returnType:kotlin.Unit flags:[]
     VALUE_PARAMETER name:a index:0 type:<root>.A flags:[]
     BLOCK_BODY
-      CALL 'FUN name:set visibility:public modality:FINAL <> ($receiver:<root>.A, i:kotlin.IntArray, v:kotlin.Int) returnType:kotlin.Unit flags:[]' type=kotlin.Unit origin=EQ
-        $receiver: GET_VAR 'VALUE_PARAMETER name:a index:0 type:<root>.A flags:[]' type=<root>.A origin=null
+      CALL 'public final fun set <> (vararg i: kotlin.Int, v: kotlin.Int): kotlin.Unit flags:[] declared in <root>' type=kotlin.Unit origin=EQ
+        $receiver: GET_VAR 'a: <root>.A flags:[] declared in <root>.testSimpleAssignment' type=<root>.A origin=null
         i: VARARG type=kotlin.IntArray varargElementType=kotlin.Int
           CONST Int type=kotlin.Int value=1
           CONST Int type=kotlin.Int value=2

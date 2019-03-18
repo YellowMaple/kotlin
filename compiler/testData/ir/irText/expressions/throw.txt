@@ -2,7 +2,7 @@ FILE fqName:<root> fileName:/throw.kt
   FUN name:test1 visibility:public modality:FINAL <> () returnType:kotlin.Unit flags:[]
     BLOCK_BODY
       THROW type=kotlin.Nothing
-        CALL 'CONSTRUCTOR IR_EXTERNAL_DECLARATION_STUB visibility:public <> () returnType:kotlin.Throwable flags:[]' type=kotlin.Throwable origin=null
+        CALL 'public constructor <init> <> () flags:[] declared in kotlin.Throwable' type=kotlin.Throwable origin=null
   FUN name:testImplicitCast visibility:public modality:FINAL <> (a:kotlin.Any) returnType:kotlin.Unit flags:[]
     VALUE_PARAMETER name:a index:0 type:kotlin.Any flags:[]
     BLOCK_BODY
@@ -10,9 +10,9 @@ FILE fqName:<root> fileName:/throw.kt
         BRANCH
           if: TYPE_OP type=kotlin.Boolean origin=INSTANCEOF typeOperand=kotlin.Throwable
             typeOperand: CLASS IR_EXTERNAL_DECLARATION_STUB CLASS name:Throwable modality:OPEN visibility:public flags:[] superTypes:[kotlin.Any; java.io.Serializable]
-            GET_VAR 'VALUE_PARAMETER name:a index:0 type:kotlin.Any flags:[]' type=kotlin.Any origin=null
+            GET_VAR 'a: kotlin.Any flags:[] declared in <root>.testImplicitCast' type=kotlin.Any origin=null
           then: BLOCK type=kotlin.Nothing origin=null
             THROW type=kotlin.Nothing
               TYPE_OP type=kotlin.Throwable origin=IMPLICIT_CAST typeOperand=kotlin.Throwable
                 typeOperand: CLASS IR_EXTERNAL_DECLARATION_STUB CLASS name:Throwable modality:OPEN visibility:public flags:[] superTypes:[kotlin.Any; java.io.Serializable]
-                GET_VAR 'VALUE_PARAMETER name:a index:0 type:kotlin.Any flags:[]' type=kotlin.Any origin=null
+                GET_VAR 'a: kotlin.Any flags:[] declared in <root>.testImplicitCast' type=kotlin.Any origin=null

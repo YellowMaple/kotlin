@@ -5,10 +5,10 @@ FILE fqName:<root> fileName:/anonymousFunction.kt
         BLOCK type=kotlin.Function0<kotlin.Unit> origin=ANONYMOUS_FUNCTION
           FUN name:<no name provided> visibility:local modality:FINAL <> () returnType:kotlin.Unit flags:[]
             BLOCK_BODY
-              CALL 'FUN IR_EXTERNAL_DECLARATION_STUB name:println visibility:public modality:FINAL <> () returnType:kotlin.Unit flags:[inline]' type=kotlin.Unit origin=null
-          FUNCTION_REFERENCE 'FUN name:<no name provided> visibility:local modality:FINAL <> () returnType:kotlin.Unit flags:[]' type=kotlin.Function0<kotlin.Unit> origin=ANONYMOUS_FUNCTION
+              CALL 'public final fun println <> (): kotlin.Unit flags:[inline] declared in kotlin.io' type=kotlin.Unit origin=null
+          FUNCTION_REFERENCE 'local final fun <no name provided> <> (): kotlin.Unit flags:[] declared in <root>.anonymous' type=kotlin.Function0<kotlin.Unit> origin=ANONYMOUS_FUNCTION
     FUN DEFAULT_PROPERTY_ACCESSOR name:<get-anonymous> visibility:public modality:FINAL <> () returnType:kotlin.Function0<kotlin.Unit> flags:[]
       correspondingProperty: PROPERTY name:anonymous visibility:public modality:FINAL flags:[val]
       BLOCK_BODY
-        RETURN type=kotlin.Nothing from='FUN DEFAULT_PROPERTY_ACCESSOR name:<get-anonymous> visibility:public modality:FINAL <> () returnType:kotlin.Function0<kotlin.Unit> flags:[]'
+        RETURN type=kotlin.Nothing from='public final fun <get-anonymous> <> (): kotlin.Function0<kotlin.Unit> flags:[] declared in <root>'
           GET_FIELD 'FIELD PROPERTY_BACKING_FIELD name:anonymous type:kotlin.Function0<kotlin.Unit> visibility:public flags:[final,static]' type=kotlin.Function0<kotlin.Unit> origin=null

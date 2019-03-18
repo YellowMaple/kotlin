@@ -6,14 +6,14 @@ FILE fqName:<root> fileName:/classesWithAnnotations.kt
     PROPERTY name:x visibility:public modality:FINAL flags:[val]
       FIELD PROPERTY_BACKING_FIELD name:x type:kotlin.String visibility:public flags:[final]
         EXPRESSION_BODY
-          GET_VAR 'VALUE_PARAMETER name:x index:0 type:kotlin.String flags:[]' type=kotlin.String origin=INITIALIZE_PROPERTY_FROM_PARAMETER
+          GET_VAR 'x: kotlin.String flags:[] declared in <root>.TestAnn.<init>' type=kotlin.String origin=INITIALIZE_PROPERTY_FROM_PARAMETER
       FUN DEFAULT_PROPERTY_ACCESSOR name:<get-x> visibility:public modality:FINAL <> ($this:<root>.TestAnn) returnType:kotlin.String flags:[]
         correspondingProperty: PROPERTY name:x visibility:public modality:FINAL flags:[val]
         $this: VALUE_PARAMETER name:<this> type:<root>.TestAnn flags:[]
         BLOCK_BODY
-          RETURN type=kotlin.Nothing from='FUN DEFAULT_PROPERTY_ACCESSOR name:<get-x> visibility:public modality:FINAL <> ($this:<root>.TestAnn) returnType:kotlin.String flags:[]'
+          RETURN type=kotlin.Nothing from='public final fun <get-x> <> (): kotlin.String flags:[] declared in <root>.TestAnn'
             GET_FIELD 'FIELD PROPERTY_BACKING_FIELD name:x type:kotlin.String visibility:public flags:[final]' type=kotlin.String origin=null
-              receiver: GET_VAR 'VALUE_PARAMETER name:<this> type:<root>.TestAnn flags:[]' type=<root>.TestAnn origin=null
+              receiver: GET_VAR '<this>: <root>.TestAnn flags:[] declared in <root>.TestAnn.<get-x>' type=<root>.TestAnn origin=null
     FUN FAKE_OVERRIDE name:equals visibility:public modality:OPEN <> ($this:kotlin.Any, other:kotlin.Any?) returnType:kotlin.Boolean flags:[]
       overridden:
         FUN FAKE_OVERRIDE name:equals visibility:public modality:OPEN <> ($this:kotlin.Any, other:kotlin.Any?) returnType:kotlin.Boolean flags:[]
@@ -29,12 +29,12 @@ FILE fqName:<root> fileName:/classesWithAnnotations.kt
       $this: VALUE_PARAMETER name:<this> type:kotlin.Any flags:[]
   CLASS CLASS name:TestClass modality:FINAL visibility:public flags:[] superTypes:[kotlin.Any]
     annotations:
-      CALL 'CONSTRUCTOR visibility:public <> (x:kotlin.String) returnType:<root>.TestAnn flags:[primary]' type=<root>.TestAnn origin=null
+      CALL 'public constructor <init> <> (x: kotlin.String) flags:[primary] declared in <root>.TestAnn' type=<root>.TestAnn origin=null
         x: CONST String type=kotlin.String value="class"
     $this: VALUE_PARAMETER INSTANCE_RECEIVER name:<this> type:<root>.TestClass flags:[]
     CONSTRUCTOR visibility:public <> () returnType:<root>.TestClass flags:[primary]
       BLOCK_BODY
-        DELEGATING_CONSTRUCTOR_CALL 'CONSTRUCTOR IR_EXTERNAL_DECLARATION_STUB visibility:public <> () returnType:kotlin.Any flags:[primary]'
+        DELEGATING_CONSTRUCTOR_CALL 'public constructor <init> <> () flags:[primary] declared in kotlin.Any'
         INSTANCE_INITIALIZER_CALL classDescriptor='CLASS CLASS name:TestClass modality:FINAL visibility:public flags:[] superTypes:[kotlin.Any]'
     FUN FAKE_OVERRIDE name:equals visibility:public modality:OPEN <> ($this:kotlin.Any, other:kotlin.Any?) returnType:kotlin.Boolean flags:[]
       overridden:
@@ -51,7 +51,7 @@ FILE fqName:<root> fileName:/classesWithAnnotations.kt
       $this: VALUE_PARAMETER name:<this> type:kotlin.Any flags:[]
   CLASS INTERFACE name:TestInterface modality:ABSTRACT visibility:public flags:[] superTypes:[kotlin.Any]
     annotations:
-      CALL 'CONSTRUCTOR visibility:public <> (x:kotlin.String) returnType:<root>.TestAnn flags:[primary]' type=<root>.TestAnn origin=null
+      CALL 'public constructor <init> <> (x: kotlin.String) flags:[primary] declared in <root>.TestAnn' type=<root>.TestAnn origin=null
         x: CONST String type=kotlin.String value="interface"
     $this: VALUE_PARAMETER INSTANCE_RECEIVER name:<this> type:<root>.TestInterface flags:[]
     FUN FAKE_OVERRIDE name:equals visibility:public modality:OPEN <> ($this:kotlin.Any, other:kotlin.Any?) returnType:kotlin.Boolean flags:[]
@@ -69,12 +69,12 @@ FILE fqName:<root> fileName:/classesWithAnnotations.kt
       $this: VALUE_PARAMETER name:<this> type:kotlin.Any flags:[]
   CLASS OBJECT name:TestObject modality:FINAL visibility:public flags:[] superTypes:[kotlin.Any]
     annotations:
-      CALL 'CONSTRUCTOR visibility:public <> (x:kotlin.String) returnType:<root>.TestAnn flags:[primary]' type=<root>.TestAnn origin=null
+      CALL 'public constructor <init> <> (x: kotlin.String) flags:[primary] declared in <root>.TestAnn' type=<root>.TestAnn origin=null
         x: CONST String type=kotlin.String value="object"
     $this: VALUE_PARAMETER INSTANCE_RECEIVER name:<this> type:<root>.TestObject flags:[]
     CONSTRUCTOR visibility:private <> () returnType:<root>.TestObject flags:[primary]
       BLOCK_BODY
-        DELEGATING_CONSTRUCTOR_CALL 'CONSTRUCTOR IR_EXTERNAL_DECLARATION_STUB visibility:public <> () returnType:kotlin.Any flags:[primary]'
+        DELEGATING_CONSTRUCTOR_CALL 'public constructor <init> <> () flags:[primary] declared in kotlin.Any'
         INSTANCE_INITIALIZER_CALL classDescriptor='CLASS OBJECT name:TestObject modality:FINAL visibility:public flags:[] superTypes:[kotlin.Any]'
     FUN FAKE_OVERRIDE name:equals visibility:public modality:OPEN <> ($this:kotlin.Any, other:kotlin.Any?) returnType:kotlin.Boolean flags:[]
       overridden:
@@ -93,16 +93,16 @@ FILE fqName:<root> fileName:/classesWithAnnotations.kt
     $this: VALUE_PARAMETER INSTANCE_RECEIVER name:<this> type:<root>.Host flags:[]
     CONSTRUCTOR visibility:public <> () returnType:<root>.Host flags:[primary]
       BLOCK_BODY
-        DELEGATING_CONSTRUCTOR_CALL 'CONSTRUCTOR IR_EXTERNAL_DECLARATION_STUB visibility:public <> () returnType:kotlin.Any flags:[primary]'
+        DELEGATING_CONSTRUCTOR_CALL 'public constructor <init> <> () flags:[primary] declared in kotlin.Any'
         INSTANCE_INITIALIZER_CALL classDescriptor='CLASS CLASS name:Host modality:FINAL visibility:public flags:[] superTypes:[kotlin.Any]'
     CLASS OBJECT name:TestCompanion modality:FINAL visibility:public flags:[companion] superTypes:[kotlin.Any]
       annotations:
-        CALL 'CONSTRUCTOR visibility:public <> (x:kotlin.String) returnType:<root>.TestAnn flags:[primary]' type=<root>.TestAnn origin=null
+        CALL 'public constructor <init> <> (x: kotlin.String) flags:[primary] declared in <root>.TestAnn' type=<root>.TestAnn origin=null
           x: CONST String type=kotlin.String value="companion"
       $this: VALUE_PARAMETER INSTANCE_RECEIVER name:<this> type:<root>.Host.TestCompanion flags:[]
       CONSTRUCTOR visibility:private <> () returnType:<root>.Host.TestCompanion flags:[primary]
         BLOCK_BODY
-          DELEGATING_CONSTRUCTOR_CALL 'CONSTRUCTOR IR_EXTERNAL_DECLARATION_STUB visibility:public <> () returnType:kotlin.Any flags:[primary]'
+          DELEGATING_CONSTRUCTOR_CALL 'public constructor <init> <> () flags:[primary] declared in kotlin.Any'
           INSTANCE_INITIALIZER_CALL classDescriptor='CLASS OBJECT name:TestCompanion modality:FINAL visibility:public flags:[companion] superTypes:[kotlin.Any]'
       FUN FAKE_OVERRIDE name:equals visibility:public modality:OPEN <> ($this:kotlin.Any, other:kotlin.Any?) returnType:kotlin.Boolean flags:[]
         overridden:
@@ -132,12 +132,12 @@ FILE fqName:<root> fileName:/classesWithAnnotations.kt
       $this: VALUE_PARAMETER name:<this> type:kotlin.Any flags:[]
   CLASS ENUM_CLASS name:TestEnum modality:FINAL visibility:public flags:[] superTypes:[kotlin.Enum<<root>.TestEnum>]
     annotations:
-      CALL 'CONSTRUCTOR visibility:public <> (x:kotlin.String) returnType:<root>.TestAnn flags:[primary]' type=<root>.TestAnn origin=null
+      CALL 'public constructor <init> <> (x: kotlin.String) flags:[primary] declared in <root>.TestAnn' type=<root>.TestAnn origin=null
         x: CONST String type=kotlin.String value="enum"
     $this: VALUE_PARAMETER INSTANCE_RECEIVER name:<this> type:<root>.TestEnum flags:[]
     CONSTRUCTOR visibility:private <> () returnType:<root>.TestEnum flags:[primary]
       BLOCK_BODY
-        ENUM_CONSTRUCTOR_CALL 'CONSTRUCTOR IR_EXTERNAL_DECLARATION_STUB visibility:public <> (name:kotlin.String, ordinal:kotlin.Int) returnType:kotlin.Enum<kotlin.Enum.E> flags:[primary]'
+        ENUM_CONSTRUCTOR_CALL 'public constructor <init> <> (name: kotlin.String, ordinal: kotlin.Int) flags:[primary] declared in kotlin.Enum'
           <E : Enum<E>>: <root>.TestEnum
         INSTANCE_INITIALIZER_CALL classDescriptor='CLASS ENUM_CLASS name:TestEnum modality:FINAL visibility:public flags:[] superTypes:[kotlin.Enum<<root>.TestEnum>]'
     FUN FAKE_OVERRIDE name:clone visibility:protected modality:FINAL <> ($this:kotlin.Enum<<root>.TestEnum>) returnType:kotlin.Any flags:[]
@@ -189,7 +189,7 @@ FILE fqName:<root> fileName:/classesWithAnnotations.kt
       SYNTHETIC_BODY kind=ENUM_VALUEOF
   CLASS ANNOTATION_CLASS name:TestAnnotation modality:FINAL visibility:public flags:[] superTypes:[kotlin.Annotation]
     annotations:
-      CALL 'CONSTRUCTOR visibility:public <> (x:kotlin.String) returnType:<root>.TestAnn flags:[primary]' type=<root>.TestAnn origin=null
+      CALL 'public constructor <init> <> (x: kotlin.String) flags:[primary] declared in <root>.TestAnn' type=<root>.TestAnn origin=null
         x: CONST String type=kotlin.String value="annotation"
     $this: VALUE_PARAMETER INSTANCE_RECEIVER name:<this> type:<root>.TestAnnotation flags:[]
     CONSTRUCTOR visibility:public <> () returnType:<root>.TestAnnotation flags:[primary]

@@ -17,7 +17,7 @@ BB 2
 INCOMING <- BB 1
     When exit: WHEN type=kotlin.Int origin=WHEN
 CONTENT
-      1 RETURN type=kotlin.Nothing from='FUN name:empty visibility:public modality:FINAL <> () returnType:kotlin.Int flags:[]'
+      1 RETURN type=kotlin.Nothing from='public final fun empty <> (): kotlin.Int flags:[] declared in <root>'
 OUTGOING -> NONE
     Function exit: FUN name:empty visibility:public modality:FINAL <> () returnType:kotlin.Int flags:[]
 

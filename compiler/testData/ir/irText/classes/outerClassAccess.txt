@@ -3,7 +3,7 @@ FILE fqName:<root> fileName:/outerClassAccess.kt
     $this: VALUE_PARAMETER INSTANCE_RECEIVER name:<this> type:<root>.Outer flags:[]
     CONSTRUCTOR visibility:public <> () returnType:<root>.Outer flags:[primary]
       BLOCK_BODY
-        DELEGATING_CONSTRUCTOR_CALL 'CONSTRUCTOR IR_EXTERNAL_DECLARATION_STUB visibility:public <> () returnType:kotlin.Any flags:[primary]'
+        DELEGATING_CONSTRUCTOR_CALL 'public constructor <init> <> () flags:[primary] declared in kotlin.Any'
         INSTANCE_INITIALIZER_CALL classDescriptor='CLASS CLASS name:Outer modality:FINAL visibility:public flags:[] superTypes:[kotlin.Any]'
     FUN name:foo visibility:public modality:FINAL <> ($this:<root>.Outer) returnType:kotlin.Unit flags:[]
       $this: VALUE_PARAMETER name:<this> type:<root>.Outer flags:[]
@@ -13,33 +13,33 @@ FILE fqName:<root> fileName:/outerClassAccess.kt
       CONSTRUCTOR visibility:public <> ($this:<root>.Outer) returnType:<root>.Outer.Inner flags:[primary]
         $outer: VALUE_PARAMETER name:<this> type:<root>.Outer flags:[]
         BLOCK_BODY
-          DELEGATING_CONSTRUCTOR_CALL 'CONSTRUCTOR IR_EXTERNAL_DECLARATION_STUB visibility:public <> () returnType:kotlin.Any flags:[primary]'
+          DELEGATING_CONSTRUCTOR_CALL 'public constructor <init> <> () flags:[primary] declared in kotlin.Any'
           INSTANCE_INITIALIZER_CALL classDescriptor='CLASS CLASS name:Inner modality:FINAL visibility:public flags:[inner] superTypes:[kotlin.Any]'
       FUN name:test visibility:public modality:FINAL <> ($this:<root>.Outer.Inner) returnType:kotlin.Unit flags:[]
         $this: VALUE_PARAMETER name:<this> type:<root>.Outer.Inner flags:[]
         BLOCK_BODY
-          CALL 'FUN name:foo visibility:public modality:FINAL <> ($this:<root>.Outer) returnType:kotlin.Unit flags:[]' type=kotlin.Unit origin=null
-            $this: GET_VAR 'VALUE_PARAMETER INSTANCE_RECEIVER name:<this> type:<root>.Outer flags:[]' type=<root>.Outer origin=null
+          CALL 'public final fun foo <> (): kotlin.Unit flags:[] declared in <root>.Outer' type=kotlin.Unit origin=null
+            $this: GET_VAR '<this>: <root>.Outer flags:[] declared in <root>.Outer' type=<root>.Outer origin=null
       CLASS CLASS name:Inner2 modality:FINAL visibility:public flags:[inner] superTypes:[kotlin.Any]
         $this: VALUE_PARAMETER INSTANCE_RECEIVER name:<this> type:<root>.Outer.Inner.Inner2 flags:[]
         CONSTRUCTOR visibility:public <> ($this:<root>.Outer.Inner) returnType:<root>.Outer.Inner.Inner2 flags:[primary]
           $outer: VALUE_PARAMETER name:<this> type:<root>.Outer.Inner flags:[]
           BLOCK_BODY
-            DELEGATING_CONSTRUCTOR_CALL 'CONSTRUCTOR IR_EXTERNAL_DECLARATION_STUB visibility:public <> () returnType:kotlin.Any flags:[primary]'
+            DELEGATING_CONSTRUCTOR_CALL 'public constructor <init> <> () flags:[primary] declared in kotlin.Any'
             INSTANCE_INITIALIZER_CALL classDescriptor='CLASS CLASS name:Inner2 modality:FINAL visibility:public flags:[inner] superTypes:[kotlin.Any]'
         FUN name:test2 visibility:public modality:FINAL <> ($this:<root>.Outer.Inner.Inner2) returnType:kotlin.Unit flags:[]
           $this: VALUE_PARAMETER name:<this> type:<root>.Outer.Inner.Inner2 flags:[]
           BLOCK_BODY
-            CALL 'FUN name:test visibility:public modality:FINAL <> ($this:<root>.Outer.Inner) returnType:kotlin.Unit flags:[]' type=kotlin.Unit origin=null
-              $this: GET_VAR 'VALUE_PARAMETER INSTANCE_RECEIVER name:<this> type:<root>.Outer.Inner flags:[]' type=<root>.Outer.Inner origin=null
-            CALL 'FUN name:foo visibility:public modality:FINAL <> ($this:<root>.Outer) returnType:kotlin.Unit flags:[]' type=kotlin.Unit origin=null
-              $this: GET_VAR 'VALUE_PARAMETER INSTANCE_RECEIVER name:<this> type:<root>.Outer flags:[]' type=<root>.Outer origin=null
+            CALL 'public final fun test <> (): kotlin.Unit flags:[] declared in <root>.Outer.Inner' type=kotlin.Unit origin=null
+              $this: GET_VAR '<this>: <root>.Outer.Inner flags:[] declared in <root>.Outer.Inner' type=<root>.Outer.Inner origin=null
+            CALL 'public final fun foo <> (): kotlin.Unit flags:[] declared in <root>.Outer' type=kotlin.Unit origin=null
+              $this: GET_VAR '<this>: <root>.Outer flags:[] declared in <root>.Outer' type=<root>.Outer origin=null
         FUN name:test3 visibility:public modality:FINAL <> ($this:<root>.Outer.Inner.Inner2, $receiver:<root>.Outer) returnType:kotlin.Unit flags:[]
           $this: VALUE_PARAMETER name:<this> type:<root>.Outer.Inner.Inner2 flags:[]
           $receiver: VALUE_PARAMETER name:<this> type:<root>.Outer flags:[]
           BLOCK_BODY
-            CALL 'FUN name:foo visibility:public modality:FINAL <> ($this:<root>.Outer) returnType:kotlin.Unit flags:[]' type=kotlin.Unit origin=null
-              $this: GET_VAR 'VALUE_PARAMETER name:<this> type:<root>.Outer flags:[]' type=<root>.Outer origin=null
+            CALL 'public final fun foo <> (): kotlin.Unit flags:[] declared in <root>.Outer' type=kotlin.Unit origin=null
+              $this: GET_VAR '<this>: <root>.Outer flags:[] declared in <root>.Outer.Inner.Inner2.test3' type=<root>.Outer origin=null
         FUN FAKE_OVERRIDE name:equals visibility:public modality:OPEN <> ($this:kotlin.Any, other:kotlin.Any?) returnType:kotlin.Boolean flags:[]
           overridden:
             FUN IR_EXTERNAL_DECLARATION_STUB name:equals visibility:public modality:OPEN <> ($this:kotlin.Any, other:kotlin.Any?) returnType:kotlin.Boolean flags:[]
